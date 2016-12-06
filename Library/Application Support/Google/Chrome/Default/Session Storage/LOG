@@ -1,0 +1,27 @@
+2016/12/06-09:50:49.588 60675 Reusing MANIFEST /Users/tlavecchia/Library/Application Support/Google/Chrome/Default/Session Storage/MANIFEST-000001
+2016/12/06-09:50:49.589 60675 Recovering log #16
+2016/12/06-09:50:49.589 60675 Reusing old log /Users/tlavecchia/Library/Application Support/Google/Chrome/Default/Session Storage/000016.log 
+2016/12/06-09:51:01.088 88915 Level-0 table #21: started
+2016/12/06-09:51:01.089 88915 Level-0 table #21: 83920 bytes OK
+2016/12/06-09:51:01.090 88915 Delete type=0 #16
+2016/12/06-09:59:47.948 88915 Level-0 table #23: started
+2016/12/06-09:59:47.950 88915 Level-0 table #23: 96240 bytes OK
+2016/12/06-09:59:47.950 88915 Delete type=0 #20
+2016/12/06-10:25:14.873 88915 Level-0 table #25: started
+2016/12/06-10:25:14.875 88915 Level-0 table #25: 28678 bytes OK
+2016/12/06-10:25:14.875 88915 Delete type=0 #22
+2016/12/06-10:25:19.388 88915 Level-0 table #27: started
+2016/12/06-10:25:19.389 88915 Level-0 table #27: 86132 bytes OK
+2016/12/06-10:25:19.390 88915 Delete type=0 #24
+2016/12/06-10:25:19.390 88915 Compacting 4@0 + 1@1 files
+2016/12/06-10:25:19.394 88915 Generated table #28@0: 415 keys, 295470 bytes
+2016/12/06-10:25:19.394 88915 Compacted 4@0 + 1@1 files => 295470 bytes
+2016/12/06-10:25:19.394 88915 compacted to: files[ 0 1 1 0 0 0 0 ]
+2016/12/06-10:25:19.394 88915 Delete type=2 #18
+2016/12/06-10:25:19.394 88915 Delete type=2 #21
+2016/12/06-10:25:19.394 88915 Delete type=2 #23
+2016/12/06-10:25:19.394 88915 Delete type=2 #25
+2016/12/06-10:25:19.394 88915 Delete type=2 #27
+2016/12/06-10:25:30.940 88915 Level-0 table #30: started
+2016/12/06-10:25:30.941 88915 Level-0 table #30: 95316 bytes OK
+2016/12/06-10:25:30.942 88915 Delete type=0 #26

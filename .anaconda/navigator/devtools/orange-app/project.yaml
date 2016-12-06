@@ -1,0 +1,16 @@
+commands:
+- orange-canvas
+default_channels:
+- https://repo.continuum.io/pkgs/free
+- https://repo.continuum.io/pkgs/pro
+default_environment: default
+description: ''
+dev_tool: false
+environments:
+  default: env.yaml
+icon: icon.png
+is_app: true
+is_conda_app: true
+is_default: false
+name: orange-app
+version: 0.1.0

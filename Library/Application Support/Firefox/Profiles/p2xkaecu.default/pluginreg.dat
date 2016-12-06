@@ -1,0 +1,105 @@
+Generated File. Do not edit.
+
+[HEADER]
+Version:0.17:$
+Arch:x86_64-gcc3:$
+
+[PLUGINS]
+Silverlight.plugin:$
+/Library/Internet Plug-Ins/Silverlight.plugin:$
+5.1.41212.0:$
+1449903684000:0:0:0:$
+5.1.41212.0:$
+Silverlight Plug-In:$
+2
+0:application/x-silverlight:Microsoft Silverlight:xaml:$
+1:application/x-silverlight-2:Microsoft Silverlight:xaml:$
+CitrixICAClientPlugIn.plugin:$
+/Library/Internet Plug-Ins/CitrixICAClientPlugIn.plugin:$
+12.1.100:$
+1453839192000:0:0:0:$
+Simple plug-in that handles Citrix connection files:$
+Citrix Receiver:$
+2
+0:application/x-ica:Citrix Connection File:ica:$
+1:application/vnd.citrix.receiver.configure:Citrix Service Record File:cr:$
+Default Browser.plugin:$
+/Library/Internet Plug-Ins/Default Browser.plugin:$
+601:$
+1458530328000:0:0:0:$
+Provides information about the default web browser:$
+Default Browser Helper:$
+1
+0:application/apple-default-browser:Provides information about the default web browser::$
+JavaAppletPlugin.plugin:$
+/Library/Internet Plug-Ins/JavaAppletPlugin.plugin:$
+Java 8 Update 91 build 14:$
+1459499288000:0:0:0:$
+Displays Java applet content, or a placeholder if Java is not installed.:$
+Java Applet Plug-in:$
+21
+0:application/x-java-applet;version=1.4:Java Applet::$
+1:application/x-java-applet;version=1.2.1:Java Applet::$
+2:application/x-java-applet;version=1.2.2:Java Applet::$
+3:application/x-java-applet;version=1.3:Java Applet::$
+4:application/x-java-applet;version=1.8:Java Applet::$
+5:application/x-java-vm:Java Applet::$
+6:application/x-java-applet;deploy=11.91.2:Java Applet::$
+7:application/x-java-applet;version=1.1.1:Java Applet::$
+8:application/x-java-applet;version=1.2:Java Applet::$
+9:application/x-java-applet;version=1.7:Java Applet::$
+10:application/x-java-applet;version=1.4.1:Java Applet::$
+11:application/x-java-applet;version=1.1.2:Java Applet::$
+12:application/x-java-applet:Basic Java Applet::$
+13:application/x-java-applet;version=1.1:Java Applet::$
+14:application/x-java-applet;version=1.1.3:Java Applet::$
+15:application/x-java-applet;jpi-version=1.8.0_91:Java Applet::$
+16:application/x-java-applet;javafx=8.0.91:JavaFX Applet::$
+17:application/x-java-applet;version=1.6:Java Applet::$
+18:application/x-java-applet;version=1.4.2:Java Applet::$
+19:application/x-java-applet;version=1.3.1:Java Applet::$
+20:application/x-java-applet;version=1.5:Java Applet::$
+Unity Web Player.plugin:$
+/Library/Internet Plug-Ins/Unity Web Player.plugin:$
+UnityPlayer version 5.3.5f1:$
+1462729439000:0:0:0:$
+Unity Web Player version 5.3.5f1. (c) 2016 Unity Technologies ApS. All rights reserved.:$
+Unity Player:$
+1
+0:application/vnd.unity:Unity Player:unity3d:$
+AdobePDFViewerNPAPI.plugin:$
+/Library/Internet Plug-Ins/AdobePDFViewerNPAPI.plugin:$
+15.016.20045:$
+1464374356000:0:0:0:$
+Adobe® Acrobat® Plug-in for Web Browsers, Version 15.016.20045:$
+Adobe Acrobat NPAPI Plug-in, Version 15.016.20045:$
+8
+0:application/vnd.adobe.pdf:Acrobat Portable Document Format:pdf:$
+1:application/vnd.adobe.pdfxml:Acrobat XML Portable Document Format:pdfxml:$
+2:application/vnd.adobe.x-mars:Acrobat XML Portable Document Format:mars:$
+3:application/vnd.adobe.xdp+xml:XML Data Package:xdp:$
+4:application/vnd.fdf:Acrobat Forms Data Format:fdf:$
+5:application/vnd.adobe.xfd+xml:FormFlow99 Data File:xfd:$
+6:application/pdf:Acrobat Portable Document Format:pdf:$
+7:application/vnd.adobe.xfdf:Acrobat Forms Data Format in XML:xfdf:$
+Flash Player.plugin:$
+/Library/Internet Plug-Ins/Flash Player.plugin:$
+22.0.0.192:$
+1466133614000:0:0:0:$
+Shockwave Flash 22.0 r0:$
+Shockwave Flash:$
+2
+0:application/x-shockwave-flash:Shockwave Flash:swf:$
+1:application/futuresplash:FutureSplash Player:spl:$
+
+[INVALID]
+/Library/Internet Plug-Ins/Unused:$
+1465584825000:$
+/Library/Internet Plug-Ins/flashplayer.xpt:$
+1465854560000:$
+/Library/Internet Plug-Ins/AdobePDFViewer.plugin:$
+1464374356000:$
+/Library/Internet Plug-Ins/Disabled Plug-Ins:$
+1446698027000:$
+/Library/Internet Plug-Ins/Quartz Composer.webplugin:$
+1438506744000:$

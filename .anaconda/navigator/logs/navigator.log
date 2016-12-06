@@ -1,0 +1,1852 @@
+2016-06-10 10:25:41,968 - INFO
+    logs.setup : 39
+    Setting up logger
+
+2016-06-10 10:25:45,047 - DEBUG
+    anaconda_api.create_default_project : 196
+    
+
+2016-06-10 10:25:45,047 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/default_project
+
+2016-06-10 10:25:45,048 - DEBUG
+    anaconda_api.save_icon : 359
+    ('/Applications/anaconda/lib/python3.5/site-packages/anaconda_navigator/images/anaconda-icon-256x256.png', '/Users/elon/.anaconda/navigator/default_project', {'version': '0.0.1', 'icon': 'icon.png', 'is_conda_app': False, 'description': '', 'environments': {'default': 'env.yaml'}, 'is_default': True, 'dev_tool': None, 'name': 'default', 'default_environment': 'default', 'default_channels': ['https://repo.continuum.io/pkgs/free', 'https://repo.continuum.io/pkgs/pro'], 'commands': [], 'is_app': False})
+
+2016-06-10 10:25:45,282 - ERROR
+    main_window.create_application_projects : 267
+    None
+
+2016-06-10 10:25:45,282 - DEBUG
+    anaconda_api.create_application_projects : 212
+    (dict_keys(['glueviz', 'notebook', 'spyder', 'orange-app', 'qtconsole']), True)
+
+2016-06-10 10:25:45,283 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/glueviz
+
+2016-06-10 10:25:45,284 - DEBUG
+    anaconda_api.save_icon : 359
+    ('/Applications/anaconda/lib/python3.5/site-packages/anaconda_navigator/images/glueviz-icon-1024x1024.png', '/Users/elon/.anaconda/navigator/devtools/glueviz', {'version': '0.0.1', 'icon': 'icon.png', 'is_conda_app': True, 'description': '', 'environments': {'default': 'env.yaml'}, 'is_default': False, 'dev_tool': False, 'name': 'glueviz', 'default_environment': 'default', 'default_channels': ['https://repo.continuum.io/pkgs/free', 'https://repo.continuum.io/pkgs/pro'], 'commands': [], 'is_app': True})
+
+2016-06-10 10:25:45,332 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/glueviz
+
+2016-06-10 10:25:45,334 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/notebook
+
+2016-06-10 10:25:45,335 - DEBUG
+    anaconda_api.save_icon : 359
+    ('/Applications/anaconda/lib/python3.5/site-packages/anaconda_navigator/images/jupyter-icon-1024x1024.png', '/Users/elon/.anaconda/navigator/devtools/notebook', {'version': '0.0.1', 'icon': 'icon.png', 'is_conda_app': True, 'description': '', 'environments': {'default': 'env.yaml'}, 'is_default': False, 'dev_tool': True, 'name': 'notebook', 'default_environment': 'default', 'default_channels': ['https://repo.continuum.io/pkgs/free', 'https://repo.continuum.io/pkgs/pro'], 'commands': [], 'is_app': True})
+
+2016-06-10 10:25:45,382 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/notebook
+
+2016-06-10 10:25:45,383 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/spyder
+
+2016-06-10 10:25:45,385 - DEBUG
+    anaconda_api.save_icon : 359
+    ('/Applications/anaconda/lib/python3.5/site-packages/anaconda_navigator/images/spyder-icon-1024x1024.png', '/Users/elon/.anaconda/navigator/devtools/spyder', {'version': '0.0.1', 'icon': 'icon.png', 'is_conda_app': True, 'description': '', 'environments': {'default': 'env.yaml'}, 'is_default': False, 'dev_tool': True, 'name': 'spyder', 'default_environment': 'default', 'default_channels': ['https://repo.continuum.io/pkgs/free', 'https://repo.continuum.io/pkgs/pro'], 'commands': [], 'is_app': True})
+
+2016-06-10 10:25:45,435 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/spyder
+
+2016-06-10 10:25:45,436 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/orange-app
+
+2016-06-10 10:25:45,438 - DEBUG
+    anaconda_api.save_icon : 359
+    ('/Applications/anaconda/lib/python3.5/site-packages/anaconda_navigator/images/orange-icon-1024x1024.png', '/Users/elon/.anaconda/navigator/devtools/orange-app', {'version': '0.0.1', 'icon': 'icon.png', 'is_conda_app': True, 'description': '', 'environments': {'default': 'env.yaml'}, 'is_default': False, 'dev_tool': False, 'name': 'orange-app', 'default_environment': 'default', 'default_channels': ['https://repo.continuum.io/pkgs/free', 'https://repo.continuum.io/pkgs/pro'], 'commands': [], 'is_app': True})
+
+2016-06-10 10:25:45,490 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/orange-app
+
+2016-06-10 10:25:45,491 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/qtconsole
+
+2016-06-10 10:25:45,493 - DEBUG
+    anaconda_api.save_icon : 359
+    ('/Applications/anaconda/lib/python3.5/site-packages/anaconda_navigator/images/ipython-qtconsole-icon-1024x1024.png', '/Users/elon/.anaconda/navigator/devtools/qtconsole', {'version': '0.0.1', 'icon': 'icon.png', 'is_conda_app': True, 'description': '', 'environments': {'default': 'env.yaml'}, 'is_default': False, 'dev_tool': True, 'name': 'qtconsole', 'default_environment': 'default', 'default_channels': ['https://repo.continuum.io/pkgs/free', 'https://repo.continuum.io/pkgs/pro'], 'commands': [], 'is_app': True})
+
+2016-06-10 10:25:45,543 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/qtconsole
+
+2016-06-10 10:25:45,544 - DEBUG
+    anaconda_api.add_project : 244
+    ('/Users/elon/.anaconda/navigator/devtools/glueviz', True)
+
+2016-06-10 10:25:45,544 - DEBUG
+    anaconda_api.add_project : 244
+    ('/Users/elon/.anaconda/navigator/devtools/notebook', True)
+
+2016-06-10 10:25:45,544 - DEBUG
+    anaconda_api.add_project : 244
+    ('/Users/elon/.anaconda/navigator/devtools/spyder', True)
+
+2016-06-10 10:25:45,544 - DEBUG
+    anaconda_api.add_project : 244
+    ('/Users/elon/.anaconda/navigator/devtools/orange-app', True)
+
+2016-06-10 10:25:45,545 - DEBUG
+    anaconda_api.add_project : 244
+    ('/Users/elon/.anaconda/navigator/devtools/qtconsole', True)
+
+2016-06-10 10:25:45,552 - DEBUG
+    anaconda_api.load_applications : 289
+    ['/Users/elon/.anaconda/navigator/default_project', '/Users/elon/.anaconda/navigator/devtools/glueviz', '/Users/elon/.anaconda/navigator/devtools/notebook', '/Users/elon/.anaconda/navigator/devtools/orange-app', '/Users/elon/.anaconda/navigator/devtools/qtconsole', '/Users/elon/.anaconda/navigator/devtools/spyder']
+
+2016-06-10 10:25:45,552 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/glueviz
+
+2016-06-10 10:25:45,554 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/notebook
+
+2016-06-10 10:25:45,556 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/orange-app
+
+2016-06-10 10:25:45,558 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/qtconsole
+
+2016-06-10 10:25:45,560 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/spyder
+
+2016-06-10 10:25:45,563 - DEBUG
+    anaconda_api.load_icon : 387
+    ('/Users/elon/.anaconda/navigator/devtools/notebook', 'notebook', True)
+
+2016-06-10 10:25:45,914 - DEBUG
+    anaconda_api.load_icon : 387
+    ('/Users/elon/.anaconda/navigator/devtools/qtconsole', 'qtconsole', True)
+
+2016-06-10 10:25:45,923 - DEBUG
+    anaconda_api.load_icon : 387
+    ('/Users/elon/.anaconda/navigator/devtools/spyder', 'spyder', True)
+
+2016-06-10 10:25:45,931 - DEBUG
+    anaconda_api.load_icon : 387
+    ('/Users/elon/.anaconda/navigator/devtools/glueviz', 'glueviz', True)
+
+2016-06-10 10:25:45,940 - DEBUG
+    anaconda_api.load_icon : 387
+    ('/Users/elon/.anaconda/navigator/devtools/orange-app', 'orange-app', True)
+
+2016-06-10 10:25:45,974 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/notebook
+
+2016-06-10 10:25:45,976 - DEBUG
+    apps.update_versions : 408
+    ('notebook', True, True)
+
+2016-06-10 10:25:45,976 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/qtconsole
+
+2016-06-10 10:25:45,979 - DEBUG
+    apps.update_versions : 408
+    ('qtconsole', True, True)
+
+2016-06-10 10:25:45,979 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/spyder
+
+2016-06-10 10:25:45,981 - DEBUG
+    apps.update_versions : 408
+    ('spyder', True, True)
+
+2016-06-10 10:25:45,982 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/glueviz
+
+2016-06-10 10:25:45,984 - DEBUG
+    apps.update_versions : 408
+    ('glueviz', False, False)
+
+2016-06-10 10:25:45,985 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/orange-app
+
+2016-06-10 10:25:45,987 - DEBUG
+    apps.update_versions : 408
+    ('orange-app', False, False)
+
+2016-06-10 10:25:46,783 - DEBUG
+    community.make_tag_filters : 211
+    TAGS: ['webinar', 'documentation', 'video', 'training']
+
+2016-06-10 10:25:46,786 - DEBUG
+    community.make_tag_filters : 211
+    TAGS: ['event', 'forum', 'social']
+
+2016-06-10 10:25:46,951 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://img.youtube.com/vi/FgfKA-HJFI0/0.jpg
+
+2016-06-10 10:25:46,961 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/AnacondaCON_lines_RGB copy.png
+
+2016-06-10 10:25:47,137 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/sym_2016_logo.png
+
+2016-06-10 10:25:47,146 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://img.youtube.com/vi/fuZI5sJQSkU/0.jpg
+
+2016-06-10 10:25:47,320 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/pydatalogo-generic.png
+
+2016-06-10 10:25:47,324 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://img.youtube.com/vi/Xb5r_495_-k/0.jpg
+
+2016-06-10 10:25:47,336 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/2015-strata-logo.png
+
+2016-06-10 10:25:47,363 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://img.youtube.com/vi/yceT9sj61vw/0.jpg
+
+2016-06-10 10:25:47,373 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/pydatalogo-generic.png
+
+2016-06-10 10:25:47,387 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://img.youtube.com/vi/aC7dzF1vY7A/0.jpg
+
+2016-06-10 10:25:47,435 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/pydatalogo-generic.png
+
+2016-06-10 10:25:47,443 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://img.youtube.com/vi/xUBoPK6FGIU/0.jpg
+
+2016-06-10 10:25:47,611 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/europython-2016-logo-white-bg.png
+
+2016-06-10 10:25:47,618 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://img.youtube.com/vi/-Y8XyrtYJzU/0.jpg
+
+2016-06-10 10:25:47,629 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://img.youtube.com/vi/q9E0csBVcwQ/0.jpg
+
+2016-06-10 10:25:47,639 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/MIT_logo.svg_.png
+
+2016-06-10 10:25:47,660 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://img.youtube.com/vi/KsXJSuBLMyM/0.jpg
+
+2016-06-10 10:25:47,668 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/SciPy2016-Logo-450x120-01.25.png
+
+2016-06-10 10:25:47,682 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://img.youtube.com/vi/q45JJ8BXP2g/0.jpg
+
+2016-06-10 10:25:47,694 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/pydatalogo-generic.png
+
+2016-06-10 10:25:47,705 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://img.youtube.com/vi/oTT4WWqhYNk/0.jpg
+
+2016-06-10 10:25:47,731 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/Screen Shot 2016-04-19 at 4.40.12 PM.png
+
+2016-06-10 10:25:47,917 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://img.youtube.com/vi/iLup7mgL21o/0.jpg
+
+2016-06-10 10:25:47,926 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/spark_summit_og_image.png
+
+2016-06-10 10:25:47,930 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://img.youtube.com/vi/QpaapVaL8Fw/0.jpg
+
+2016-06-10 10:25:47,949 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://img.youtube.com/vi/7uYhhCx_MAE/0.jpg
+
+2016-06-10 10:25:47,965 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/Logox2.jpg
+
+2016-06-10 10:25:47,980 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://img.youtube.com/vi/QKBcnEhkCtk/0.jpg
+
+2016-06-10 10:25:47,994 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/tumblr_inline_nx1ss5EXo91tp8y64_500.png
+
+2016-06-10 10:25:48,004 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://img.youtube.com/vi/Kojrxqgecx4/0.jpg
+
+2016-06-10 10:25:48,024 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/pydata-logo-berlin-2016.png
+
+2016-06-10 10:25:48,215 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://img.youtube.com/vi/MUlMh_oy_4k/0.jpg
+
+2016-06-10 10:25:48,226 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/odsc.png
+
+2016-06-10 10:25:48,242 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/Screen Shot 2016-03-11 at 3.41.22 PM.png
+
+2016-06-10 10:25:48,255 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://img.youtube.com/vi/EV6dSVHDGek/0.jpg
+
+2016-06-10 10:25:48,270 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/oscon2014_logo.png
+
+2016-06-10 10:25:48,279 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://img.youtube.com/vi/pZBhyO-djfc/0.jpg
+
+2016-06-10 10:25:48,294 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/pydata-logo-london-2016.png
+
+2016-06-10 10:25:48,303 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://img.youtube.com/vi/ieW3G7ZzRZ0/0.jpg
+
+2016-06-10 10:25:48,324 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/pycon-il-logo-new.jpg
+
+2016-06-10 10:25:48,501 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/computer_code.jpg
+
+2016-06-10 10:25:48,515 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.python.org/static/opengraph-icon-200x200.png
+
+2016-06-10 10:25:48,529 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/high_performance_ods_webinar.jpg
+
+2016-06-10 10:25:48,540 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.python.org/static/opengraph-icon-200x200.png
+
+2016-06-10 10:25:48,550 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/webinar_predict.png
+
+2016-06-10 10:25:48,565 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:25:48,575 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/openDataSciencewithR.jpg
+
+2016-06-10 10:25:48,593 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:25:48,603 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/dask-bag.jpg
+
+2016-06-10 10:25:48,624 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:25:48,817 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/journeyToOpenDataScience.png
+
+2016-06-10 10:25:48,827 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:25:48,844 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/webinar_pandas.png
+
+2016-06-10 10:25:48,863 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/7094935_orig.png
+
+2016-06-10 10:25:48,872 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/webinar_datashader.png
+
+2016-06-10 10:25:48,987 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/3444089.png
+
+2016-06-10 10:25:48,999 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/webinar_hassle.png
+
+2016-06-10 10:25:49,198 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://scipy.org/_static/images/scipy_med.png
+
+2016-06-10 10:25:49,209 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/webinar_gurobi2.png
+
+2016-06-10 10:25:49,222 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/webinar_amd.png
+
+2016-06-10 10:25:49,229 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/904538_orig.png
+
+2016-06-10 10:25:49,398 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://continuum.io/sites/default/files/webinar_distributed.png
+
+2016-06-10 10:25:49,405 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://pbs.twimg.com/profile_images/624030560457850880/17LrFnZt_400x400.png
+
+2016-06-10 10:25:49,417 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.python.org/static/opengraph-icon-200x200.png
+
+2016-06-10 10:25:49,432 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://scipy.org/_static/images/documentation.png
+
+2016-06-10 10:25:49,439 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.python.org/static/opengraph-icon-200x200.png
+
+2016-06-10 10:25:49,463 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://docs.scipy.org/doc/scipy-0.10.1/reference/_static/scipyshiny_small.png
+
+2016-06-10 10:25:49,471 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:25:49,500 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:25:49,515 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://pbs.twimg.com/profile_images/1678023092/DSC_Logo_400x400.jpg
+
+2016-06-10 10:25:49,525 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:25:49,532 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:25:49,802 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:25:49,808 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:25:49,832 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/7094935_orig.png
+
+2016-06-10 10:25:49,844 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://cdn.sstatic.net/stackoverflow/company/img/logos/so/so-icon.png
+
+2016-06-10 10:25:50,003 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/3444089.png
+
+2016-06-10 10:25:50,022 - ERROR
+    community.convert_image : 322
+    cannot identify image file '/Users/elon/.anaconda/navigator/images/stackoverflow.png'
+
+2016-06-10 10:25:50,029 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:25:50,041 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://scipy.org/_static/images/scipy_med.png
+
+2016-06-10 10:25:50,057 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/904538_orig.png
+
+2016-06-10 10:25:50,065 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://bokeh.pydata.org/en/latest/_static/images/logo.png
+
+2016-06-10 10:25:50,084 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://pbs.twimg.com/profile_images/624030560457850880/17LrFnZt_400x400.png
+
+2016-06-10 10:25:50,093 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://bokeh.pydata.org/en/latest/_static/images/logo.png
+
+2016-06-10 10:25:50,111 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://scipy.org/_static/images/documentation.png
+
+2016-06-10 10:25:50,122 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://blaze.pydata.org/images/blaze.png
+
+2016-06-10 10:25:50,288 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://docs.scipy.org/doc/scipy-0.10.1/reference/_static/scipyshiny_small.png
+
+2016-06-10 10:25:50,296 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://gnosis.cx/tmp/developer-dark.png
+
+2016-06-10 10:25:50,307 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://pbs.twimg.com/profile_images/1678023092/DSC_Logo_400x400.jpg
+
+2016-06-10 10:25:50,328 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:25:50,340 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/904538_orig.png
+
+2016-06-10 10:25:50,354 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:25:50,363 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://docs.scipy.org/doc/scipy-0.10.1/reference/_static/scipyshiny_small.png
+
+2016-06-10 10:25:50,382 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://cdn.sstatic.net/stackoverflow/company/img/logos/so/so-icon.png
+
+2016-06-10 10:25:50,395 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/1457562110.png
+
+2016-06-10 10:25:50,408 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:25:50,409 - ERROR
+    community.convert_image : 322
+    cannot identify image file '/Users/elon/.anaconda/navigator/images/stackoverflow.png'
+
+2016-06-10 10:25:50,424 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:25:50,578 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://bokeh.pydata.org/en/latest/_static/images/logo.png
+
+2016-06-10 10:25:50,588 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:25:50,614 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://bokeh.pydata.org/en/latest/_static/images/logo.png
+
+2016-06-10 10:25:50,621 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:25:50,629 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://blaze.pydata.org/images/blaze.png
+
+2016-06-10 10:25:50,651 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://gnosis.cx/tmp/developer-dark.png
+
+2016-06-10 10:25:50,678 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/904538_orig.png
+
+2016-06-10 10:25:50,706 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://docs.scipy.org/doc/scipy-0.10.1/reference/_static/scipyshiny_small.png
+
+2016-06-10 10:25:50,877 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/1457562110.png
+
+2016-06-10 10:25:50,896 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:25:50,923 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:25:50,948 - DEBUG
+    community.download_thumbnail : 288
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:27:01,362 - INFO
+    logs.setup : 39
+    Setting up logger
+
+2016-06-10 10:27:03,867 - ERROR
+    main_window.create_application_projects : 267
+    None
+
+2016-06-10 10:27:03,867 - DEBUG
+    anaconda_api.create_application_projects : 212
+    (dict_keys(['qtconsole', 'spyder', 'glueviz', 'notebook', 'orange-app']), False)
+
+2016-06-10 10:27:03,867 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/qtconsole
+
+2016-06-10 10:27:03,869 - DEBUG
+    anaconda_api.save_icon : 359
+    ('/Applications/anaconda/lib/python3.5/site-packages/anaconda_navigator/images/ipython-qtconsole-icon-1024x1024.png', '/Users/elon/.anaconda/navigator/devtools/qtconsole', {'icon': 'icon.png', 'environments': {'default': 'env.yaml'}, 'dev_tool': True, 'default_environment': 'default', 'version': '0.0.1', 'commands': [], 'name': 'qtconsole', 'is_app': True, 'is_default': False, 'description': '', 'is_conda_app': True, 'default_channels': ['https://repo.continuum.io/pkgs/free', 'https://repo.continuum.io/pkgs/pro']})
+
+2016-06-10 10:27:03,934 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/qtconsole
+
+2016-06-10 10:27:03,935 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/spyder
+
+2016-06-10 10:27:03,937 - DEBUG
+    anaconda_api.save_icon : 359
+    ('/Applications/anaconda/lib/python3.5/site-packages/anaconda_navigator/images/spyder-icon-1024x1024.png', '/Users/elon/.anaconda/navigator/devtools/spyder', {'icon': 'icon.png', 'environments': {'default': 'env.yaml'}, 'dev_tool': True, 'default_environment': 'default', 'version': '0.0.1', 'commands': [], 'name': 'spyder', 'is_app': True, 'is_default': False, 'description': '', 'is_conda_app': True, 'default_channels': ['https://repo.continuum.io/pkgs/free', 'https://repo.continuum.io/pkgs/pro']})
+
+2016-06-10 10:27:03,987 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/spyder
+
+2016-06-10 10:27:03,988 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/glueviz
+
+2016-06-10 10:27:03,990 - DEBUG
+    anaconda_api.save_icon : 359
+    ('/Applications/anaconda/lib/python3.5/site-packages/anaconda_navigator/images/glueviz-icon-1024x1024.png', '/Users/elon/.anaconda/navigator/devtools/glueviz', {'icon': 'icon.png', 'environments': {'default': 'env.yaml'}, 'dev_tool': False, 'default_environment': 'default', 'version': '0.0.1', 'commands': [], 'name': 'glueviz', 'is_app': True, 'is_default': False, 'description': '', 'is_conda_app': True, 'default_channels': ['https://repo.continuum.io/pkgs/free', 'https://repo.continuum.io/pkgs/pro']})
+
+2016-06-10 10:27:04,034 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/glueviz
+
+2016-06-10 10:27:04,035 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/notebook
+
+2016-06-10 10:27:04,036 - DEBUG
+    anaconda_api.save_icon : 359
+    ('/Applications/anaconda/lib/python3.5/site-packages/anaconda_navigator/images/jupyter-icon-1024x1024.png', '/Users/elon/.anaconda/navigator/devtools/notebook', {'icon': 'icon.png', 'environments': {'default': 'env.yaml'}, 'dev_tool': True, 'default_environment': 'default', 'version': '0.0.1', 'commands': [], 'name': 'notebook', 'is_app': True, 'is_default': False, 'description': '', 'is_conda_app': True, 'default_channels': ['https://repo.continuum.io/pkgs/free', 'https://repo.continuum.io/pkgs/pro']})
+
+2016-06-10 10:27:04,083 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/notebook
+
+2016-06-10 10:27:04,085 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/orange-app
+
+2016-06-10 10:27:04,086 - DEBUG
+    anaconda_api.save_icon : 359
+    ('/Applications/anaconda/lib/python3.5/site-packages/anaconda_navigator/images/orange-icon-1024x1024.png', '/Users/elon/.anaconda/navigator/devtools/orange-app', {'icon': 'icon.png', 'environments': {'default': 'env.yaml'}, 'dev_tool': False, 'default_environment': 'default', 'version': '0.0.1', 'commands': [], 'name': 'orange-app', 'is_app': True, 'is_default': False, 'description': '', 'is_conda_app': True, 'default_channels': ['https://repo.continuum.io/pkgs/free', 'https://repo.continuum.io/pkgs/pro']})
+
+2016-06-10 10:27:04,138 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/orange-app
+
+2016-06-10 10:27:04,142 - DEBUG
+    anaconda_api.load_applications : 289
+    ['/Users/elon/.anaconda/navigator/default_project', '/Users/elon/.anaconda/navigator/devtools/glueviz', '/Users/elon/.anaconda/navigator/devtools/notebook', '/Users/elon/.anaconda/navigator/devtools/orange-app', '/Users/elon/.anaconda/navigator/devtools/qtconsole', '/Users/elon/.anaconda/navigator/devtools/spyder']
+
+2016-06-10 10:27:04,142 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/glueviz
+
+2016-06-10 10:27:04,144 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/notebook
+
+2016-06-10 10:27:04,146 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/orange-app
+
+2016-06-10 10:27:04,148 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/qtconsole
+
+2016-06-10 10:27:04,150 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/spyder
+
+2016-06-10 10:27:04,153 - DEBUG
+    anaconda_api.load_icon : 387
+    ('/Users/elon/.anaconda/navigator/devtools/notebook', 'notebook', True)
+
+2016-06-10 10:27:04,497 - DEBUG
+    anaconda_api.load_icon : 387
+    ('/Users/elon/.anaconda/navigator/devtools/qtconsole', 'qtconsole', True)
+
+2016-06-10 10:27:04,505 - DEBUG
+    anaconda_api.load_icon : 387
+    ('/Users/elon/.anaconda/navigator/devtools/spyder', 'spyder', True)
+
+2016-06-10 10:27:04,514 - DEBUG
+    anaconda_api.load_icon : 387
+    ('/Users/elon/.anaconda/navigator/devtools/glueviz', 'glueviz', True)
+
+2016-06-10 10:27:04,522 - DEBUG
+    anaconda_api.load_icon : 387
+    ('/Users/elon/.anaconda/navigator/devtools/orange-app', 'orange-app', True)
+
+2016-06-10 10:27:04,556 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/notebook
+
+2016-06-10 10:27:04,558 - DEBUG
+    apps.update_versions : 408
+    ('notebook', True, True)
+
+2016-06-10 10:27:04,559 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/qtconsole
+
+2016-06-10 10:27:04,561 - DEBUG
+    apps.update_versions : 408
+    ('qtconsole', True, True)
+
+2016-06-10 10:27:04,562 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/spyder
+
+2016-06-10 10:27:04,564 - DEBUG
+    apps.update_versions : 408
+    ('spyder', True, True)
+
+2016-06-10 10:27:04,565 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/glueviz
+
+2016-06-10 10:27:04,567 - DEBUG
+    apps.update_versions : 408
+    ('glueviz', False, False)
+
+2016-06-10 10:27:04,568 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/orange-app
+
+2016-06-10 10:27:04,569 - DEBUG
+    apps.update_versions : 408
+    ('orange-app', False, False)
+
+2016-06-10 10:27:05,045 - DEBUG
+    community.make_tag_filters : 240
+    TAGS: ['event', 'forum', 'social']
+
+2016-06-10 10:27:05,048 - DEBUG
+    community.make_tag_filters : 240
+    TAGS: ['webinar', 'documentation', 'video', 'training']
+
+2016-06-10 10:27:05,213 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/FgfKA-HJFI0/0.jpg
+
+2016-06-10 10:27:05,225 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/AnacondaCON_lines_RGB copy.png
+
+2016-06-10 10:27:05,238 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/fuZI5sJQSkU/0.jpg
+
+2016-06-10 10:27:05,393 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/sym_2016_logo.png
+
+2016-06-10 10:27:05,398 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/Xb5r_495_-k/0.jpg
+
+2016-06-10 10:27:05,406 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/pydatalogo-generic.png
+
+2016-06-10 10:27:05,418 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/yceT9sj61vw/0.jpg
+
+2016-06-10 10:27:05,441 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/2015-strata-logo.png
+
+2016-06-10 10:27:05,462 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/aC7dzF1vY7A/0.jpg
+
+2016-06-10 10:27:05,475 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/pydatalogo-generic.png
+
+2016-06-10 10:27:05,483 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/xUBoPK6FGIU/0.jpg
+
+2016-06-10 10:27:05,506 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/-Y8XyrtYJzU/0.jpg
+
+2016-06-10 10:27:05,514 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/pydatalogo-generic.png
+
+2016-06-10 10:27:05,540 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/q9E0csBVcwQ/0.jpg
+
+2016-06-10 10:27:05,710 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/europython-2016-logo-white-bg.png
+
+2016-06-10 10:27:05,718 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/KsXJSuBLMyM/0.jpg
+
+2016-06-10 10:27:05,763 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/MIT_logo.svg_.png
+
+2016-06-10 10:27:05,781 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/q45JJ8BXP2g/0.jpg
+
+2016-06-10 10:27:05,795 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/SciPy2016-Logo-450x120-01.25.png
+
+2016-06-10 10:27:05,803 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/oTT4WWqhYNk/0.jpg
+
+2016-06-10 10:27:05,828 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/pydatalogo-generic.png
+
+2016-06-10 10:27:05,832 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/iLup7mgL21o/0.jpg
+
+2016-06-10 10:27:06,027 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/Screen Shot 2016-04-19 at 4.40.12 PM.png
+
+2016-06-10 10:27:06,035 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/QpaapVaL8Fw/0.jpg
+
+2016-06-10 10:27:06,044 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/7uYhhCx_MAE/0.jpg
+
+2016-06-10 10:27:06,070 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/spark_summit_og_image.png
+
+2016-06-10 10:27:06,080 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/QKBcnEhkCtk/0.jpg
+
+2016-06-10 10:27:06,106 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/Logox2.jpg
+
+2016-06-10 10:27:06,116 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/Kojrxqgecx4/0.jpg
+
+2016-06-10 10:27:06,140 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/MUlMh_oy_4k/0.jpg
+
+2016-06-10 10:27:06,318 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/tumblr_inline_nx1ss5EXo91tp8y64_500.png
+
+2016-06-10 10:27:06,341 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/EV6dSVHDGek/0.jpg
+
+2016-06-10 10:27:06,351 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/pydata-logo-berlin-2016.png
+
+2016-06-10 10:27:06,378 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/pZBhyO-djfc/0.jpg
+
+2016-06-10 10:27:06,389 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/odsc.png
+
+2016-06-10 10:27:06,410 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/ieW3G7ZzRZ0/0.jpg
+
+2016-06-10 10:27:06,420 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/Screen Shot 2016-03-11 at 3.41.22 PM.png
+
+2016-06-10 10:27:06,439 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/computer_code.jpg
+
+2016-06-10 10:27:06,617 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/oscon2014_logo.png
+
+2016-06-10 10:27:06,628 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/high_performance_ods_webinar.jpg
+
+2016-06-10 10:27:06,640 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/pydata-logo-london-2016.png
+
+2016-06-10 10:27:06,650 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/webinar_predict.png
+
+2016-06-10 10:27:06,665 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/pycon-il-logo-new.jpg
+
+2016-06-10 10:27:06,680 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/openDataSciencewithR.jpg
+
+2016-06-10 10:27:06,698 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.python.org/static/opengraph-icon-200x200.png
+
+2016-06-10 10:27:06,711 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/dask-bag.jpg
+
+2016-06-10 10:27:06,735 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.python.org/static/opengraph-icon-200x200.png
+
+2016-06-10 10:27:06,745 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/journeyToOpenDataScience.png
+
+2016-06-10 10:27:06,960 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/webinar_pandas.png
+
+2016-06-10 10:27:07,024 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:27:07,037 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/webinar_datashader.png
+
+2016-06-10 10:27:07,223 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:27:07,232 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/webinar_hassle.png
+
+2016-06-10 10:27:07,248 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/webinar_gurobi2.png
+
+2016-06-10 10:27:07,258 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:27:07,281 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/webinar_amd.png
+
+2016-06-10 10:27:07,294 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:27:07,310 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/webinar_distributed.png
+
+2016-06-10 10:27:07,328 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/7094935_orig.png
+
+2016-06-10 10:27:07,385 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.python.org/static/opengraph-icon-200x200.png
+
+2016-06-10 10:27:07,575 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/3444089.png
+
+2016-06-10 10:27:07,583 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.python.org/static/opengraph-icon-200x200.png
+
+2016-06-10 10:27:07,608 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:27:07,616 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://scipy.org/_static/images/scipy_med.png
+
+2016-06-10 10:27:07,637 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:27:07,842 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/904538_orig.png
+
+2016-06-10 10:27:07,851 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:27:07,867 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://pbs.twimg.com/profile_images/624030560457850880/17LrFnZt_400x400.png
+
+2016-06-10 10:27:07,876 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:27:07,887 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://scipy.org/_static/images/documentation.png
+
+2016-06-10 10:27:07,937 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/7094935_orig.png
+
+2016-06-10 10:27:07,946 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://docs.scipy.org/doc/scipy-0.10.1/reference/_static/scipyshiny_small.png
+
+2016-06-10 10:27:08,109 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://pbs.twimg.com/profile_images/1678023092/DSC_Logo_400x400.jpg
+
+2016-06-10 10:27:08,118 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/3444089.png
+
+2016-06-10 10:27:08,133 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:27:08,146 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://scipy.org/_static/images/scipy_med.png
+
+2016-06-10 10:27:08,167 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:27:08,176 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/904538_orig.png
+
+2016-06-10 10:27:08,203 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://cdn.sstatic.net/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a
+
+2016-06-10 10:27:08,212 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://pbs.twimg.com/profile_images/624030560457850880/17LrFnZt_400x400.png
+
+2016-06-10 10:27:08,238 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://scipy.org/_static/images/documentation.png
+
+2016-06-10 10:27:08,400 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:27:08,410 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://docs.scipy.org/doc/scipy-0.10.1/reference/_static/scipyshiny_small.png
+
+2016-06-10 10:27:08,422 - ERROR
+    community.convert_image : 351
+    cannot identify image file '/Users/elon/.anaconda/navigator/images/stackoverflow.png'
+
+2016-06-10 10:27:08,446 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://bokeh.pydata.org/en/latest/_static/images/logo.png
+
+2016-06-10 10:27:08,454 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://pbs.twimg.com/profile_images/1678023092/DSC_Logo_400x400.jpg
+
+2016-06-10 10:27:08,476 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:27:08,489 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://bokeh.pydata.org/en/latest/_static/images/logo.png
+
+2016-06-10 10:27:08,505 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:27:08,517 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://blaze.pydata.org/images/blaze.png
+
+2016-06-10 10:27:08,537 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://cdn.sstatic.net/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a
+
+2016-06-10 10:27:08,691 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://gnosis.cx/tmp/developer-dark.png
+
+2016-06-10 10:27:08,698 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:27:08,699 - ERROR
+    community.convert_image : 351
+    cannot identify image file '/Users/elon/.anaconda/navigator/images/stackoverflow.png'
+
+2016-06-10 10:27:08,717 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://bokeh.pydata.org/en/latest/_static/images/logo.png
+
+2016-06-10 10:27:08,727 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/904538_orig.png
+
+2016-06-10 10:27:08,746 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://bokeh.pydata.org/en/latest/_static/images/logo.png
+
+2016-06-10 10:27:08,764 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://docs.scipy.org/doc/scipy-0.10.1/reference/_static/scipyshiny_small.png
+
+2016-06-10 10:27:08,776 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://blaze.pydata.org/images/blaze.png
+
+2016-06-10 10:27:08,799 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/1457562110.png
+
+2016-06-10 10:27:08,807 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://gnosis.cx/tmp/developer-dark.png
+
+2016-06-10 10:27:08,835 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:27:08,842 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/904538_orig.png
+
+2016-06-10 10:27:08,998 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://docs.scipy.org/doc/scipy-0.10.1/reference/_static/scipyshiny_small.png
+
+2016-06-10 10:27:09,008 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:27:09,023 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/1457562110.png
+
+2016-06-10 10:27:09,044 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:27:09,053 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:27:09,076 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-06-10 10:27:09,107 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-07-11 14:03:25,456 - INFO
+    logs.setup : 39
+    Setting up logger
+
+2016-07-11 14:03:28,726 - ERROR
+    main_window.create_application_projects : 267
+    None
+
+2016-07-11 14:03:28,726 - DEBUG
+    anaconda_api.create_application_projects : 212
+    (dict_keys(['orange-app', 'glueviz', 'spyder', 'notebook', 'qtconsole']), False)
+
+2016-07-11 14:03:28,726 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/orange-app
+
+2016-07-11 14:03:28,730 - DEBUG
+    anaconda_api.save_icon : 359
+    ('/Applications/anaconda/lib/python3.5/site-packages/anaconda_navigator/images/orange-icon-1024x1024.png', '/Users/elon/.anaconda/navigator/devtools/orange-app', {'dev_tool': False, 'is_default': False, 'default_environment': 'default', 'environments': {'default': 'env.yaml'}, 'name': 'orange-app', 'is_app': True, 'icon': 'icon.png', 'is_conda_app': True, 'description': '', 'version': '0.0.1', 'commands': [], 'default_channels': ['https://repo.continuum.io/pkgs/free', 'https://repo.continuum.io/pkgs/pro']})
+
+2016-07-11 14:03:28,821 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/orange-app
+
+2016-07-11 14:03:28,822 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/glueviz
+
+2016-07-11 14:03:28,823 - DEBUG
+    anaconda_api.save_icon : 359
+    ('/Applications/anaconda/lib/python3.5/site-packages/anaconda_navigator/images/glueviz-icon-1024x1024.png', '/Users/elon/.anaconda/navigator/devtools/glueviz', {'dev_tool': False, 'is_default': False, 'default_environment': 'default', 'environments': {'default': 'env.yaml'}, 'name': 'glueviz', 'is_app': True, 'icon': 'icon.png', 'is_conda_app': True, 'description': '', 'version': '0.0.1', 'commands': [], 'default_channels': ['https://repo.continuum.io/pkgs/free', 'https://repo.continuum.io/pkgs/pro']})
+
+2016-07-11 14:03:28,868 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/glueviz
+
+2016-07-11 14:03:28,870 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/spyder
+
+2016-07-11 14:03:28,871 - DEBUG
+    anaconda_api.save_icon : 359
+    ('/Applications/anaconda/lib/python3.5/site-packages/anaconda_navigator/images/spyder-icon-1024x1024.png', '/Users/elon/.anaconda/navigator/devtools/spyder', {'dev_tool': True, 'is_default': False, 'default_environment': 'default', 'environments': {'default': 'env.yaml'}, 'name': 'spyder', 'is_app': True, 'icon': 'icon.png', 'is_conda_app': True, 'description': '', 'version': '0.0.1', 'commands': [], 'default_channels': ['https://repo.continuum.io/pkgs/free', 'https://repo.continuum.io/pkgs/pro']})
+
+2016-07-11 14:03:28,921 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/spyder
+
+2016-07-11 14:03:28,923 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/notebook
+
+2016-07-11 14:03:28,924 - DEBUG
+    anaconda_api.save_icon : 359
+    ('/Applications/anaconda/lib/python3.5/site-packages/anaconda_navigator/images/jupyter-icon-1024x1024.png', '/Users/elon/.anaconda/navigator/devtools/notebook', {'dev_tool': True, 'is_default': False, 'default_environment': 'default', 'environments': {'default': 'env.yaml'}, 'name': 'notebook', 'is_app': True, 'icon': 'icon.png', 'is_conda_app': True, 'description': '', 'version': '0.0.1', 'commands': [], 'default_channels': ['https://repo.continuum.io/pkgs/free', 'https://repo.continuum.io/pkgs/pro']})
+
+2016-07-11 14:03:28,971 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/notebook
+
+2016-07-11 14:03:28,973 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/qtconsole
+
+2016-07-11 14:03:28,974 - DEBUG
+    anaconda_api.save_icon : 359
+    ('/Applications/anaconda/lib/python3.5/site-packages/anaconda_navigator/images/ipython-qtconsole-icon-1024x1024.png', '/Users/elon/.anaconda/navigator/devtools/qtconsole', {'dev_tool': True, 'is_default': False, 'default_environment': 'default', 'environments': {'default': 'env.yaml'}, 'name': 'qtconsole', 'is_app': True, 'icon': 'icon.png', 'is_conda_app': True, 'description': '', 'version': '0.0.1', 'commands': [], 'default_channels': ['https://repo.continuum.io/pkgs/free', 'https://repo.continuum.io/pkgs/pro']})
+
+2016-07-11 14:03:29,024 - DEBUG
+    project_api.save : 99
+    /Users/elon/.anaconda/navigator/devtools/qtconsole
+
+2016-07-11 14:03:29,029 - DEBUG
+    anaconda_api.load_applications : 289
+    ['/Users/elon/.anaconda/navigator/default_project', '/Users/elon/.anaconda/navigator/devtools/glueviz', '/Users/elon/.anaconda/navigator/devtools/notebook', '/Users/elon/.anaconda/navigator/devtools/orange-app', '/Users/elon/.anaconda/navigator/devtools/qtconsole', '/Users/elon/.anaconda/navigator/devtools/spyder']
+
+2016-07-11 14:03:29,029 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/glueviz
+
+2016-07-11 14:03:29,031 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/notebook
+
+2016-07-11 14:03:29,032 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/orange-app
+
+2016-07-11 14:03:29,034 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/qtconsole
+
+2016-07-11 14:03:29,036 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/spyder
+
+2016-07-11 14:03:29,040 - DEBUG
+    anaconda_api.load_icon : 387
+    ('/Users/elon/.anaconda/navigator/devtools/notebook', 'notebook', True)
+
+2016-07-11 14:03:29,395 - DEBUG
+    anaconda_api.load_icon : 387
+    ('/Users/elon/.anaconda/navigator/devtools/qtconsole', 'qtconsole', True)
+
+2016-07-11 14:03:29,404 - DEBUG
+    anaconda_api.load_icon : 387
+    ('/Users/elon/.anaconda/navigator/devtools/spyder', 'spyder', True)
+
+2016-07-11 14:03:29,413 - DEBUG
+    anaconda_api.load_icon : 387
+    ('/Users/elon/.anaconda/navigator/devtools/glueviz', 'glueviz', True)
+
+2016-07-11 14:03:29,421 - DEBUG
+    anaconda_api.load_icon : 387
+    ('/Users/elon/.anaconda/navigator/devtools/orange-app', 'orange-app', True)
+
+2016-07-11 14:03:29,456 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/notebook
+
+2016-07-11 14:03:29,458 - DEBUG
+    apps.update_versions : 408
+    ('notebook', True, True)
+
+2016-07-11 14:03:29,459 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/qtconsole
+
+2016-07-11 14:03:29,461 - DEBUG
+    apps.update_versions : 408
+    ('qtconsole', True, True)
+
+2016-07-11 14:03:29,461 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/spyder
+
+2016-07-11 14:03:29,463 - DEBUG
+    apps.update_versions : 408
+    ('spyder', True, True)
+
+2016-07-11 14:03:29,464 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/glueviz
+
+2016-07-11 14:03:29,466 - DEBUG
+    apps.update_versions : 408
+    ('glueviz', False, False)
+
+2016-07-11 14:03:29,467 - DEBUG
+    anaconda_api.load_project : 272
+    /Users/elon/.anaconda/navigator/devtools/orange-app
+
+2016-07-11 14:03:29,468 - DEBUG
+    apps.update_versions : 408
+    ('orange-app', False, False)
+
+2016-07-11 14:03:29,954 - DEBUG
+    community.make_tag_filters : 240
+    TAGS: ['event', 'forum', 'social']
+
+2016-07-11 14:03:29,957 - DEBUG
+    community.make_tag_filters : 240
+    TAGS: ['webinar', 'documentation', 'video', 'training']
+
+2016-07-11 14:03:30,352 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/FgfKA-HJFI0/0.jpg
+
+2016-07-11 14:03:30,368 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/AnacondaCON_lines_RGB copy.png
+
+2016-07-11 14:03:30,531 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/fuZI5sJQSkU/0.jpg
+
+2016-07-11 14:03:30,540 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/pydatalogo-generic.png
+
+2016-07-11 14:03:30,556 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/Xb5r_495_-k/0.jpg
+
+2016-07-11 14:03:30,575 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/sym_2016_logo.png
+
+2016-07-11 14:03:30,733 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/aC7dzF1vY7A/0.jpg
+
+2016-07-11 14:03:30,756 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/pydatalogo-generic.png
+
+2016-07-11 14:03:30,811 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/yceT9sj61vw/0.jpg
+
+2016-07-11 14:03:30,821 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/2015-strata-logo.png
+
+2016-07-11 14:03:30,831 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/xUBoPK6FGIU/0.jpg
+
+2016-07-11 14:03:30,857 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/q9E0csBVcwQ/0.jpg
+
+2016-07-11 14:03:30,866 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/pydatalogo-generic.png
+
+2016-07-11 14:03:31,032 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/KsXJSuBLMyM/0.jpg
+
+2016-07-11 14:03:31,042 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/pydatalogo-generic.png
+
+2016-07-11 14:03:31,050 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/-Y8XyrtYJzU/0.jpg
+
+2016-07-11 14:03:31,059 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/pydatalogo-generic.png
+
+2016-07-11 14:03:31,083 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/q45JJ8BXP2g/0.jpg
+
+2016-07-11 14:03:31,091 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/europython-2016-logo-white-bg.png
+
+2016-07-11 14:03:31,095 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/oTT4WWqhYNk/0.jpg
+
+2016-07-11 14:03:31,116 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/Screen Shot 2016-04-19 at 4.44.50 PM.png
+
+2016-07-11 14:03:31,122 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/QpaapVaL8Fw/0.jpg
+
+2016-07-11 14:03:31,148 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/MIT_logo.svg_.png
+
+2016-07-11 14:03:31,153 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/7uYhhCx_MAE/0.jpg
+
+2016-07-11 14:03:31,363 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/SciPy2016-Logo-450x120-01.25.png
+
+2016-07-11 14:03:31,376 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/iLup7mgL21o/0.jpg
+
+2016-07-11 14:03:31,395 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/Kojrxqgecx4/0.jpg
+
+2016-07-11 14:03:31,403 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/pydatalogo-generic.png
+
+2016-07-11 14:03:31,428 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/MUlMh_oy_4k/0.jpg
+
+2016-07-11 14:03:31,438 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/Screen Shot 2016-04-19 at 4.40.12 PM.png
+
+2016-07-11 14:03:31,453 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/QKBcnEhkCtk/0.jpg
+
+2016-07-11 14:03:31,470 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/spark_summit_og_image.png
+
+2016-07-11 14:03:31,641 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/EV6dSVHDGek/0.jpg
+
+2016-07-11 14:03:31,650 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/Logox2.jpg
+
+2016-07-11 14:03:31,662 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/tumblr_inline_nx1ss5EXo91tp8y64_500.png
+
+2016-07-11 14:03:31,669 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/ieW3G7ZzRZ0/0.jpg
+
+2016-07-11 14:03:31,692 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/pydata-logo-berlin-2016.png
+
+2016-07-11 14:03:31,701 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://img.youtube.com/vi/pZBhyO-djfc/0.jpg
+
+2016-07-11 14:03:31,728 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/mosaic.png
+
+2016-07-11 14:03:31,746 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/odsc.png
+
+2016-07-11 14:03:31,759 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/fusion.jpg
+
+2016-07-11 14:03:31,773 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/Screen Shot 2016-03-11 at 3.41.22 PM.png
+
+2016-07-11 14:03:31,783 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/computer_code.jpg
+
+2016-07-11 14:03:31,965 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.python.org/static/opengraph-icon-200x200.png
+
+2016-07-11 14:03:31,976 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/high_performance_ods_webinar.jpg
+
+2016-07-11 14:03:31,985 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.python.org/static/opengraph-icon-200x200.png
+
+2016-07-11 14:03:31,995 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/webinar_predict.png
+
+2016-07-11 14:03:32,282 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-07-11 14:03:32,293 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/openDataSciencewithR.jpg
+
+2016-07-11 14:03:32,515 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-07-11 14:03:32,525 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/dask-bag.jpg
+
+2016-07-11 14:03:32,699 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-07-11 14:03:32,708 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/journeyToOpenDataScience.png
+
+2016-07-11 14:03:32,974 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-07-11 14:03:32,982 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/webinar_pandas.png
+
+2016-07-11 14:03:33,171 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/7094935_orig.png
+
+2016-07-11 14:03:33,181 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/webinar_datashader.png
+
+2016-07-11 14:03:33,194 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/3444089.png
+
+2016-07-11 14:03:33,206 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/webinar_hassle.png
+
+2016-07-11 14:03:33,229 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://scipy.org/_static/images/scipy_med.png
+
+2016-07-11 14:03:33,239 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/webinar_gurobi2.png
+
+2016-07-11 14:03:33,267 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/904538_orig.png
+
+2016-07-11 14:03:33,278 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/webinar_amd.png
+
+2016-07-11 14:03:33,459 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://continuum.io/sites/default/files/webinar_distributed.png
+
+2016-07-11 14:03:33,467 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://pbs.twimg.com/profile_images/624030560457850880/17LrFnZt_400x400.png
+
+2016-07-11 14:03:33,476 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.python.org/static/opengraph-icon-200x200.png
+
+2016-07-11 14:03:33,500 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://scipy.org/_static/images/documentation.png
+
+2016-07-11 14:03:33,525 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.python.org/static/opengraph-icon-200x200.png
+
+2016-07-11 14:03:33,540 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://docs.scipy.org/doc/scipy-0.10.1/reference/_static/scipyshiny_small.png
+
+2016-07-11 14:03:33,557 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-07-11 14:03:33,741 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://pbs.twimg.com/profile_images/1678023092/DSC_Logo_400x400.jpg
+
+2016-07-11 14:03:33,750 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-07-11 14:03:33,772 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-07-11 14:03:33,780 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-07-11 14:03:33,800 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-07-11 14:03:33,806 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-07-11 14:03:33,827 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/7094935_orig.png
+
+2016-07-11 14:03:33,834 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://cdn.sstatic.net/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a
+
+2016-07-11 14:03:33,886 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/3444089.png
+
+2016-07-11 14:03:33,893 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-07-11 14:03:34,066 - ERROR
+    community.convert_image : 351
+    cannot identify image file '/Users/elon/.anaconda/navigator/images/stackoverflow.png'
+
+2016-07-11 14:03:34,103 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://scipy.org/_static/images/scipy_med.png
+
+2016-07-11 14:03:34,111 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://bokeh.pydata.org/en/latest/_static/images/logo.png
+
+2016-07-11 14:03:34,125 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://bokeh.pydata.org/en/latest/_static/images/logo.png
+
+2016-07-11 14:03:34,132 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/904538_orig.png
+
+2016-07-11 14:03:34,151 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://pbs.twimg.com/profile_images/624030560457850880/17LrFnZt_400x400.png
+
+2016-07-11 14:03:34,158 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://blaze.pydata.org/images/blaze.png
+
+2016-07-11 14:03:34,333 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://scipy.org/_static/images/documentation.png
+
+2016-07-11 14:03:34,344 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://gnosis.cx/tmp/developer-dark.png
+
+2016-07-11 14:03:34,367 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://docs.scipy.org/doc/scipy-0.10.1/reference/_static/scipyshiny_small.png
+
+2016-07-11 14:03:34,377 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/904538_orig.png
+
+2016-07-11 14:03:34,394 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://pbs.twimg.com/profile_images/1678023092/DSC_Logo_400x400.jpg
+
+2016-07-11 14:03:34,410 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://docs.scipy.org/doc/scipy-0.10.1/reference/_static/scipyshiny_small.png
+
+2016-07-11 14:03:34,419 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-07-11 14:03:34,443 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/1457562110.png
+
+2016-07-11 14:03:34,450 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-07-11 14:03:34,475 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://cdn.sstatic.net/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a
+
+2016-07-11 14:03:34,484 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-07-11 14:03:34,646 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-07-11 14:03:34,655 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-07-11 14:03:34,655 - ERROR
+    community.convert_image : 351
+    cannot identify image file '/Users/elon/.anaconda/navigator/images/stackoverflow.png'
+
+2016-07-11 14:03:34,669 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://bokeh.pydata.org/en/latest/_static/images/logo.png
+
+2016-07-11 14:03:34,677 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-07-11 14:03:34,690 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://bokeh.pydata.org/en/latest/_static/images/logo.png
+
+2016-07-11 14:03:34,718 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://blaze.pydata.org/images/blaze.png
+
+2016-07-11 14:03:34,743 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://gnosis.cx/tmp/developer-dark.png
+
+2016-07-11 14:03:34,771 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/904538_orig.png
+
+2016-07-11 14:03:34,938 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://docs.scipy.org/doc/scipy-0.10.1/reference/_static/scipyshiny_small.png
+
+2016-07-11 14:03:34,968 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail http://www.numfocus.org/uploads/6/0/6/9/60696727/1457562110.png
+
+2016-07-11 14:03:34,991 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-07-11 14:03:35,014 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+
+2016-07-11 14:03:35,042 - DEBUG
+    community.download_thumbnail : 317
+    Fetching thumbnail https://www.continuum.io/sites/default/files/anaconda_logo.png
+

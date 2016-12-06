@@ -1,0 +1,15 @@
+commands: []
+default_channels:
+- https://repo.continuum.io/pkgs/free
+- https://repo.continuum.io/pkgs/pro
+default_environment: default
+description: ''
+dev_tool: null
+environments:
+  default: env.yaml
+icon: icon.png
+is_app: false
+is_conda_app: false
+is_default: true
+name: default
+version: 0.0.1

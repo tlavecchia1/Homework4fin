@@ -1,0 +1,10 @@
+[1, 12:17:04] create database elon: Running...
+[1, 12:17:04] create database elon: 1 row(s) affected
+[2, 12:18:02] create table phoenix (
+ id integer,
+ name varchar(30)
+ ): Running...
+[2, 12:18:02] create table phoenix (
+ id integer,
+ name varchar(30)
+ ): 0 row(s) affected

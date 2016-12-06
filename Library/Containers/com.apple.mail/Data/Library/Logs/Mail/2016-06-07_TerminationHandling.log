@@ -1,0 +1,30 @@
+Jun  7 14:39:18  Mail[486] <Debug>: <addTerminationHandler:> Added handler: <MailApp: 0x7f95658184f0>
+	_currentTerminationHandlers: (null)
+	_terminationHandlers: (
+	    "<MailApp: 0x7f95658184f0>"
+	)
+	_terminationReply: NSTerminateCancel
+Jun  7 14:39:18  Mail[486] <Debug>: <addTerminationHandler:> Added handler: <MailTimeMachineController: 0x7f9563d08b70>
+	_currentTerminationHandlers: (null)
+	_terminationHandlers: (
+	    "<MailApp: 0x7f95658184f0>",
+	    "<MailTimeMachineController: 0x7f9563d08b70>"
+	)
+	_terminationReply: NSTerminateCancel
+Jun  7 14:39:18  Mail[486] <Debug>: <_terminateNoConfirm>
+	_currentTerminationHandlers: (null)
+	_terminationHandlers: (
+	    "<MailApp: 0x7f95658184f0>",
+	    "<MailTimeMachineController: 0x7f9563d08b70>"
+	)
+	_terminationReply: NSTerminateCancel
+Jun  7 14:39:18  Mail[486] <Debug>: <applicationShouldTerminate:> BEGIN with handler: (null)
+	_currentTerminationHandlers: (
+	)
+	_terminationHandlers: (null)
+	_terminationReply: NSTerminateNow
+Jun  7 14:39:18  Mail[486] <Debug>: <applicationShouldTerminate:> END
+	_currentTerminationHandlers: (
+	)
+	_terminationHandlers: (null)
+	_terminationReply: NSTerminateNow

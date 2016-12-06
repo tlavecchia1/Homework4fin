@@ -1,0 +1,64 @@
+---- INSTALL RUN |||| 02-23-2016 03:04:46 -0500 
+Install Log: Type:Network Severity:Debug Message:Get Staged XML from :https://javadl-esd-secure.oracle.com/update/1.8.0/mac-1.8.0_73-b02.xml 
+Install Log: Type:Network Severity:Debug Message:Arguments:(
+    "/Users/elon/Desktop/Java 8 Update 73.app/Contents/MacOS/MacJREInstaller",
+    ""
+) 
+Install Log: Type:Other Severity:Debug Message:Dictionary:{
+} 
+Install Log: Type:Network Severity:Debug Message:Current Installed Version:XX 
+Install Log: Type:Ping Severity:Debug Message:Init MacPingEngine. 
+Install Log: Type:Other Severity:Debug Message:Application support directory:/Users/elon/Library/Application Support 
+Install Log: Type:Other Severity:Debug Message:infoPlist:(null) 
+Install Log: Type:Network Severity:Debug Message:Java 8 Update 73 build 02 
+Install Log: Type:Install Severity:Debug Message:downloadSponsors https://javadl-esd-secure.oracle.com/update/1.8.0/sp-mac-1.8.0_73-b02/Sponsors.framework.tar
+ 9df737909a95275b673037e77c2bfb26 
+Install Log: Type:Install Severity:Debug Message:Inside begin download 
+Install Log: Type:Install Severity:Debug Message:Download Started 
+Install Log: Type:Other Severity:Debug Message:Application support directory:/Users/elon/Library/Application Support 
+Install Log: Type:Network Severity:Debug Message:From Welcome Delegate 
+Install Log: Type:Install Severity:Debug Message:Destination file created at:/Users/elon/Library/Application Support/Sponsors.framework.tar 
+Install Log: Type:Install Severity:Debug Message:SPDownloader downloadDidFinish 
+Install Log: Type:Ping Severity:Debug Message:Incoming response: <NSHTTPURLResponse: 0x7fb5a8559ca0> { URL: http://rps-svcs.sun.com/services/countrylookup } { status code: 200, headers {
+    Connection = "keep-alive";
+    "Content-Length" = 269;
+    "Content-Type" = "text/html";
+    Country = US;
+    Date = "Tue, 23 Feb 2016 20:04:51 GMT";
+    Expires = "Tue, 23 Feb 2016 20:04:51 GMT";
+    "Mime-Version" = "1.0";
+    Server = AkamaiGHost;
+} } 
+Install Log: Type:Ping Severity:Debug Message:country in NSString: US 
+Install Log: Type:Network Severity:Debug Message:Current Step:0 
+Install Log: Type:Network Severity:Debug Message:From SP Delegate:1 
+Install Log: Type:Network Severity:Debug Message:Unlocking ContinueButton = <NSButton: 0x7fb5a87404e0>: 0 
+Install Log: Type:Network Severity:Debug Message:Continue Button Clicked 
+Install Log: Type:Network Severity:Debug Message:Ret Code from savepreferences:-2 
+Install Log: Type:Network Severity:Debug Message:Installing JRE, Lock Continue Button 
+Install Log: Type:Network Severity:Debug Message:ExecCmd:/usr/sbin/installer -pkg "/Users/elon/Desktop/Java 8 Update 73.app/Contents/Resources/JavaAppletPlugin.pkg" -target / 
+Install Log: Type:Network Severity:Debug Message:Response from Priviledged Helper: 0 
+Install Log: Type:Ping Severity:Debug Message:From Ping Delegate 
+Install Log: Type:Network Severity:Debug Message:Unlocking ContinueButton = <NSButton: 0x7fb5a87404e0>: 0 
+Install Log: Type:Ping Severity:Debug Message:Incoming response: <NSHTTPURLResponse: 0x7fb5a84d6650> { URL: http://rps-svcs.sun.com/services/countrylookup } { status code: 200, headers {
+    Connection = "keep-alive";
+    "Content-Length" = 269;
+    "Content-Type" = "text/html";
+    Country = US;
+    Date = "Tue, 23 Feb 2016 20:04:59 GMT";
+    Expires = "Tue, 23 Feb 2016 20:04:59 GMT";
+    "Mime-Version" = "1.0";
+    Server = AkamaiGHost;
+} } 
+Install Log: Type:Ping Severity:Debug Message:country in NSString: US 
+Install Log: Type:Ping Severity:Debug Message:Installed Browser: Safari.app Safari 
+Install Log: Type:Ping Severity:Debug Message:Installed Browser: Google Chrome.app Google Chrome 
+Install Log: Type:Ping Severity:Debug Message:Installed Browser: Firefox.app Firefox 
+Install Log: Type:Ping Severity:Debug Message:XMLDocument
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><request><sc_xml_ver>1.0</sc_xml_ver><reportsuiteid>suninstallstat</reportsuiteid><visitorid>4D1CCD5B1231556C9708BF9BDF95F2A9</visitorid><prop21>4D1CCD5B1231556C9708BF9BDF95F2A9</prop21><prop20>******</prop20><pagename>ic</pagename><evar2>1.8.73.02</evar2><evar3>XX</evar3><evar6>10.11.3</evar6><evar7>joff</evar7><evar8>US</evar8><evar24>0</evar24><evar25>0</evar25><evar50>B01110</evar50><events>event6,event7</events><products>;jre|0,;XSP60|-129;;;;event7=1</products></request>  
+Install Log: Type:Ping Severity:Debug Message:Ping return 1 
+Install Log: Type:Network Severity:Debug Message:Calling performSelectorOnMainThread to set jre install code as 0 
+Install Log: Type:Network Severity:Debug Message:Calling setJREInstallCode with 0 
+Install Log: Type:Network Severity:Debug Message:Curent step 3,Try to open https://java.com/verify/?src=install 
+Install Log: Type:Other Severity:Debug Message:Application support directory:/Users/elon/Library/Application Support 
+Install Log: Type:Ping Severity:Debug Message:Remove sponsor: (null) 

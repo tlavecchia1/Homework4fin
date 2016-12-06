@@ -1,0 +1,744 @@
+2016-07-11 14:03:25,260 - INFO
+    logs.setup : 35
+    Setting up logger
+
+2016-07-11 14:03:25,994 - DEBUG
+    conda_api.start : 211
+    conda info --json
+
+2016-07-11 14:03:27,148 - DEBUG
+    client_api.set_domain : 355
+    https://api.anaconda.org
+
+2016-07-11 14:03:27,248 - DEBUG
+    packages._load_bundled_metadata : 338
+    
+
+2016-07-11 14:03:27,346 - DEBUG
+    client_api.set_domain : 355
+    https://api.anaconda.org
+
+2016-07-11 14:03:27,450 - DEBUG
+    download_api.download : 424
+    ('http://repo.continuum.io/pkgs/metadata.json', '/Users/elon/.anaconda/navigator/channels/metadata.json', False)
+
+2016-07-11 14:03:28,199 - DEBUG
+    download_api.is_valid_url : 435
+    https://repo.continuum.io/pkgs/free/osx-64/repodata.json.bz2
+
+2016-07-11 14:03:28,199 - DEBUG
+    download_api.is_valid_url : 435
+    https://repo.continuum.io/pkgs/pro/osx-64/repodata.json.bz2
+
+2016-07-11 14:03:28,254 - DEBUG
+    download_api.download : 207
+    ('https://repo.continuum.io/pkgs/free/osx-64/repodata.json.bz2', '/Users/elon/.anaconda/navigator/channels/repo.continuum.io_pkgs_free_osx-64_repodata.json.bz2')
+
+2016-07-11 14:03:28,292 - DEBUG
+    download_api.download : 207
+    ('https://repo.continuum.io/pkgs/pro/osx-64/repodata.json.bz2', '/Users/elon/.anaconda/navigator/channels/repo.continuum.io_pkgs_pro_osx-64_repodata.json.bz2')
+
+2016-07-11 14:03:28,412 - DEBUG
+    client_api.load_repodata : 337
+    ['/Users/elon/.anaconda/navigator/channels/repo.continuum.io_pkgs_free_osx-64_repodata.json.bz2', '/Users/elon/.anaconda/navigator/channels/repo.continuum.io_pkgs_pro_osx-64_repodata.json.bz2']
+
+2016-07-11 14:03:29,038 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Applications/anaconda')
+
+2016-07-11 14:03:29,038 - DEBUG
+    conda_api.linked : 412
+    /Applications/anaconda
+
+2016-07-11 14:03:29,039 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Applications/anaconda')
+
+2016-07-11 14:03:29,039 - DEBUG
+    conda_api.linked : 412
+    /Applications/anaconda
+
+2016-07-11 14:03:29,039 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Applications/anaconda')
+
+2016-07-11 14:03:29,040 - DEBUG
+    conda_api.linked : 412
+    /Applications/anaconda
+
+2016-07-11 14:03:29,040 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Applications/anaconda')
+
+2016-07-11 14:03:29,040 - DEBUG
+    conda_api.linked : 412
+    /Applications/anaconda
+
+2016-07-11 14:03:29,040 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Applications/anaconda')
+
+2016-07-11 14:03:29,040 - DEBUG
+    conda_api.linked : 412
+    /Applications/anaconda
+
+2016-07-11 14:03:29,071 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Applications/anaconda')
+
+2016-07-11 14:03:29,071 - DEBUG
+    conda_api.linked : 412
+    /Applications/anaconda
+
+2016-07-11 14:03:29,394 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Applications/anaconda')
+
+2016-07-11 14:03:29,395 - DEBUG
+    conda_api.linked : 412
+    /Applications/anaconda
+
+2016-07-11 14:03:29,398 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Applications/anaconda')
+
+2016-07-11 14:03:29,398 - DEBUG
+    conda_api.linked : 412
+    /Applications/anaconda
+
+2016-07-11 14:03:29,404 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Applications/anaconda')
+
+2016-07-11 14:03:29,404 - DEBUG
+    conda_api.linked : 412
+    /Applications/anaconda
+
+2016-07-11 14:03:29,407 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Applications/anaconda')
+
+2016-07-11 14:03:29,407 - DEBUG
+    conda_api.linked : 412
+    /Applications/anaconda
+
+2016-07-11 14:03:29,412 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Applications/anaconda')
+
+2016-07-11 14:03:29,413 - DEBUG
+    conda_api.linked : 412
+    /Applications/anaconda
+
+2016-07-11 14:03:29,415 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Applications/anaconda')
+
+2016-07-11 14:03:29,415 - DEBUG
+    conda_api.linked : 412
+    /Applications/anaconda
+
+2016-07-11 14:03:29,421 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Applications/anaconda')
+
+2016-07-11 14:03:29,421 - DEBUG
+    conda_api.linked : 412
+    /Applications/anaconda
+
+2016-07-11 14:03:29,425 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Applications/anaconda')
+
+2016-07-11 14:03:29,425 - DEBUG
+    conda_api.linked : 412
+    /Applications/anaconda
+
+2016-07-11 14:03:29,431 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Applications/anaconda')
+
+2016-07-11 14:03:29,431 - DEBUG
+    conda_api.linked : 412
+    /Applications/anaconda
+
+2016-07-11 14:03:29,458 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Users/elon/.anaconda/navigator/devtools/notebook/envs/default')
+
+2016-07-11 14:03:29,458 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Applications/anaconda')
+
+2016-07-11 14:03:29,458 - DEBUG
+    conda_api.linked : 412
+    /Applications/anaconda
+
+2016-07-11 14:03:29,461 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Users/elon/.anaconda/navigator/devtools/qtconsole/envs/default')
+
+2016-07-11 14:03:29,461 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Applications/anaconda')
+
+2016-07-11 14:03:29,461 - DEBUG
+    conda_api.linked : 412
+    /Applications/anaconda
+
+2016-07-11 14:03:29,463 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Users/elon/.anaconda/navigator/devtools/spyder/envs/default')
+
+2016-07-11 14:03:29,463 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Applications/anaconda')
+
+2016-07-11 14:03:29,463 - DEBUG
+    conda_api.linked : 412
+    /Applications/anaconda
+
+2016-07-11 14:03:29,466 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Users/elon/.anaconda/navigator/devtools/glueviz/envs/default')
+
+2016-07-11 14:03:29,466 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Applications/anaconda')
+
+2016-07-11 14:03:29,466 - DEBUG
+    conda_api.linked : 412
+    /Applications/anaconda
+
+2016-07-11 14:03:29,468 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Users/elon/.anaconda/navigator/devtools/orange-app/envs/default')
+
+2016-07-11 14:03:29,469 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Applications/anaconda')
+
+2016-07-11 14:03:29,469 - DEBUG
+    conda_api.linked : 412
+    /Applications/anaconda
+
+2016-07-11 14:03:29,475 - DEBUG
+    conda_api.get_envs : 380
+    
+
+2016-07-11 14:03:29,491 - DEBUG
+    packages.set_environment : 813
+    (None, '/Applications/anaconda')
+
+2016-07-11 14:03:29,491 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Applications/anaconda')
+
+2016-07-11 14:03:29,491 - DEBUG
+    packages.setup : 769
+    
+
+2016-07-11 14:03:29,492 - DEBUG
+    client_api.load_repodata : 337
+    ['/Users/elon/.anaconda/navigator/channels/repo.continuum.io_pkgs_free_osx-64_repodata.json.bz2', '/Users/elon/.anaconda/navigator/channels/repo.continuum.io_pkgs_pro_osx-64_repodata.json.bz2']
+
+2016-07-11 14:03:29,495 - DEBUG
+    download_api.download : 207
+    ('http://content.continuum.io/api/events', '/Users/elon/.anaconda/navigator/content/events.json')
+
+2016-07-11 14:03:29,515 - DEBUG
+    download_api.download : 207
+    ('http://content.continuum.io/api/videos', '/Users/elon/.anaconda/navigator/content/videos.json')
+
+2016-07-11 14:03:29,516 - DEBUG
+    download_api.download : 207
+    ('http://content.continuum.io/api/webinars', '/Users/elon/.anaconda/navigator/content/webinars.json')
+
+2016-07-11 14:03:29,900 - DEBUG
+    conda_api.get_envs : 380
+    
+
+2016-07-11 14:03:29,900 - DEBUG
+    conda_api.environment_exists : 856
+    (None, '/Applications/anaconda')
+
+2016-07-11 14:03:29,900 - DEBUG
+    conda_api.linked : 412
+    /Applications/anaconda
+
+2016-07-11 14:03:29,911 - ERROR
+    packages._prepare_model_data : 397
+    None
+
+2016-07-11 14:03:29,911 - DEBUG
+    client_api.multi_packages : 452
+    
+
+2016-07-11 14:03:30,352 - DEBUG
+    download_api.download : 207
+    ('http://img.youtube.com/vi/FgfKA-HJFI0/0.jpg', '/Users/elon/.anaconda/navigator/images/FgfKA-HJFI0.jpg')
+
+2016-07-11 14:03:30,353 - ERROR
+    packages._user_private_packages_ready : 413
+    None
+
+2016-07-11 14:03:30,353 - DEBUG
+    conda_api.start : 211
+    /Applications/anaconda/bin/python /Applications/anaconda/lib/python3.5/site-packages/conda_manager/utils/findpip.py
+
+2016-07-11 14:03:30,367 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/AnacondaCON_lines_RGB%20copy.png', '/Users/elon/.anaconda/navigator/images/AnacondaCON_lines_RGB copy.png')
+
+2016-07-11 14:03:30,530 - DEBUG
+    download_api.download : 207
+    ('http://img.youtube.com/vi/fuZI5sJQSkU/0.jpg', '/Users/elon/.anaconda/navigator/images/fuZI5sJQSkU.jpg')
+
+2016-07-11 14:03:30,539 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/pydatalogo-generic.png', '/Users/elon/.anaconda/navigator/images/pydatalogo-generic.png')
+
+2016-07-11 14:03:30,556 - DEBUG
+    download_api.download : 207
+    ('http://img.youtube.com/vi/Xb5r_495_-k/0.jpg', '/Users/elon/.anaconda/navigator/images/Xb5r_495_-k.jpg')
+
+2016-07-11 14:03:30,574 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/sym_2016_logo.png', '/Users/elon/.anaconda/navigator/images/sym_2016_logo.png')
+
+2016-07-11 14:03:30,733 - DEBUG
+    download_api.download : 207
+    ('http://img.youtube.com/vi/aC7dzF1vY7A/0.jpg', '/Users/elon/.anaconda/navigator/images/aC7dzF1vY7A.jpg')
+
+2016-07-11 14:03:30,756 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/pydatalogo-generic.png', '/Users/elon/.anaconda/navigator/images/pydatalogo-generic.png')
+
+2016-07-11 14:03:30,758 - DEBUG
+    conda_api.linked : 412
+    /Applications/anaconda
+
+2016-07-11 14:03:30,758 - DEBUG
+    packages._pip_list_ready : 447
+    
+
+2016-07-11 14:03:30,758 - DEBUG
+    conda_api.linked : 412
+    /Applications/anaconda
+
+2016-07-11 14:03:30,758 - DEBUG
+    client_api.prepare_model_data : 346
+    
+
+2016-07-11 14:03:30,811 - DEBUG
+    download_api.download : 207
+    ('http://img.youtube.com/vi/yceT9sj61vw/0.jpg', '/Users/elon/.anaconda/navigator/images/yceT9sj61vw.jpg')
+
+2016-07-11 14:03:30,820 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/2015-strata-logo.png', '/Users/elon/.anaconda/navigator/images/2015-strata-logo.png')
+
+2016-07-11 14:03:30,831 - DEBUG
+    download_api.download : 207
+    ('http://img.youtube.com/vi/xUBoPK6FGIU/0.jpg', '/Users/elon/.anaconda/navigator/images/xUBoPK6FGIU.jpg')
+
+2016-07-11 14:03:30,857 - DEBUG
+    download_api.download : 207
+    ('http://img.youtube.com/vi/q9E0csBVcwQ/0.jpg', '/Users/elon/.anaconda/navigator/images/q9E0csBVcwQ.jpg')
+
+2016-07-11 14:03:30,866 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/pydatalogo-generic.png', '/Users/elon/.anaconda/navigator/images/pydatalogo-generic.png')
+
+2016-07-11 14:03:31,032 - DEBUG
+    download_api.download : 207
+    ('http://img.youtube.com/vi/KsXJSuBLMyM/0.jpg', '/Users/elon/.anaconda/navigator/images/KsXJSuBLMyM.jpg')
+
+2016-07-11 14:03:31,041 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/pydatalogo-generic.png', '/Users/elon/.anaconda/navigator/images/pydatalogo-generic.png')
+
+2016-07-11 14:03:31,049 - DEBUG
+    download_api.download : 207
+    ('http://img.youtube.com/vi/-Y8XyrtYJzU/0.jpg', '/Users/elon/.anaconda/navigator/images/-Y8XyrtYJzU.jpg')
+
+2016-07-11 14:03:31,059 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/pydatalogo-generic.png', '/Users/elon/.anaconda/navigator/images/pydatalogo-generic.png')
+
+2016-07-11 14:03:31,082 - DEBUG
+    download_api.download : 207
+    ('http://img.youtube.com/vi/q45JJ8BXP2g/0.jpg', '/Users/elon/.anaconda/navigator/images/q45JJ8BXP2g.jpg')
+
+2016-07-11 14:03:31,091 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/europython-2016-logo-white-bg.png', '/Users/elon/.anaconda/navigator/images/europython-2016-logo-white-bg.png')
+
+2016-07-11 14:03:31,095 - DEBUG
+    download_api.download : 207
+    ('http://img.youtube.com/vi/oTT4WWqhYNk/0.jpg', '/Users/elon/.anaconda/navigator/images/oTT4WWqhYNk.jpg')
+
+2016-07-11 14:03:31,116 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/Screen%20Shot%202016-04-19%20at%204.44.50%20PM.png', '/Users/elon/.anaconda/navigator/images/Screen Shot 2016-04-19 at 4.44.50 PM.png')
+
+2016-07-11 14:03:31,122 - DEBUG
+    download_api.download : 207
+    ('http://img.youtube.com/vi/QpaapVaL8Fw/0.jpg', '/Users/elon/.anaconda/navigator/images/QpaapVaL8Fw.jpg')
+
+2016-07-11 14:03:31,148 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/MIT_logo.svg_.png', '/Users/elon/.anaconda/navigator/images/MIT_logo.svg_.png')
+
+2016-07-11 14:03:31,153 - DEBUG
+    download_api.download : 207
+    ('http://img.youtube.com/vi/7uYhhCx_MAE/0.jpg', '/Users/elon/.anaconda/navigator/images/7uYhhCx_MAE.jpg')
+
+2016-07-11 14:03:31,363 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/SciPy2016-Logo-450x120-01.25.png', '/Users/elon/.anaconda/navigator/images/SciPy2016-Logo-450x120-01.25.png')
+
+2016-07-11 14:03:31,376 - DEBUG
+    download_api.download : 207
+    ('http://img.youtube.com/vi/iLup7mgL21o/0.jpg', '/Users/elon/.anaconda/navigator/images/iLup7mgL21o.jpg')
+
+2016-07-11 14:03:31,395 - DEBUG
+    download_api.download : 207
+    ('http://img.youtube.com/vi/Kojrxqgecx4/0.jpg', '/Users/elon/.anaconda/navigator/images/Kojrxqgecx4.jpg')
+
+2016-07-11 14:03:31,403 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/pydatalogo-generic.png', '/Users/elon/.anaconda/navigator/images/pydatalogo-generic.png')
+
+2016-07-11 14:03:31,428 - DEBUG
+    download_api.download : 207
+    ('http://img.youtube.com/vi/MUlMh_oy_4k/0.jpg', '/Users/elon/.anaconda/navigator/images/MUlMh_oy_4k.jpg')
+
+2016-07-11 14:03:31,438 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/Screen%20Shot%202016-04-19%20at%204.40.12%20PM.png', '/Users/elon/.anaconda/navigator/images/Screen Shot 2016-04-19 at 4.40.12 PM.png')
+
+2016-07-11 14:03:31,452 - DEBUG
+    download_api.download : 207
+    ('http://img.youtube.com/vi/QKBcnEhkCtk/0.jpg', '/Users/elon/.anaconda/navigator/images/QKBcnEhkCtk.jpg')
+
+2016-07-11 14:03:31,470 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/spark_summit_og_image.png', '/Users/elon/.anaconda/navigator/images/spark_summit_og_image.png')
+
+2016-07-11 14:03:31,641 - DEBUG
+    download_api.download : 207
+    ('http://img.youtube.com/vi/EV6dSVHDGek/0.jpg', '/Users/elon/.anaconda/navigator/images/EV6dSVHDGek.jpg')
+
+2016-07-11 14:03:31,650 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/Logox2.jpg', '/Users/elon/.anaconda/navigator/images/Logox2.jpg')
+
+2016-07-11 14:03:31,661 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/tumblr_inline_nx1ss5EXo91tp8y64_500.png', '/Users/elon/.anaconda/navigator/images/tumblr_inline_nx1ss5EXo91tp8y64_500.png')
+
+2016-07-11 14:03:31,669 - DEBUG
+    download_api.download : 207
+    ('http://img.youtube.com/vi/ieW3G7ZzRZ0/0.jpg', '/Users/elon/.anaconda/navigator/images/ieW3G7ZzRZ0.jpg')
+
+2016-07-11 14:03:31,691 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/pydata-logo-berlin-2016.png', '/Users/elon/.anaconda/navigator/images/pydata-logo-berlin-2016.png')
+
+2016-07-11 14:03:31,701 - DEBUG
+    download_api.download : 207
+    ('http://img.youtube.com/vi/pZBhyO-djfc/0.jpg', '/Users/elon/.anaconda/navigator/images/pZBhyO-djfc.jpg')
+
+2016-07-11 14:03:31,728 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/mosaic.png', '/Users/elon/.anaconda/navigator/images/mosaic.png')
+
+2016-07-11 14:03:31,746 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/odsc.png', '/Users/elon/.anaconda/navigator/images/odsc.png')
+
+2016-07-11 14:03:31,758 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/fusion.jpg', '/Users/elon/.anaconda/navigator/images/fusion.jpg')
+
+2016-07-11 14:03:31,773 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/Screen%20Shot%202016-03-11%20at%203.41.22%20PM.png', '/Users/elon/.anaconda/navigator/images/Screen Shot 2016-03-11 at 3.41.22 PM.png')
+
+2016-07-11 14:03:31,783 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/computer_code.jpg', '/Users/elon/.anaconda/navigator/images/computer_code.jpg')
+
+2016-07-11 14:03:31,964 - DEBUG
+    download_api.download : 207
+    ('https://www.python.org/static/opengraph-icon-200x200.png', '/Users/elon/.anaconda/navigator/images/python_logo.png')
+
+2016-07-11 14:03:31,975 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/high_performance_ods_webinar.jpg', '/Users/elon/.anaconda/navigator/images/high_performance_ods_webinar.jpg')
+
+2016-07-11 14:03:31,985 - DEBUG
+    download_api.download : 207
+    ('https://www.python.org/static/opengraph-icon-200x200.png', '/Users/elon/.anaconda/navigator/images/python_logo.png')
+
+2016-07-11 14:03:31,995 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/webinar_predict.png', '/Users/elon/.anaconda/navigator/images/webinar_predict.png')
+
+2016-07-11 14:03:32,282 - DEBUG
+    download_api.download : 207
+    ('https://www.continuum.io/sites/default/files/anaconda_logo.png', '/Users/elon/.anaconda/navigator/images/anaconda.png')
+
+2016-07-11 14:03:32,293 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/openDataSciencewithR.jpg', '/Users/elon/.anaconda/navigator/images/openDataSciencewithR.jpg')
+
+2016-07-11 14:03:32,515 - DEBUG
+    download_api.download : 207
+    ('https://www.continuum.io/sites/default/files/anaconda_logo.png', '/Users/elon/.anaconda/navigator/images/anaconda.png')
+
+2016-07-11 14:03:32,525 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/dask-bag.jpg', '/Users/elon/.anaconda/navigator/images/dask-bag.jpg')
+
+2016-07-11 14:03:32,699 - DEBUG
+    download_api.download : 207
+    ('https://www.continuum.io/sites/default/files/anaconda_logo.png', '/Users/elon/.anaconda/navigator/images/anaconda.png')
+
+2016-07-11 14:03:32,708 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/journeyToOpenDataScience.png', '/Users/elon/.anaconda/navigator/images/journeyToOpenDataScience.png')
+
+2016-07-11 14:03:32,973 - DEBUG
+    download_api.download : 207
+    ('https://www.continuum.io/sites/default/files/anaconda_logo.png', '/Users/elon/.anaconda/navigator/images/anaconda.png')
+
+2016-07-11 14:03:32,981 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/webinar_pandas.png', '/Users/elon/.anaconda/navigator/images/webinar_pandas.png')
+
+2016-07-11 14:03:33,170 - DEBUG
+    download_api.download : 207
+    ('http://www.numfocus.org/uploads/6/0/6/9/60696727/7094935_orig.png', '/Users/elon/.anaconda/navigator/images/pandas.png')
+
+2016-07-11 14:03:33,180 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/webinar_datashader.png', '/Users/elon/.anaconda/navigator/images/webinar_datashader.png')
+
+2016-07-11 14:03:33,194 - DEBUG
+    download_api.download : 207
+    ('http://www.numfocus.org/uploads/6/0/6/9/60696727/3444089.png', '/Users/elon/.anaconda/navigator/images/numpy.png')
+
+2016-07-11 14:03:33,206 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/webinar_hassle.png', '/Users/elon/.anaconda/navigator/images/webinar_hassle.png')
+
+2016-07-11 14:03:33,228 - DEBUG
+    download_api.download : 207
+    ('http://scipy.org/_static/images/scipy_med.png', '/Users/elon/.anaconda/navigator/images/scipy.png')
+
+2016-07-11 14:03:33,239 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/webinar_gurobi2.png', '/Users/elon/.anaconda/navigator/images/webinar_gurobi2.png')
+
+2016-07-11 14:03:33,267 - DEBUG
+    download_api.download : 207
+    ('http://www.numfocus.org/uploads/6/0/6/9/60696727/904538_orig.png', '/Users/elon/.anaconda/navigator/images/mpl.png')
+
+2016-07-11 14:03:33,277 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/webinar_amd.png', '/Users/elon/.anaconda/navigator/images/webinar_amd.png')
+
+2016-07-11 14:03:33,459 - DEBUG
+    download_api.download : 207
+    ('https://continuum.io/sites/default/files/webinar_distributed.png', '/Users/elon/.anaconda/navigator/images/webinar_distributed.png')
+
+2016-07-11 14:03:33,467 - DEBUG
+    download_api.download : 207
+    ('https://pbs.twimg.com/profile_images/624030560457850880/17LrFnZt_400x400.png', '/Users/elon/.anaconda/navigator/images/continuum_t.png')
+
+2016-07-11 14:03:33,476 - DEBUG
+    download_api.download : 207
+    ('https://www.python.org/static/opengraph-icon-200x200.png', '/Users/elon/.anaconda/navigator/images/python_logo.png')
+
+2016-07-11 14:03:33,500 - DEBUG
+    download_api.download : 207
+    ('http://scipy.org/_static/images/documentation.png', '/Users/elon/.anaconda/navigator/images/pl_scipy.png')
+
+2016-07-11 14:03:33,525 - DEBUG
+    download_api.download : 207
+    ('https://www.python.org/static/opengraph-icon-200x200.png', '/Users/elon/.anaconda/navigator/images/python_logo.png')
+
+2016-07-11 14:03:33,540 - DEBUG
+    download_api.download : 207
+    ('https://docs.scipy.org/doc/scipy-0.10.1/reference/_static/scipyshiny_small.png', '/Users/elon/.anaconda/navigator/images/scipy.png')
+
+2016-07-11 14:03:33,556 - DEBUG
+    download_api.download : 207
+    ('https://www.continuum.io/sites/default/files/anaconda_logo.png', '/Users/elon/.anaconda/navigator/images/anaconda.png')
+
+2016-07-11 14:03:33,741 - DEBUG
+    download_api.download : 207
+    ('https://pbs.twimg.com/profile_images/1678023092/DSC_Logo_400x400.jpg', '/Users/elon/.anaconda/navigator/images/data_science.png')
+
+2016-07-11 14:03:33,750 - DEBUG
+    download_api.download : 207
+    ('https://www.continuum.io/sites/default/files/anaconda_logo.png', '/Users/elon/.anaconda/navigator/images/anaconda.png')
+
+2016-07-11 14:03:33,772 - DEBUG
+    download_api.download : 207
+    ('https://www.continuum.io/sites/default/files/anaconda_logo.png', '/Users/elon/.anaconda/navigator/images/anaconda.png')
+
+2016-07-11 14:03:33,780 - DEBUG
+    download_api.download : 207
+    ('https://www.continuum.io/sites/default/files/anaconda_logo.png', '/Users/elon/.anaconda/navigator/images/anaconda.png')
+
+2016-07-11 14:03:33,799 - DEBUG
+    download_api.download : 207
+    ('https://www.continuum.io/sites/default/files/anaconda_logo.png', '/Users/elon/.anaconda/navigator/images/anaconda.png')
+
+2016-07-11 14:03:33,806 - DEBUG
+    download_api.download : 207
+    ('https://www.continuum.io/sites/default/files/anaconda_logo.png', '/Users/elon/.anaconda/navigator/images/anaconda.png')
+
+2016-07-11 14:03:33,827 - DEBUG
+    download_api.download : 207
+    ('http://www.numfocus.org/uploads/6/0/6/9/60696727/7094935_orig.png', '/Users/elon/.anaconda/navigator/images/pandas.png')
+
+2016-07-11 14:03:33,834 - DEBUG
+    download_api.download : 207
+    ('http://cdn.sstatic.net/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a', '/Users/elon/.anaconda/navigator/images/stackoverflow.png')
+
+2016-07-11 14:03:33,886 - DEBUG
+    download_api.download : 207
+    ('http://www.numfocus.org/uploads/6/0/6/9/60696727/3444089.png', '/Users/elon/.anaconda/navigator/images/numpy.png')
+
+2016-07-11 14:03:33,893 - DEBUG
+    download_api.download : 207
+    ('https://www.continuum.io/sites/default/files/anaconda_logo.png', '/Users/elon/.anaconda/navigator/images/anaconda.png')
+
+2016-07-11 14:03:34,102 - DEBUG
+    download_api.download : 207
+    ('http://scipy.org/_static/images/scipy_med.png', '/Users/elon/.anaconda/navigator/images/scipy.png')
+
+2016-07-11 14:03:34,111 - DEBUG
+    download_api.download : 207
+    ('http://bokeh.pydata.org/en/latest/_static/images/logo.png', '/Users/elon/.anaconda/navigator/images/bokeh.png')
+
+2016-07-11 14:03:34,125 - DEBUG
+    download_api.download : 207
+    ('http://bokeh.pydata.org/en/latest/_static/images/logo.png', '/Users/elon/.anaconda/navigator/images/bokeh.png')
+
+2016-07-11 14:03:34,132 - DEBUG
+    download_api.download : 207
+    ('http://www.numfocus.org/uploads/6/0/6/9/60696727/904538_orig.png', '/Users/elon/.anaconda/navigator/images/mpl.png')
+
+2016-07-11 14:03:34,150 - DEBUG
+    download_api.download : 207
+    ('https://pbs.twimg.com/profile_images/624030560457850880/17LrFnZt_400x400.png', '/Users/elon/.anaconda/navigator/images/continuum_t.png')
+
+2016-07-11 14:03:34,157 - DEBUG
+    download_api.download : 207
+    ('http://blaze.pydata.org/images/blaze.png', '/Users/elon/.anaconda/navigator/images/blaze.png')
+
+2016-07-11 14:03:34,332 - DEBUG
+    download_api.download : 207
+    ('http://scipy.org/_static/images/documentation.png', '/Users/elon/.anaconda/navigator/images/pl_scipy.png')
+
+2016-07-11 14:03:34,344 - DEBUG
+    download_api.download : 207
+    ('http://gnosis.cx/tmp/developer-dark.png', '/Users/elon/.anaconda/navigator/images/continuum-tech.png')
+
+2016-07-11 14:03:34,367 - DEBUG
+    download_api.download : 207
+    ('https://docs.scipy.org/doc/scipy-0.10.1/reference/_static/scipyshiny_small.png', '/Users/elon/.anaconda/navigator/images/scipy.png')
+
+2016-07-11 14:03:34,377 - DEBUG
+    download_api.download : 207
+    ('http://www.numfocus.org/uploads/6/0/6/9/60696727/904538_orig.png', '/Users/elon/.anaconda/navigator/images/mpl.png')
+
+2016-07-11 14:03:34,394 - DEBUG
+    download_api.download : 207
+    ('https://pbs.twimg.com/profile_images/1678023092/DSC_Logo_400x400.jpg', '/Users/elon/.anaconda/navigator/images/data_science.png')
+
+2016-07-11 14:03:34,410 - DEBUG
+    download_api.download : 207
+    ('https://docs.scipy.org/doc/scipy-0.10.1/reference/_static/scipyshiny_small.png', '/Users/elon/.anaconda/navigator/images/scipy.png')
+
+2016-07-11 14:03:34,419 - DEBUG
+    download_api.download : 207
+    ('https://www.continuum.io/sites/default/files/anaconda_logo.png', '/Users/elon/.anaconda/navigator/images/anaconda.png')
+
+2016-07-11 14:03:34,443 - DEBUG
+    download_api.download : 207
+    ('http://www.numfocus.org/uploads/6/0/6/9/60696727/1457562110.png', '/Users/elon/.anaconda/navigator/images/numfocus.png')
+
+2016-07-11 14:03:34,450 - DEBUG
+    download_api.download : 207
+    ('https://www.continuum.io/sites/default/files/anaconda_logo.png', '/Users/elon/.anaconda/navigator/images/anaconda.png')
+
+2016-07-11 14:03:34,475 - DEBUG
+    download_api.download : 207
+    ('http://cdn.sstatic.net/stackoverflow/company/img/logos/so/so-icon.png?v=c78bd457575a', '/Users/elon/.anaconda/navigator/images/stackoverflow.png')
+
+2016-07-11 14:03:34,484 - DEBUG
+    download_api.download : 207
+    ('https://www.continuum.io/sites/default/files/anaconda_logo.png', '/Users/elon/.anaconda/navigator/images/anaconda.png')
+
+2016-07-11 14:03:34,638 - DEBUG
+    conda_api.get_envs : 380
+    
+
+2016-07-11 14:03:34,646 - DEBUG
+    download_api.download : 207
+    ('https://www.continuum.io/sites/default/files/anaconda_logo.png', '/Users/elon/.anaconda/navigator/images/anaconda.png')
+
+2016-07-11 14:03:34,654 - DEBUG
+    download_api.download : 207
+    ('https://www.continuum.io/sites/default/files/anaconda_logo.png', '/Users/elon/.anaconda/navigator/images/anaconda.png')
+
+2016-07-11 14:03:34,669 - DEBUG
+    download_api.download : 207
+    ('http://bokeh.pydata.org/en/latest/_static/images/logo.png', '/Users/elon/.anaconda/navigator/images/bokeh.png')
+
+2016-07-11 14:03:34,677 - DEBUG
+    download_api.download : 207
+    ('https://www.continuum.io/sites/default/files/anaconda_logo.png', '/Users/elon/.anaconda/navigator/images/anaconda.png')
+
+2016-07-11 14:03:34,690 - DEBUG
+    download_api.download : 207
+    ('http://bokeh.pydata.org/en/latest/_static/images/logo.png', '/Users/elon/.anaconda/navigator/images/bokeh.png')
+
+2016-07-11 14:03:34,717 - DEBUG
+    download_api.download : 207
+    ('http://blaze.pydata.org/images/blaze.png', '/Users/elon/.anaconda/navigator/images/blaze.png')
+
+2016-07-11 14:03:34,743 - DEBUG
+    download_api.download : 207
+    ('http://gnosis.cx/tmp/developer-dark.png', '/Users/elon/.anaconda/navigator/images/continuum-tech.png')
+
+2016-07-11 14:03:34,771 - DEBUG
+    download_api.download : 207
+    ('http://www.numfocus.org/uploads/6/0/6/9/60696727/904538_orig.png', '/Users/elon/.anaconda/navigator/images/mpl.png')
+
+2016-07-11 14:03:34,937 - DEBUG
+    download_api.download : 207
+    ('https://docs.scipy.org/doc/scipy-0.10.1/reference/_static/scipyshiny_small.png', '/Users/elon/.anaconda/navigator/images/scipy.png')
+
+2016-07-11 14:03:34,968 - DEBUG
+    download_api.download : 207
+    ('http://www.numfocus.org/uploads/6/0/6/9/60696727/1457562110.png', '/Users/elon/.anaconda/navigator/images/numfocus.png')
+
+2016-07-11 14:03:34,991 - DEBUG
+    download_api.download : 207
+    ('https://www.continuum.io/sites/default/files/anaconda_logo.png', '/Users/elon/.anaconda/navigator/images/anaconda.png')
+
+2016-07-11 14:03:35,013 - DEBUG
+    download_api.download : 207
+    ('https://www.continuum.io/sites/default/files/anaconda_logo.png', '/Users/elon/.anaconda/navigator/images/anaconda.png')
+
+2016-07-11 14:03:35,042 - DEBUG
+    download_api.download : 207
+    ('https://www.continuum.io/sites/default/files/anaconda_logo.png', '/Users/elon/.anaconda/navigator/images/anaconda.png')
+

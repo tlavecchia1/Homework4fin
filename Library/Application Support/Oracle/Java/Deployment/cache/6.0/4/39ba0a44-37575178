@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp href="JavaDetection_applet.jnlp" spec="1.0+">
+    <information>
+        <title>Java Detection</title>
+        <vendor>Oracle Inc.</vendor>
+    </information>
+    <resources>
+        <!-- Application Resources -->
+		<j2se version="1.6+"/>
+        <jar href="JavaDetection.jar" />
+    </resources>
+	<security>
+		<all-permissions /> 
+	</security>
+    <applet-desc 
+         name="Java Detection Applet"
+         main-class="JavaDetection"
+         width="1"
+         height="1">
+     </applet-desc>
+     <update check="background"/>
+</jnlp>

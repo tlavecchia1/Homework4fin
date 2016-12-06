@@ -1,0 +1,129 @@
+mongod
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew 
+brew list
+brew search mongod
+brewupdate
+brew update
+brew install mongodb
+mongodb
+brew services start mongodb
+mongodb
+mongodb
+/usr/local/Cellar/mongodb/3.2.6/bin/mongod
+mongodb
+which mongob
+which mongodb
+cd ..
+ls
+cd elon
+ls
+touch .bash_profile
+vim .bash_profile
+defaults write com.apple.finder AppleShowAllFiles YES
+killall Finder
+echp $PATH
+echo $PATH
+echo $PATH
+echo $PATH
+echo $PATH
+mongo -version
+mongo -version
+which mongo
+homebrew
+brew search vulture
+brew search mongodb
+/Users/elon/Downloads/vulture_1.2.1-vulture_darwin_amd64/vulture ; exit;
+/Applications/Vulture/vulture
+cd /Applications/Vulture/
+ls
+vulture
+ls vulture
+./vulture
+conda
+conda --version
+/usr/local/Cellar/putty/0.67/bin/puttygen ; exit;
+/usr/local/Cellar/putty/0.67/bin/psftp ; exit;
+$JAVA_HOME
+$JAVA_HOME
+echo $JAVA_HOME
+echo $JAVA_HOME
+echo $JAVA_HOME
+brew search tomcat
+brew
+brew into tomcat
+brew tomcat
+brew 
+brew info
+brew install tomcat
+/usr/local/Cellar/tomcat/8.0.35/libexec/bin/startup.sh
+/usr/local/Cellar/tomcat/8.0.35/libexec/bin/shutdown.sh
+cd /usr/local/mysql/bin
+./mysqladmin -u root password 'mysqluser
+Ωz
+d
+dfa
+
+
+Ω
+
+./mysqladmin -u root password mysqluser
+cd /usr/local/mysql/bin
+./mysqladmin -u root password mysqluser
+sudo /usr/local/mysql/support-files/mysql.server stop
+sudo /usr/local/mysql/support-files/mysql.server stop
+mysql
+mysql
+cd /usr/local/mysql/bin
+ls
+./mysql -u root
+./mysqladmin -u root password mysqluser
+./mysqladmin -u root password mysqluser
+mysqlmadmin 
+mysqladmin -u password mysqluser
+ls
+mysql
+./mysql
+mysql
+mysql -u root -p;
+mysql -u root -p;
+ls
+mysqladmin
+mysqladmin -u root -p password
+git
+git --version
+ruby
+which ruby
+ruby --version
+ruby -e 'puts "Welcome to Ruby"'
+sudo gem install rhc
+rhc
+which rhc
+ls
+sudo ln -s /Applications/Android_Studio/Android\ Studio.app  /Applications/Computing\ Sciences/Programming 
+sudo ln -s /Applications/BlueJ/BlueJ.app /Applications/Computing\ Sciences/Programming 
+sudo ln -s /Applications/BlueJ/BlueJ.app /Applications/Computing\ Sciences/Programming 
+sudo ln -s /Applications/anaconda/Navigator.app /Applications/Computing\ Sciences/Programming 
+sudo ls -s /Applications/NetBeans/NetBeans\ 8.1.app /Applications/Computing\ Sciences/Programming 
+sudo ln -s /Applications/NetBeans/NetBeans\ 8.1.app /Applications/Computing\ Sciences/Programming 
+which tomcat
+ls
+git
+rhc
+pwd
+cd .openshift
+cd
+rhc setup
+rhc list 
+rhc -help
+rhc apps
+exit
+cd .openshift
+ls
+cd ..
+rm -rf .openshift
+ls
+xattr -rc /Users/elon/Downloads/ArgoUML.app
+defaults write com.apple.finder AppleShowAllFiles YES
+defaults write com.apple.finder AppleShowAllFiles NO
+killall Finder

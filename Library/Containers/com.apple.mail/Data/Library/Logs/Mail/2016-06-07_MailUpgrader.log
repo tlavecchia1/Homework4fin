@@ -1,0 +1,2 @@
+Jun  7 14:39:18  Mail[486] <Debug>: Error accessing accounts, (null)
+Jun  7 14:39:18  Mail[486] <Debug>: No legacy accounts, skipping external update actions migration

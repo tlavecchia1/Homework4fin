@@ -1,0 +1,33 @@
+14:27:22 [INF][      WBContext]: Parsing application arguments.
+14:27:22 [INF][      WBContext]:     /Applications/MySQLWorkbench.app/Contents/MacOS/MySQLWorkbench
+14:27:22 [INF][      Workbench]: Starting up Workbench
+14:27:22 [INF][      Workbench]: Loading main window
+14:27:22 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+	base dir: /Applications/MySQLWorkbench.app/Contents/Resources
+	plugin path: /Applications/MySQLWorkbench.app/Contents/PlugIns
+	struct path: /Applications/MySQLWorkbench.app/Contents/Resources/grt
+	module path: /Applications/MySQLWorkbench.app/Contents/PlugIns:/Applications/MySQLWorkbench.app/Contents/Resources/plugins
+	library path: /Applications/MySQLWorkbench.app/Contents/Resources/libraries
+	user data dir: /Users/elon/Library/Application Support/MySQL/Workbench
+	open at start: 
+	open type: 
+	run at startup: 
+	run type: 
+	Force SW rendering: No
+	Force OpenGL: No
+	quit when done: No
+14:27:22 [INF][      WBContext]: WbContext::init
+14:27:23 [INF][            WBA]: Looking for extension modules for WBA...
+14:27:23 [INF][            WBA]: 0 extension modules found
+14:27:23 [WRN][            grt]: /Applications/MySQLWorkbench.app/Contents/Resources/data/table_templates.xml:21: link 'com.mysql.rdbms.mysql.datatype.timestamp' <object db.SimpleDatatype> key=simpleType could not be resolved
+14:27:23 [WRN][            grt]: /Applications/MySQLWorkbench.app/Contents/Resources/data/table_templates.xml:106: link 'com.mysql.rdbms.mysql.datatype.varchar' <object db.SimpleDatatype> key=simpleType could not be resolved
+14:27:23 [WRN][            grt]: /Applications/MySQLWorkbench.app/Contents/Resources/data/table_templates.xml:229: link 'com.mysql.rdbms.mysql.datatype.int' <object db.SimpleDatatype> key=simpleType could not be resolved
+14:27:23 [WRN][            grt]: /Users/elon/Library/Application Support/MySQL/Workbench/server_instances.xml:15: link 'A9C031DF-3631-486B-92ED-32B6DCA92527' <object GrtObject> key=owner could not be resolved
+14:27:23 [INF][      WBContext]: System info:
+ 	MySQL Workbench Community (GPL) for Mac OS X version 6.3.6 CE build 511 (32 bit)
+	Configuration Directory: /Users/elon/Library/Application Support/MySQL/Workbench
+	Data Directory: /Applications/MySQLWorkbench.app/Contents/Resources
+	Cairo Version: 1.10.2
+	OS: OS X 10.11.x El Capitan
+	CPU: 8x Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz - 32.00GiB RAM
+

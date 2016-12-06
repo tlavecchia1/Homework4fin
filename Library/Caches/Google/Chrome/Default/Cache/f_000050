@@ -1,0 +1,279 @@
+/*! ========================================================= * * jquery.reorder.js - version 0.1.1 * 2007-12-11 * * jquery plugin to randomly reorder  * first-child elements of selected elements  * by rebecca murphey * http://blog.rebeccamurphey.com/  */* ========================================================= */;(function ( $, window, document, undefined ) {    $.fn.reorder = function() {          // random array sort from       // http://javascript.about.com/library/blsort2.htm      function randOrd() { return(Math.round(Math.random())-0.5); }          return($(this).each(function() {        var $this = $(this);        var $children = $this.children();        var childCount = $children.length;            if (childCount > 1) {          $children.remove();              var indices = new Array();          for (i=0;i<childCount;i++) { indices[indices.length] = i; }          indices = indices.sort(randOrd);          $.each(indices,function(j,k) { $this.append($children.eq(k)); });            }      }));    };})( jQuery, window, document );
+
+/*! CENTER ELEMENT */
+
+;(function ( $, window, document, undefined ) {
+    'use strict';
+    var pluginName = 'centerElement',
+        defaults = {
+            propertyName: "value"
+        };
+
+    function Plugin( element, options ) {
+        this.element = element;
+
+        this.options = $.extend( {}, defaults, options) ;
+
+        this._defaults = defaults;
+        this._name = pluginName;
+
+        this.init();
+    }
+
+    Plugin.prototype.init = function () {
+        var obj = this.element, $obj = $(this.element), opts = this.options; 
+        
+        function modifySource() {
+        
+            $obj.css('display', 'inline-block').wrap('<div style="float:none;display:table;top:0;left:0;height:100%;width:100%;border-spacing:0;border-collapse:collapse"><div style="float:none;display:table-cell;vertical-align:middle;text-align:center;padding:0"></div></div>');
+        }
+        
+        modifySource($obj);
+    };
+
+    $.fn[pluginName] = function ( options ) {
+        return this.each(function () {
+            if (!$.data(this, 'plugin_' + pluginName)) {
+                $.data(this, 'plugin_' + pluginName,
+                new Plugin( this, options ));
+            }
+        });
+    };
+
+})( jQuery, window, document );/*! * jQuery lightweight plugin boilerplate * Original author: @ajpiano * Further changes, comments: @addyosmani * Licensed under the MIT license */  /*! DEPARTMENT NAV */  // the semi-colon before the function invocation is a safety // net against concatenated scripts and/or other plugins // that are not closed properly. ;(function ( $, window, document, undefined ) {     'use strict';      // undefined is used here as the undefined global     // variable in ECMAScript 3 and is mutable (i.e. it can     // be changed by someone else). undefined isn't really     // being passed in so we can ensure that its value is     // truly undefined. In ES5, undefined can no longer be     // modified.      // window and document are passed through as local     // variables rather than as globals, because this (slightly)     // quickens the resolution process and can be more     // efficiently minified (especially when both are     // regularly referenced in your plugin).      // Create the defaults once     var pluginName = 'elonDeptNav',         defaults = {             navId: "mainnav"         };      // The actual plugin constructor     function Plugin( element, options ) {         this.element = element;          // jQuery has an extend method that merges the         // contents of two or more objects, storing the         // result in the first object. The first object         // is generally empty because we don't want to alter         // the default options for future instances of the plugin         this.options = $.extend( {}, defaults, options) ;          this._defaults = defaults;         this._name = pluginName;          this.init();     }      Plugin.prototype.init = function () {         // Place initialization logic here         // You already have access to the DOM element and         // the options via the instance, e.g. this.element         // and this.options                  var obj = this.element, $obj = $(this.element), opts = this.options;                  function modifySource($obj)         {             // give $obj classes "menu", "collapsible"             $obj.addClass('menu collapsible');                          // add classes to top level <a> tags                     var topLevelLinks = $obj.children('li');                          $(topLevelLinks).first().addClass('first');             $(topLevelLinks).last().addClass('last');                          $(topLevelLinks).each(function(index) {                 if ( (!$(this).is('li:last-child') && $(this).hasClass('last')) || (!$(this).is('li:first-child') && $(this).hasClass('first')) ) {                     $(this).removeClass();                          }                 $(this).children('a').attr('class', function() {                     return 'm' + $(this).parent().index();                 });                                  var $submenu = $(this).children('ul');                                  if ($submenu.length) {                     $submenu.addClass('submenu');                     $submenu.children(':first').addClass('first');                 }             });                          $obj.highlight('&', { element: 'span', className: 'amp'});              }                  modifySource($obj);     };      // A really lightweight plugin wrapper around the constructor,     // preventing against multiple instantiations     $.fn[pluginName] = function ( options ) {         return this.each(function () {             if (!$.data(this, 'plugin_' + pluginName)) {                 $.data(this, 'plugin_' + pluginName,                 new Plugin( this, options ));             }         });     };  })( jQuery, window, document );  /*! ELON PLAYER */// the semi-colon before the function invocation is a safety// net against concatenated scripts and/or other plugins// that are not closed properly.;(function ( $, window, document, undefined ) {    'use strict';        // undefined is used here as the undefined global    // variable in ECMAScript 3 and is mutable (i.e. it can    // be changed by someone else). undefined isn't really    // being passed in so we can ensure that its value is    // truly undefined. In ES5, undefined can no longer be    // modified.    // window and document are passed through as local    // variables rather than as globals, because this (slightly)    // quickens the resolution process and can be more    // efficiently minified (especially when both are    // regularly referenced in your plugin).    // Create the defaults once    var pluginName = 'elonPlayer',        defaults = {            file: '',            height: '',            width: '',            image: '',            skin: "/shell/js/elonPlugins/js/elonPlayer/js/jwplayer/skin/elonPlayerLight/elonPlayerLight.zip",            flashplayer: "/shell/js/elonPlugins/js/elonPlayer/js/jwplayer/player.swf",             wmode: 'transparent',            "playlist.duration": '',            start:0,            controlbar: 'over',            controlbarIdlehide: false,            dock: true,            icons: false,            playlist: [],            playlistSize: '',            playlistPosition:'',            playlistfile: '',            autostart: false,            bufferlength: 0,            id: '',            item: 0,            mute: false,            playready: '',            plugins: {
+              'gapro-2':{
+                'trackpercentage':false
+              }
+//              ,
+//              'hd-2': {
+//                fullscreen:true,
+//                state:true
+//              }
+            },
+            provider:'',            repeat: 'list',            shuffle: false,            smoothing: true,            stretching: 'fill',            volume: 100,            backcolor: '333333',            fontcolor: '333333',            lightcolor: '333333',            screencolor: '333333',            borderStyle: '1px solid #696969',            events: null        };    // The actual plugin constructor    function Plugin( element, options ) {        this.element = element;                // jQuery has an extend method that merges the        // contents of two or more objects, storing the        // result in the first object. The first object        // is generally empty because we don't want to alter        // the default options for future instances of the plugin        this.options = $.extend( {}, defaults, options) ;        this._defaults = defaults;        this._name = pluginName;        this.init();    }    Plugin.prototype.init = function () {
+            // Place initialization logic here
+            // You already have access to the DOM element and
+            // the options via the instance, e.g. this.element
+            // and this.options
+            //var obj = this.element, $obj = $(this.element), opts = this.options;
+            
+            var obj,
+                $obj,
+                opts,
+                $objUrl,
+                $parent,
+                poster,
+                index,
+                playerId,
+                $origObj,
+                $new_plistSize,
+                $rel,
+                $rel_str,
+                $size_patt,
+                $plugins;
+                
+            obj = this.element;
+            $obj = $(this.element);
+            opts = this.options;
+            $plugins;
+            
+            function initializeJWPlayer()
+                {
+                    var f,
+                        h,
+                        w,
+                        vidWidth,
+                        vidHeight,
+                        plist,
+                        plistSize,
+                        plistPos,
+                        playerId
+
+                    h = $obj.height();
+                    w = $obj.width();
+                    $plugins = opts.plugins;
+                            
+                    if ( opts.height ) {
+                        h = opts.height;
+                    }
+                    
+                    if ( opts.width ) {
+                        w = opts.width;
+                    }
+                    
+                    if ( $obj.is('.autoplay') ) {
+                        opts.autostart = true;
+                    }
+                    
+                    if ( $obj.is('.controlbar-hide-false') ) {
+                        opts.controlbarIdlehide = false;
+                    }
+                    
+                    if ( $obj.is('.controlbar-bottom') ) {
+                        opts.controlbar = "bottom";
+                    }
+                    
+                    if ( $rel_str.indexOf("hd") != -1 ) {
+                     $plugins = {
+                       'gapro-2':{
+                         'trackpercentage':false
+                       },
+                       'hd-2': {
+                         fullscreen:true,
+                         state:true
+                       }
+                     };
+                    
+                    }
+                    if ( $rel_str.indexOf("playlist") != -1 || $obj.attr('rel') === 'playlist' || $objUrl.substring(-4) === '.xml' || opts.playlistXML === true) {
+                    
+                      $size_patt = /\bsize-\w*\b/ig;
+     
+                      plist = $objUrl;
+                      
+                      plistSize = 268;
+                      
+                      if ( opts.playlistSize ) {
+                          plistSize = opts.playlistSize;
+                      }
+                      
+                      if ($rel_str.indexOf("size") != -1 ) {
+                                          
+                        var $size_str = $rel_str.match($size_patt);
+                        
+                        var $size = $rel_str.match( /\d+/ig );
+                                              
+                        plistSize = parseInt($size, 10);
+                        
+                      }
+                      
+                      if ( $obj.is('.playlist-right') || $rel_str.indexOf("right") != -1 ) {
+                          opts.playlistPosition = 'right';
+                      }
+                      
+                      if ( $obj.is('.playlist-left') || $rel_str.indexOf("left") != -1 ) {
+                          opts.playlistPosition = 'left';
+                      }
+                      
+                      plistPos = opts.playlistPosition;
+                      
+                      if ( !plistPos ) {
+                          plistPos = 'bottom';
+                      }
+          
+                      if ( plistPos === 'left' || plistPos === 'right' ) {
+                      
+                          vidWidth = w;
+                          
+                          w = ( parseInt(vidWidth) + parseInt(plistSize) );
+          
+                      } else {
+                          vidHeight = h;
+                          
+                          h = ( parseInt(vidHeight) + parseInt(plistSize) );
+                          
+                      }
+                  }
+                    else {
+                        
+                        f = $objUrl;
+                        plist = '';
+                    }
+                              
+                    jwplayer(obj.id).setup({
+                        file: f,
+                        height: h,
+                        width: w,
+                        image: poster,
+                        skin: opts.skin,
+                        flashplayer: opts.flashplayer,
+                        wmode: opts.wmode,
+                        playlistfile: plist,
+                        playlistXML: opts.playlistXML,
+                        start:opts.start,
+                        controlbar: opts.controlbar,
+                        "controlbar.idlehide": opts.controlbarIdlehide,
+                        dock: opts.dock,
+                        icons: opts.icons,
+                        playlist: opts.playlist,
+                        "playlist.size": plistSize,
+                        "playlist.position": plistPos,
+                        autostart: opts.autostart,
+                        bufferlength: opts.bufferlength,
+                        id: opts.id,
+                        item: opts.item,
+                        mute: opts.mute,
+                        playready: opts.playready,
+                        plugins: $plugins,
+                        provider: opts.provider,
+                        repeat: opts.repeat,
+                        shuffle: opts.shuffle,
+                        smoothing: opts.smoothing,
+                        stretching: opts.stretching,
+                        volume: opts.volume,
+                        backcolor: opts.backcolor,
+                        fontcolor: opts.frontcolor,
+                        lightcolor: opts.lightcolor,
+                        screencolor: opts.screencolor,
+                        events: opts.events            
+                    });        
+                    
+                    playerId = $(jwplayer(obj.id)).attr('id');
+                            
+                    $('#'+playerId).css({'border': opts.borderStyle });
+                    
+                    $origObj.height(h);
+                    $origObj.width(w);
+            
+                }
+                
+                function modifySource()
+                {                        
+                      poster = opts.image;
+                      $objUrl = $obj.attr('href');
+                      $parent = $obj.parent();
+                      index = $parent.index();
+                      playerId = $objUrl.replace(/\W/ig, "") + '_' + index;
+                      
+                      $rel = $obj.attr('rel');
+                      
+                      $rel_str = new String( $rel );
+                          
+                      if ( !poster && $obj.has('img').length ) {
+                          poster = $obj.children('img').attr('src');
+                      }
+                                        
+                      if ( $parent.is('p') ) {
+                          $obj.detach();
+                          $obj.insertAfter($parent);
+                          $parent.remove();
+                      }
+                      
+                      $obj.wrap(function() {
+                          return '<div class="' + $(this).attr('class') + '"/>';
+                      });
+                      
+                      $obj.attr('id', function() {
+                          return playerId;           
+                      });
+                      
+                      $origObj = $('#'+playerId).parent();
+                      
+                      initializeJWPlayer();
+                }
+            
+            modifySource();
+        };    // A really lightweight plugin wrapper around the constructor,    // preventing against multiple instantiations    $.fn[pluginName] = function ( options ) {        return this.each(function () {            if (!$.data(this, 'plugin_' + pluginName)) {                $.data(this, 'plugin_' + pluginName,                new Plugin( this, options ));            }        });    };})( jQuery, window, document ); /*! ELON OVERLAY */  // the semi-colon before the function invocation is a safety // net against concatenated scripts and/or other plugins // that are not closed properly. ;(function ( $, window, document, undefined ) {     'use strict';          // undefined is used here as the undefined global     // variable in ECMAScript 3 and is mutable (i.e. it can     // be changed by someone else). undefined isn't really     // being passed in so we can ensure that its value is     // truly undefined. In ES5, undefined can no longer be     // modified.      // window and document are passed through as local     // variables rather than as globals, because this (slightly)     // quickens the resolution process and can be more     // efficiently minified (especially when both are     // regularly referenced in your plugin).      // Create the defaults once     var pluginName = 'elonOverlay',         defaults = {             close: '',             closeOnClick:true,             CloseOnEsc: true,             effect: 'default',             fixed: true,             mask: {                                  closeOnClick: true,                 closeOnEsc: true,                 closeSpeed: 300,                 color:'#222',                 loadSpeed: 400,                 maskId: 'exposeMask',                 opacity: 0.75,                 startOpacity: 0,                 zIndex: 9998             },             left: 'center',             load: false,             oneInstance: true,             speed: 'normal',             target: '',             top: '10%',             expose: '#222222',             overlayContent: 'overlayContent here',             contentWrapTag: 'p',             player: false         };      // The actual plugin constructor     function Plugin( element, options ) {         this.element = element;          // jQuery has an extend method that merges the         // contents of two or more objects, storing the         // result in the first object. The first object         // is generally empty because we don't want to alter         // the default options for future instances of the plugin         this.options = $.extend( {}, defaults, options) ;          this._defaults = defaults;         this._name = pluginName;          this.init();     }      Plugin.prototype.init = function () {         // Place initialization logic here         // You already have access to the DOM element and         // the options via the instance, e.g. this.element         // and this.options                          var obj, $obj, opts, $obj_id, $objUrl, $overlayContainer, $currPlayer, $overlayPlayer,$rel,$rel_str,$size_patt;                                  obj = this.element;                 $obj = $(this.element);                 opts = this.options;                 $obj_id = $obj.attr('id');                 $objUrl = $obj.attr('href');                 $overlayContainer = $('<div class="overlayContainer overlay" />').attr('id', function() {                     return $objUrl.replace(/\W/ig, "") + '_overlay';                 });                                                   $currPlayer = false;                                                   function startPlayer($currPlayer)                 {                             $currPlayer.play(true);                                      }                                  function pausePlayer($currPlayer)                 {                             $currPlayer.pause(true);                                      }                                                   function stopPlayer($currPlayer)                 {                     $currPlayer.stop();                                      }                                  function initializePlayer($currPlayer)                 {                         var $currPlayerHeight = ($currPlayer).parent().height();                         var $currPlayerWidth = ($currPlayer).parent().width();                         $currPlayer.elonPlayer({height:$currPlayerHeight,width:$currPlayerWidth,image:null});                 }                                  function initializePlugins()                 {                             // initialize overlay                     if ( $rel_str.indexOf("player") != -1 || opts.player === true) {                                      var $overlayIndex;                                                                           $overlayIndex = $overlayContainer.index();                                                  var playerEl = document.getElementById( ($objUrl.replace(/\W/ig, "") + '_' + $overlayIndex) );                                                  $currPlayer = jwplayer( playerEl );                                                                           $obj.overlay({                             target: $overlayContainer,                             effect: opts.effect,                             mask :{                                 color: opts.mask.color,                                 loadSpeed: opts.mask.loadSpeed,                                 opacity: opts.mask.opacity                             },                             speed: opts.speed,                             fixed: opts.fixed,                                                          onBeforeLoad: function(content) {                                 jwplayer().stop();                                 startPlayer($currPlayer);                             },                                                          // when overlay is opened, load our player                             onLoad: function(content) {                                 $overlayContainer.css({"visibility":"visible"});                             },                                                          // when overlay is closed, unload our player                             onBeforeClose: function(content) {                                 pausePlayer($currPlayer);                                                              },                             onClose: function(content) {                                                          $overlayContainer.css({"visibility":"hidden"});                             }                                                      });                     } else {                         $obj.overlay({                             target: $overlayContainer,                             effect: 'apple'                         });                     }                 }                                  function modifySource($obj, $overlayContainer, $objUrl)                 {
+                     $rel = $obj.attr('rel');
+                     $rel_str = new String( $rel );
+                     
+                     // create overlayContainer                     $overlayContainer.css('background-image', function() {                         return 'url(/shell/js/elonPlugins/js/elonOverlay/img/transparent.gif)';                     }).addClass('basic').appendTo(document.body);                                          // wrap and insert overlayContent, if player, wrap in an <a> and initialize flowplayer                     if ( $rel_str.indexOf("player") != -1 || opts.player === true) {                                                          var $currPlayer = $('<a/>').addClass('overlaid-player');                                                  $currPlayer.attr('href', function() {                                                      return $objUrl;                                                      }).attr('id', function() {                                                      return $objUrl.replace(/\W/ig, "");                                                      }).appendTo($overlayContainer).html('&nbsp;');
+                         
+                         if ( $rel_str.indexOf("hd") != -1 ) {
+                           $currPlayer.attr('rel', function() {
+                             return 'hd';
+                           });
+                         }                                                  initializePlayer($currPlayer);                                              } else {                         // wrap content of $obj in an <a/>                         $obj.wrapInner('<a/>');                                                  $('<' + opts.contentWrapTag + '>').append(opts.overlayContent).appendTo($overlayContainer);                     }                  
+                  // initialize additional plugins
+                  initializePlugins();
+                                                           }                                          // create overlay and attach it to end off document                 modifySource($obj, $overlayContainer, $objUrl, $currPlayer);                                                                };      // A really lightweight plugin wrapper around the constructor,     // preventing against multiple instantiations     $.fn[pluginName] = function ( options ) {         return this.each(function () {             if (!$.data(this, 'plugin_' + pluginName)) {                 $.data(this, 'plugin_' + pluginName,                 new Plugin( this, options ));             }         });     }  })( jQuery, window, document );     /*** Condense 0.1 - Condense and expand text heavy elements** (c) 2008 Joseph Sillitoe* Dual licensed under the MIT License (MIT-LICENSE) and GPL License,version 2 (GPL-LICENSE). */ /** jQuery plugin** usage:*  *   $(document).ready(function(){     *     $('#example1').condense();*   });** Options:*  condensedLength: Target length of condensed element. Default: 200  *  minTrail: Minimun length of the trailing text. Default: 20*  delim: Delimiter used for finding the break point. Default: " " - {space}*  moreText: Text used for the more control. Default: [more]  *  lessText: Text used for the less control. Default: [less]  *  ellipsis: Text added to condensed element. Default:  ( ... )  *  moreSpeed: Animation Speed for expanding. Default: "normal"  *  lessSpeed: Animation Speed for condensing. Default: "normal"*  easing: Easing algorith. Default: "linear"*  expandedWidth: Width of the expanded text (optional)*/(function($) {  // plugin definition  $.fn.condense = function(options) {        $.metadata ? debug('metadata plugin detected') : debug('metadata plugin not present');//detect the metadata plugin?    var opts = $.extend({}, $.fn.condense.defaults, options); // build main options before element iteration    // iterate each matched element    return this.each(function() {	    $this = $(this);      // support metadata plugin (v2.0)	    var o = $.metadata ? $.extend({}, opts, $this.metadata()) : opts; // build element specific options           debug('Condensing ['+$this.text().length+']: '+$this.text());            var clone = cloneCondensed($this,o);      if (clone){         // id attribute switch.  make sure that the visible elem keeps the original id (if set).        $this.attr('id') ? $this.attr('id','condensed_'+$this.attr('id')) : false;        var controlMore = " <span class='condense_control condense_control_more' style='cursor:pointer;'>"+o.moreText+"</span>";        var controlLess = " <span class='condense_control condense_control_less' style='cursor:pointer;'>"+o.lessText+"</span>";                if (o.hasButton)        {			clone.append(o.ellipsis + controlMore);		}		else		{			clone.find('p').append(o.ellipsis);		}			$this.after(clone).hide().append(controlLess);		        $('.condense_control_more',clone).click(function(){          debug('moreControl clicked.');          triggerExpand($(this),o)        });        $('.condense_control_less',$this).click(function(){          debug('lessControl clicked.');          triggerCondense($(this),o)        });      }	  });  };  function cloneCondensed(elem, opts){    // Try to clone and condense the element.  if not possible because of the length/minTrail options, return false.    // also, dont count tag declarations as part of the text length.    // check the length of the text first, return false if too short.    if ($.trim(elem.text()).length <= opts.condensedLength + opts.minTrail){      debug('element too short: skipping.');      return false;    }     var fullbody = $.trim(elem.html());    var fulltext = $.trim(elem.text());    var delim = opts.delim;     var clone = elem.clone();    var delta = 0;    do {      // find the location of the next potential break-point.      var loc = findDelimiterLocation(fullbody, opts.delim, (opts.condensedLength + delta));      //set the html of the clone to the substring html of the original      clone.html($.trim(fullbody.substring(0,(loc+1))));      var cloneTextLength = clone.text().length;      var cloneHtmlLength = clone.html().length;      delta = clone.html().length - cloneTextLength;       debug ("condensing... [html-length:"+cloneHtmlLength+" text-length:"+cloneTextLength+" delta: "+delta+" break-point: "+loc+"]");    //is the length of the clone text long enough?    }while(clone.text().length < opts.condensedLength )    //  after skipping ahead to the delimiter, do we still have enough trailing text?    if ((fulltext.length - cloneTextLength) < opts.minTrail){      debug('not enough trailing text: skipping.');      return false;    }    debug('clone condensed. [text-length:'+cloneTextLength+']');    return clone;  }  function findDelimiterLocation(html, delim, startpos){    // find the location inside the html of the delimiter, starting at the specified length.    var foundDelim = false;    var loc = startpos;        do {      var loc = html.indexOf(delim, loc);      if (loc < 0){        debug ("No delimiter found.");        return html.length;      } // if there is no delimiter found, just return the length of the entire html string.      foundDelim = true;      while (isInsideTag(html, loc)) {        // if we are inside a tag, this delim doesn't count.  keep looking...              loc++;        foundDelim = false;      }    }while(!foundDelim)    debug ("Delimiter found in html at: "+loc);    return loc;  }  function isInsideTag(html, loc){    return (html.indexOf('>',loc) < html.indexOf('<',loc));  }  function triggerCondense(control, opts){    debug('Condense Trigger: '+control.html());      var orig = control.parent(); // The original element will be the control's immediate parent.    var condensed = orig.next(); // The condensed element will be the original immediate next sibling.        condensed.show();        var con_w  = condensed.width();    var con_h = condensed.height();    condensed.hide(); //briefly flashed the condensed element so we can get the target width/height    var orig_w  = orig.width();    var orig_h = orig.height();    orig.animate({height:con_h, width:con_w, opacity: 1}, opts.lessSpeed, opts.easing,      function(){        orig.height(orig_h).width(orig_w).hide();        condensed.show();       });  }  function triggerExpand(control, opts){    debug('Expand Trigger: '+control.html());        var condensed = control.parent(); // The condensed element will be the control's immediate parent.    var orig = condensed.prev(); // The original element will be the condensed immediate previous sibling.    if (opts.expandedWidth) {      orig.width(opts.expandedWidth);    }    orig.show();    var orig_w  = orig.width();    var orig_h = orig.height();    orig.width(condensed.width()+"px").height(condensed.height()+"px");     condensed.hide();    orig.animate({height:orig_h, width:orig_w, opacity: 1}, opts.moreSpeed, opts.easing);    if(condensed.attr('id')){      var idAttr = condensed.attr('id');      condensed.attr('id','condensed_'+idAttr);      orig.attr('id',idAttr);    }   }  /**   * private function for debugging   */  function debug($obj) {if (window.console && window.console.log){window.console.log($obj);}};  // plugin defaults  $.fn.condense.defaults = {    condensedLength: 300,      minTrail: 20,    delim: " ",    hasButton: false,    moreText: "[more]",      lessText: "[less]",      ellipsis: " ...",      moreSpeed: "fast",      lessSpeed: "fast",    easing: "linear"  };})(jQuery);$(function() {	$('.contact-info .bio', '#top_wrapper').condense();});

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1</key>
+	<integer>20</integer>
+	<key>APPLICATIONS</key>
+	<integer>18</integer>
+	<key>DIRECTORIES</key>
+	<integer>1</integer>
+	<key>com.apple.parsec.wiki</key>
+	<integer>1</integer>
+</dict>
+</plist>

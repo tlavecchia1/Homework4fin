@@ -1,0 +1,204 @@
+2016-02-23 14:54:52,902 Fetch 5.7.5 (5H1476):    DEBUG === Fetch launching ===
+2016-02-23 14:54:52,902 Fetch 5.7.5 (5H1476):    DEBUG Initialized exception logging
+2016-02-23 14:54:52,902 Fetch 5.7.5 (5H1476):    DEBUG App starting
+2016-02-23 14:54:52,902 Fetch 5.7.5 (5H1476):    DEBUG Found font named Lucida Grande (Full) -- file /System/Library/Fonts/LucidaGrande.ttc
+2016-02-23 14:54:52,902 Fetch 5.7.5 (5H1476):    DEBUG     Copyright: Copyright © 1989 Bigelow & Holmes, Inc. All rights reserved. Lucida is a trademark of Bigelow & Holmes Inc. registered in the U.S. Patent and Trademark Office and other jurisdictions. Lucida typeface designs created by Kris Holmes and Charles Bigelow.
+2016-02-23 14:54:52,902 Fetch 5.7.5 (5H1476):    DEBUG     Family: Lucida Grande
+2016-02-23 14:54:52,902 Fetch 5.7.5 (5H1476):    DEBUG     Style: R\0e\0g\0u\0l\0a\0r\0
+2016-02-23 14:54:52,902 Fetch 5.7.5 (5H1476):    DEBUG     Unique: Lucida Grande; 10.0d1e2; 2014-09-12
+2016-02-23 14:54:52,903 Fetch 5.7.5 (5H1476):    DEBUG     Full: Lucida Grande
+2016-02-23 14:54:52,903 Fetch 5.7.5 (5H1476):    DEBUG     Version: 10.0d1e2
+2016-02-23 14:54:52,903 Fetch 5.7.5 (5H1476):    DEBUG     Postscript: LucidaGrande
+2016-02-23 14:54:52,903 Fetch 5.7.5 (5H1476):    DEBUG     Trademark: Lucida is a registered trademark of Bigelow & Holmes Inc.
+2016-02-23 14:54:52,903 Fetch 5.7.5 (5H1476):    DEBUG     Designer: Kris Holmes and Charles Bigelow
+2016-02-23 14:54:52,903 Fetch 5.7.5 (5H1476):    DEBUG     Vendor URL: http://www.agfamonotype.com
+2016-02-23 14:54:52,903 Fetch 5.7.5 (5H1476):    DEBUG     Designer URL: www.bigelowandholmes.com
+2016-02-23 14:54:52,903 Fetch 5.7.5 (5H1476):    DEBUG     License description: Do not copy. Call USA 847-718-0400 UK 44(0)1737 765959.
+2016-02-23 14:54:52,903 Fetch 5.7.5 (5H1476):    DEBUG     License info URL: http://www.agfamonotype.com/html/type/license.html
+2016-02-23 14:54:52,968 Fetch 5.7.5 (5H1476):    DEBUG Found font named Lucida Grande (Full) -- file /System/Library/Fonts/LucidaGrande.ttc
+2016-02-23 14:54:52,968 Fetch 5.7.5 (5H1476):    DEBUG     Copyright: Copyright © 1989 Bigelow & Holmes, Inc. All rights reserved. Lucida is a trademark of Bigelow & Holmes Inc. registered in the U.S. Patent and Trademark Office and other jurisdictions. Lucida typeface designs created by Kris Holmes and Charles Bigelow.
+2016-02-23 14:54:52,968 Fetch 5.7.5 (5H1476):    DEBUG     Family: Lucida Grande
+2016-02-23 14:54:52,969 Fetch 5.7.5 (5H1476):    DEBUG     Style: R\0e\0g\0u\0l\0a\0r\0
+2016-02-23 14:54:52,969 Fetch 5.7.5 (5H1476):    DEBUG     Unique: Lucida Grande; 10.0d1e2; 2014-09-12
+2016-02-23 14:54:52,969 Fetch 5.7.5 (5H1476):    DEBUG     Full: Lucida Grande
+2016-02-23 14:54:52,969 Fetch 5.7.5 (5H1476):    DEBUG     Version: 10.0d1e2
+2016-02-23 14:54:52,969 Fetch 5.7.5 (5H1476):    DEBUG     Postscript: LucidaGrande
+2016-02-23 14:54:52,969 Fetch 5.7.5 (5H1476):    DEBUG     Trademark: Lucida is a registered trademark of Bigelow & Holmes Inc.
+2016-02-23 14:54:52,969 Fetch 5.7.5 (5H1476):    DEBUG     Designer: Kris Holmes and Charles Bigelow
+2016-02-23 14:54:52,969 Fetch 5.7.5 (5H1476):    DEBUG     Vendor URL: http://www.agfamonotype.com
+2016-02-23 14:54:52,969 Fetch 5.7.5 (5H1476):    DEBUG     Designer URL: www.bigelowandholmes.com
+2016-02-23 14:54:52,969 Fetch 5.7.5 (5H1476):    DEBUG     License description: Do not copy. Call USA 847-718-0400 UK 44(0)1737 765959.
+2016-02-23 14:54:52,969 Fetch 5.7.5 (5H1476):    DEBUG     License info URL: http://www.agfamonotype.com/html/type/license.html
+2016-02-23 14:54:52,973 Fetch 5.7.5 (5H1476):    DEBUG Found font named Lucida Grande (Full) -- file /System/Library/Fonts/LucidaGrande.ttc
+2016-02-23 14:54:52,974 Fetch 5.7.5 (5H1476):    DEBUG     Copyright: Copyright © 1989 Bigelow & Holmes, Inc. All rights reserved. Lucida is a trademark of Bigelow & Holmes Inc. registered in the U.S. Patent and Trademark Office and other jurisdictions. Lucida typeface designs created by Kris Holmes and Charles Bigelow.
+2016-02-23 14:54:52,974 Fetch 5.7.5 (5H1476):    DEBUG     Family: Lucida Grande
+2016-02-23 14:54:52,974 Fetch 5.7.5 (5H1476):    DEBUG     Style: R\0e\0g\0u\0l\0a\0r\0
+2016-02-23 14:54:52,974 Fetch 5.7.5 (5H1476):    DEBUG     Unique: Lucida Grande; 10.0d1e2; 2014-09-12
+2016-02-23 14:54:52,974 Fetch 5.7.5 (5H1476):    DEBUG     Full: Lucida Grande
+2016-02-23 14:54:52,974 Fetch 5.7.5 (5H1476):    DEBUG     Version: 10.0d1e2
+2016-02-23 14:54:52,974 Fetch 5.7.5 (5H1476):    DEBUG     Postscript: LucidaGrande
+2016-02-23 14:54:52,974 Fetch 5.7.5 (5H1476):    DEBUG     Trademark: Lucida is a registered trademark of Bigelow & Holmes Inc.
+2016-02-23 14:54:52,975 Fetch 5.7.5 (5H1476):    DEBUG     Designer: Kris Holmes and Charles Bigelow
+2016-02-23 14:54:52,975 Fetch 5.7.5 (5H1476):    DEBUG     Vendor URL: http://www.agfamonotype.com
+2016-02-23 14:54:52,975 Fetch 5.7.5 (5H1476):    DEBUG     Designer URL: www.bigelowandholmes.com
+2016-02-23 14:54:52,975 Fetch 5.7.5 (5H1476):    DEBUG     License description: Do not copy. Call USA 847-718-0400 UK 44(0)1737 765959.
+2016-02-23 14:54:52,975 Fetch 5.7.5 (5H1476):    DEBUG     License info URL: http://www.agfamonotype.com/html/type/license.html
+2016-02-23 14:54:53,027 Fetch 5.7.5 (5H1476):    DEBUG Found font named Lucida Grande (Full) -- file /System/Library/Fonts/LucidaGrande.ttc
+2016-02-23 14:54:53,027 Fetch 5.7.5 (5H1476):    DEBUG     Copyright: Copyright © 1989 Bigelow & Holmes, Inc. All rights reserved. Lucida is a trademark of Bigelow & Holmes Inc. registered in the U.S. Patent and Trademark Office and other jurisdictions. Lucida typeface designs created by Kris Holmes and Charles Bigelow.
+2016-02-23 14:54:53,027 Fetch 5.7.5 (5H1476):    DEBUG     Family: Lucida Grande
+2016-02-23 14:54:53,027 Fetch 5.7.5 (5H1476):    DEBUG     Style: R\0e\0g\0u\0l\0a\0r\0
+2016-02-23 14:54:53,027 Fetch 5.7.5 (5H1476):    DEBUG     Unique: Lucida Grande; 10.0d1e2; 2014-09-12
+2016-02-23 14:54:53,027 Fetch 5.7.5 (5H1476):    DEBUG     Full: Lucida Grande
+2016-02-23 14:54:53,028 Fetch 5.7.5 (5H1476):    DEBUG     Version: 10.0d1e2
+2016-02-23 14:54:53,028 Fetch 5.7.5 (5H1476):    DEBUG     Postscript: LucidaGrande
+2016-02-23 14:54:53,028 Fetch 5.7.5 (5H1476):    DEBUG     Trademark: Lucida is a registered trademark of Bigelow & Holmes Inc.
+2016-02-23 14:54:53,028 Fetch 5.7.5 (5H1476):    DEBUG     Designer: Kris Holmes and Charles Bigelow
+2016-02-23 14:54:53,028 Fetch 5.7.5 (5H1476):    DEBUG     Vendor URL: http://www.agfamonotype.com
+2016-02-23 14:54:53,028 Fetch 5.7.5 (5H1476):    DEBUG     Designer URL: www.bigelowandholmes.com
+2016-02-23 14:54:53,028 Fetch 5.7.5 (5H1476):    DEBUG     License description: Do not copy. Call USA 847-718-0400 UK 44(0)1737 765959.
+2016-02-23 14:54:53,028 Fetch 5.7.5 (5H1476):    DEBUG     License info URL: http://www.agfamonotype.com/html/type/license.html
+2016-02-23 14:54:53,168 Fetch 5.7.5 (5H1476):    DEBUG Found font named Monaco (Full) -- file /System/Library/Fonts/Monaco.dfont
+2016-02-23 14:54:53,169 Fetch 5.7.5 (5H1476):    DEBUG     Copyright: © 1990-2008 Apple Inc. © 1990-97 Type Solutions Inc. © 1990-97 The Font Bureau Inc.  TrueType outline design of Monaco typeface created by Kris Holmes and Charles Bigelow.
+2016-02-23 14:54:53,169 Fetch 5.7.5 (5H1476):    DEBUG     Family: Monaco
+2016-02-23 14:54:53,169 Fetch 5.7.5 (5H1476):    DEBUG     Style: R\0e\0g\0u\0l\0a\0r\0
+2016-02-23 14:54:53,169 Fetch 5.7.5 (5H1476):    DEBUG     Unique: Monaco; 7.0d1e1; 2013-04-24
+2016-02-23 14:54:53,169 Fetch 5.7.5 (5H1476):    DEBUG     Full: Monaco
+2016-02-23 14:54:53,169 Fetch 5.7.5 (5H1476):    DEBUG     Version: 7.0d1e1
+2016-02-23 14:54:53,169 Fetch 5.7.5 (5H1476):    DEBUG     Postscript: Monaco
+2016-02-23 14:54:53,173 Fetch 5.7.5 (5H1476):     INFO Fetch 5.7.5 (5H1476) Intel (Web Store) running on Mac OS X 10.11.3 (15D21) Intel English
+2016-02-23 14:54:53,175 Fetch 5.7.5 (5H1476):     INFO StuffIt Engine 0x820, StuffIt SDK Version 10.1.1b1
+2016-02-23 14:55:18,085 Fetch 5.7.5 (5H1476):     INFO Partial serial FETCHEX001-BGSJ-3NYJ  T
+2016-02-23 14:55:18,127 Fetch 5.7.5 (5H1476):    DEBUG Found font named Lucida Grande (Full) -- file /System/Library/Fonts/LucidaGrande.ttc
+2016-02-23 14:55:18,127 Fetch 5.7.5 (5H1476):    DEBUG     Copyright: Copyright © 1989 Bigelow & Holmes, Inc. All rights reserved. Lucida is a trademark of Bigelow & Holmes Inc. registered in the U.S. Patent and Trademark Office and other jurisdictions. Lucida typeface designs created by Kris Holmes and Charles Bigelow.
+2016-02-23 14:55:18,127 Fetch 5.7.5 (5H1476):    DEBUG     Family: Lucida Grande
+2016-02-23 14:55:18,128 Fetch 5.7.5 (5H1476):    DEBUG     Style: R\0e\0g\0u\0l\0a\0r\0
+2016-02-23 14:55:18,128 Fetch 5.7.5 (5H1476):    DEBUG     Unique: Lucida Grande; 10.0d1e2; 2014-09-12
+2016-02-23 14:55:18,128 Fetch 5.7.5 (5H1476):    DEBUG     Full: Lucida Grande
+2016-02-23 14:55:18,128 Fetch 5.7.5 (5H1476):    DEBUG     Version: 10.0d1e2
+2016-02-23 14:55:18,128 Fetch 5.7.5 (5H1476):    DEBUG     Postscript: LucidaGrande
+2016-02-23 14:55:18,128 Fetch 5.7.5 (5H1476):    DEBUG     Trademark: Lucida is a registered trademark of Bigelow & Holmes Inc.
+2016-02-23 14:55:18,128 Fetch 5.7.5 (5H1476):    DEBUG     Designer: Kris Holmes and Charles Bigelow
+2016-02-23 14:55:18,128 Fetch 5.7.5 (5H1476):    DEBUG     Vendor URL: http://www.agfamonotype.com
+2016-02-23 14:55:18,128 Fetch 5.7.5 (5H1476):    DEBUG     Designer URL: www.bigelowandholmes.com
+2016-02-23 14:55:18,128 Fetch 5.7.5 (5H1476):    DEBUG     License description: Do not copy. Call USA 847-718-0400 UK 44(0)1737 765959.
+2016-02-23 14:55:18,128 Fetch 5.7.5 (5H1476):    DEBUG     License info URL: http://www.agfamonotype.com/html/type/license.html
+2016-02-23 14:55:18,516 Fetch 5.7.5 (5H1476):    DEBUG Found font named Lucida Grande (Full) -- file /System/Library/Fonts/LucidaGrande.ttc
+2016-02-23 14:55:18,516 Fetch 5.7.5 (5H1476):    DEBUG     Copyright: Copyright © 1989 Bigelow & Holmes, Inc. All rights reserved. Lucida is a trademark of Bigelow & Holmes Inc. registered in the U.S. Patent and Trademark Office and other jurisdictions. Lucida typeface designs created by Kris Holmes and Charles Bigelow.
+2016-02-23 14:55:18,516 Fetch 5.7.5 (5H1476):    DEBUG     Family: Lucida Grande
+2016-02-23 14:55:18,516 Fetch 5.7.5 (5H1476):    DEBUG     Style: R\0e\0g\0u\0l\0a\0r\0
+2016-02-23 14:55:18,517 Fetch 5.7.5 (5H1476):    DEBUG     Unique: Lucida Grande; 10.0d1e2; 2014-09-12
+2016-02-23 14:55:18,517 Fetch 5.7.5 (5H1476):    DEBUG     Full: Lucida Grande
+2016-02-23 14:55:18,517 Fetch 5.7.5 (5H1476):    DEBUG     Version: 10.0d1e2
+2016-02-23 14:55:18,517 Fetch 5.7.5 (5H1476):    DEBUG     Postscript: LucidaGrande
+2016-02-23 14:55:18,517 Fetch 5.7.5 (5H1476):    DEBUG     Trademark: Lucida is a registered trademark of Bigelow & Holmes Inc.
+2016-02-23 14:55:18,517 Fetch 5.7.5 (5H1476):    DEBUG     Designer: Kris Holmes and Charles Bigelow
+2016-02-23 14:55:18,517 Fetch 5.7.5 (5H1476):    DEBUG     Vendor URL: http://www.agfamonotype.com
+2016-02-23 14:55:18,517 Fetch 5.7.5 (5H1476):    DEBUG     Designer URL: www.bigelowandholmes.com
+2016-02-23 14:55:18,517 Fetch 5.7.5 (5H1476):    DEBUG     License description: Do not copy. Call USA 847-718-0400 UK 44(0)1737 765959.
+2016-02-23 14:55:18,517 Fetch 5.7.5 (5H1476):    DEBUG     License info URL: http://www.agfamonotype.com/html/type/license.html
+2016-02-23 14:55:21,445 Fetch 5.7.5 (5H1476):    DEBUG FST2\Vsy5KQIEA++EpAD02BQA9dDpieiWSYnooBmJ6M9kAYxusAATdIAAAiqQAAIdgAAAABA=
+2016-02-23 14:55:21,453 Fetch 5.7.5 (5H1476):    DEBUG Closing debug log
+2016-02-23 14:55:21,454 Fetch 5.7.5 (5H1476):    DEBUG Closing transcript
+2016-02-23 14:55:21,454 Fetch 5.7.5 (5H1476):    DEBUG All logs closed
+2016-06-09 10:25:22,931 Fetch 5.7.5 (5H1476):    DEBUG === Fetch launching ===
+2016-06-09 10:25:22,931 Fetch 5.7.5 (5H1476):    DEBUG Initialized exception logging
+2016-06-09 10:25:22,931 Fetch 5.7.5 (5H1476):    DEBUG App starting
+2016-06-09 10:25:22,947 Fetch 5.7.5 (5H1476):    DEBUG Found font named Lucida Grande (Full) -- file /System/Library/Fonts/LucidaGrande.ttc
+2016-06-09 10:25:22,947 Fetch 5.7.5 (5H1476):    DEBUG     Copyright: Copyright © 1989 Bigelow & Holmes, Inc. All rights reserved. Lucida is a trademark of Bigelow & Holmes Inc. registered in the U.S. Patent and Trademark Office and other jurisdictions. Lucida typeface designs created by Kris Holmes and Charles Bigelow.
+2016-06-09 10:25:22,948 Fetch 5.7.5 (5H1476):    DEBUG     Family: Lucida Grande
+2016-06-09 10:25:22,948 Fetch 5.7.5 (5H1476):    DEBUG     Style: R\0e\0g\0u\0l\0a\0r\0
+2016-06-09 10:25:22,948 Fetch 5.7.5 (5H1476):    DEBUG     Unique: Lucida Grande; 10.0d1e2; 2014-09-12
+2016-06-09 10:25:22,948 Fetch 5.7.5 (5H1476):    DEBUG     Full: Lucida Grande
+2016-06-09 10:25:22,948 Fetch 5.7.5 (5H1476):    DEBUG     Version: 10.0d1e2
+2016-06-09 10:25:22,948 Fetch 5.7.5 (5H1476):    DEBUG     Postscript: LucidaGrande
+2016-06-09 10:25:22,948 Fetch 5.7.5 (5H1476):    DEBUG     Trademark: Lucida is a registered trademark of Bigelow & Holmes Inc.
+2016-06-09 10:25:22,950 Fetch 5.7.5 (5H1476):    DEBUG     Designer: Kris Holmes and Charles Bigelow
+2016-06-09 10:25:22,950 Fetch 5.7.5 (5H1476):    DEBUG     Vendor URL: http://www.agfamonotype.com
+2016-06-09 10:25:22,950 Fetch 5.7.5 (5H1476):    DEBUG     Designer URL: www.bigelowandholmes.com
+2016-06-09 10:25:22,950 Fetch 5.7.5 (5H1476):    DEBUG     License description: Do not copy. Call USA 847-718-0400 UK 44(0)1737 765959.
+2016-06-09 10:25:22,950 Fetch 5.7.5 (5H1476):    DEBUG     License info URL: http://www.agfamonotype.com/html/type/license.html
+2016-06-09 10:25:23,033 Fetch 5.7.5 (5H1476):    DEBUG Found font named Lucida Grande (Full) -- file /System/Library/Fonts/LucidaGrande.ttc
+2016-06-09 10:25:23,034 Fetch 5.7.5 (5H1476):    DEBUG     Copyright: Copyright © 1989 Bigelow & Holmes, Inc. All rights reserved. Lucida is a trademark of Bigelow & Holmes Inc. registered in the U.S. Patent and Trademark Office and other jurisdictions. Lucida typeface designs created by Kris Holmes and Charles Bigelow.
+2016-06-09 10:25:23,034 Fetch 5.7.5 (5H1476):    DEBUG     Family: Lucida Grande
+2016-06-09 10:25:23,034 Fetch 5.7.5 (5H1476):    DEBUG     Style: R\0e\0g\0u\0l\0a\0r\0
+2016-06-09 10:25:23,034 Fetch 5.7.5 (5H1476):    DEBUG     Unique: Lucida Grande; 10.0d1e2; 2014-09-12
+2016-06-09 10:25:23,034 Fetch 5.7.5 (5H1476):    DEBUG     Full: Lucida Grande
+2016-06-09 10:25:23,034 Fetch 5.7.5 (5H1476):    DEBUG     Version: 10.0d1e2
+2016-06-09 10:25:23,034 Fetch 5.7.5 (5H1476):    DEBUG     Postscript: LucidaGrande
+2016-06-09 10:25:23,034 Fetch 5.7.5 (5H1476):    DEBUG     Trademark: Lucida is a registered trademark of Bigelow & Holmes Inc.
+2016-06-09 10:25:23,034 Fetch 5.7.5 (5H1476):    DEBUG     Designer: Kris Holmes and Charles Bigelow
+2016-06-09 10:25:23,034 Fetch 5.7.5 (5H1476):    DEBUG     Vendor URL: http://www.agfamonotype.com
+2016-06-09 10:25:23,034 Fetch 5.7.5 (5H1476):    DEBUG     Designer URL: www.bigelowandholmes.com
+2016-06-09 10:25:23,034 Fetch 5.7.5 (5H1476):    DEBUG     License description: Do not copy. Call USA 847-718-0400 UK 44(0)1737 765959.
+2016-06-09 10:25:23,034 Fetch 5.7.5 (5H1476):    DEBUG     License info URL: http://www.agfamonotype.com/html/type/license.html
+2016-06-09 10:25:23,036 Fetch 5.7.5 (5H1476):    DEBUG Found font named Lucida Grande (Full) -- file /System/Library/Fonts/LucidaGrande.ttc
+2016-06-09 10:25:23,036 Fetch 5.7.5 (5H1476):    DEBUG     Copyright: Copyright © 1989 Bigelow & Holmes, Inc. All rights reserved. Lucida is a trademark of Bigelow & Holmes Inc. registered in the U.S. Patent and Trademark Office and other jurisdictions. Lucida typeface designs created by Kris Holmes and Charles Bigelow.
+2016-06-09 10:25:23,036 Fetch 5.7.5 (5H1476):    DEBUG     Family: Lucida Grande
+2016-06-09 10:25:23,036 Fetch 5.7.5 (5H1476):    DEBUG     Style: R\0e\0g\0u\0l\0a\0r\0
+2016-06-09 10:25:23,036 Fetch 5.7.5 (5H1476):    DEBUG     Unique: Lucida Grande; 10.0d1e2; 2014-09-12
+2016-06-09 10:25:23,036 Fetch 5.7.5 (5H1476):    DEBUG     Full: Lucida Grande
+2016-06-09 10:25:23,036 Fetch 5.7.5 (5H1476):    DEBUG     Version: 10.0d1e2
+2016-06-09 10:25:23,036 Fetch 5.7.5 (5H1476):    DEBUG     Postscript: LucidaGrande
+2016-06-09 10:25:23,036 Fetch 5.7.5 (5H1476):    DEBUG     Trademark: Lucida is a registered trademark of Bigelow & Holmes Inc.
+2016-06-09 10:25:23,036 Fetch 5.7.5 (5H1476):    DEBUG     Designer: Kris Holmes and Charles Bigelow
+2016-06-09 10:25:23,037 Fetch 5.7.5 (5H1476):    DEBUG     Vendor URL: http://www.agfamonotype.com
+2016-06-09 10:25:23,037 Fetch 5.7.5 (5H1476):    DEBUG     Designer URL: www.bigelowandholmes.com
+2016-06-09 10:25:23,037 Fetch 5.7.5 (5H1476):    DEBUG     License description: Do not copy. Call USA 847-718-0400 UK 44(0)1737 765959.
+2016-06-09 10:25:23,037 Fetch 5.7.5 (5H1476):    DEBUG     License info URL: http://www.agfamonotype.com/html/type/license.html
+2016-06-09 10:25:23,042 Fetch 5.7.5 (5H1476):    DEBUG Found font named Lucida Grande (Full) -- file /System/Library/Fonts/LucidaGrande.ttc
+2016-06-09 10:25:23,042 Fetch 5.7.5 (5H1476):    DEBUG     Copyright: Copyright © 1989 Bigelow & Holmes, Inc. All rights reserved. Lucida is a trademark of Bigelow & Holmes Inc. registered in the U.S. Patent and Trademark Office and other jurisdictions. Lucida typeface designs created by Kris Holmes and Charles Bigelow.
+2016-06-09 10:25:23,042 Fetch 5.7.5 (5H1476):    DEBUG     Family: Lucida Grande
+2016-06-09 10:25:23,043 Fetch 5.7.5 (5H1476):    DEBUG     Style: R\0e\0g\0u\0l\0a\0r\0
+2016-06-09 10:25:23,043 Fetch 5.7.5 (5H1476):    DEBUG     Unique: Lucida Grande; 10.0d1e2; 2014-09-12
+2016-06-09 10:25:23,043 Fetch 5.7.5 (5H1476):    DEBUG     Full: Lucida Grande
+2016-06-09 10:25:23,043 Fetch 5.7.5 (5H1476):    DEBUG     Version: 10.0d1e2
+2016-06-09 10:25:23,043 Fetch 5.7.5 (5H1476):    DEBUG     Postscript: LucidaGrande
+2016-06-09 10:25:23,043 Fetch 5.7.5 (5H1476):    DEBUG     Trademark: Lucida is a registered trademark of Bigelow & Holmes Inc.
+2016-06-09 10:25:23,043 Fetch 5.7.5 (5H1476):    DEBUG     Designer: Kris Holmes and Charles Bigelow
+2016-06-09 10:25:23,043 Fetch 5.7.5 (5H1476):    DEBUG     Vendor URL: http://www.agfamonotype.com
+2016-06-09 10:25:23,043 Fetch 5.7.5 (5H1476):    DEBUG     Designer URL: www.bigelowandholmes.com
+2016-06-09 10:25:23,043 Fetch 5.7.5 (5H1476):    DEBUG     License description: Do not copy. Call USA 847-718-0400 UK 44(0)1737 765959.
+2016-06-09 10:25:23,043 Fetch 5.7.5 (5H1476):    DEBUG     License info URL: http://www.agfamonotype.com/html/type/license.html
+2016-06-09 10:25:23,145 Fetch 5.7.5 (5H1476):    DEBUG Found font named Monaco (Full) -- file /System/Library/Fonts/Monaco.dfont
+2016-06-09 10:25:23,145 Fetch 5.7.5 (5H1476):    DEBUG     Copyright: © 1990-2008 Apple Inc. © 1990-97 Type Solutions Inc. © 1990-97 The Font Bureau Inc.  TrueType outline design of Monaco typeface created by Kris Holmes and Charles Bigelow.
+2016-06-09 10:25:23,145 Fetch 5.7.5 (5H1476):    DEBUG     Family: Monaco
+2016-06-09 10:25:23,145 Fetch 5.7.5 (5H1476):    DEBUG     Style: R\0e\0g\0u\0l\0a\0r\0
+2016-06-09 10:25:23,145 Fetch 5.7.5 (5H1476):    DEBUG     Unique: Monaco; 7.0d1e1; 2013-04-24
+2016-06-09 10:25:23,145 Fetch 5.7.5 (5H1476):    DEBUG     Full: Monaco
+2016-06-09 10:25:23,145 Fetch 5.7.5 (5H1476):    DEBUG     Version: 7.0d1e1
+2016-06-09 10:25:23,145 Fetch 5.7.5 (5H1476):    DEBUG     Postscript: Monaco
+2016-06-09 10:25:23,147 Fetch 5.7.5 (5H1476):     INFO Fetch 5.7.5 (5H1476) Intel (Web Store) running on Mac OS X 10.11.5 (15F34) Intel English
+2016-06-09 10:25:23,171 Fetch 5.7.5 (5H1476):     INFO StuffIt Engine 0x820, StuffIt SDK Version 10.1.1b1
+2016-06-09 10:25:23,267 Fetch 5.7.5 (5H1476):     INFO Partial serial FETCHEX001-BGSJ-3NYJ  T
+2016-06-09 10:25:23,303 Fetch 5.7.5 (5H1476):    DEBUG Found font named Lucida Grande (Full) -- file /System/Library/Fonts/LucidaGrande.ttc
+2016-06-09 10:25:23,304 Fetch 5.7.5 (5H1476):    DEBUG     Copyright: Copyright © 1989 Bigelow & Holmes, Inc. All rights reserved. Lucida is a trademark of Bigelow & Holmes Inc. registered in the U.S. Patent and Trademark Office and other jurisdictions. Lucida typeface designs created by Kris Holmes and Charles Bigelow.
+2016-06-09 10:25:23,304 Fetch 5.7.5 (5H1476):    DEBUG     Family: Lucida Grande
+2016-06-09 10:25:23,304 Fetch 5.7.5 (5H1476):    DEBUG     Style: R\0e\0g\0u\0l\0a\0r\0
+2016-06-09 10:25:23,304 Fetch 5.7.5 (5H1476):    DEBUG     Unique: Lucida Grande; 10.0d1e2; 2014-09-12
+2016-06-09 10:25:23,304 Fetch 5.7.5 (5H1476):    DEBUG     Full: Lucida Grande
+2016-06-09 10:25:23,304 Fetch 5.7.5 (5H1476):    DEBUG     Version: 10.0d1e2
+2016-06-09 10:25:23,304 Fetch 5.7.5 (5H1476):    DEBUG     Postscript: LucidaGrande
+2016-06-09 10:25:23,304 Fetch 5.7.5 (5H1476):    DEBUG     Trademark: Lucida is a registered trademark of Bigelow & Holmes Inc.
+2016-06-09 10:25:23,304 Fetch 5.7.5 (5H1476):    DEBUG     Designer: Kris Holmes and Charles Bigelow
+2016-06-09 10:25:23,304 Fetch 5.7.5 (5H1476):    DEBUG     Vendor URL: http://www.agfamonotype.com
+2016-06-09 10:25:23,304 Fetch 5.7.5 (5H1476):    DEBUG     Designer URL: www.bigelowandholmes.com
+2016-06-09 10:25:23,304 Fetch 5.7.5 (5H1476):    DEBUG     License description: Do not copy. Call USA 847-718-0400 UK 44(0)1737 765959.
+2016-06-09 10:25:23,304 Fetch 5.7.5 (5H1476):    DEBUG     License info URL: http://www.agfamonotype.com/html/type/license.html
+2016-06-09 10:25:23,601 Fetch 5.7.5 (5H1476):    DEBUG Found font named Lucida Grande (Full) -- file /System/Library/Fonts/LucidaGrande.ttc
+2016-06-09 10:25:23,601 Fetch 5.7.5 (5H1476):    DEBUG     Copyright: Copyright © 1989 Bigelow & Holmes, Inc. All rights reserved. Lucida is a trademark of Bigelow & Holmes Inc. registered in the U.S. Patent and Trademark Office and other jurisdictions. Lucida typeface designs created by Kris Holmes and Charles Bigelow.
+2016-06-09 10:25:23,601 Fetch 5.7.5 (5H1476):    DEBUG     Family: Lucida Grande
+2016-06-09 10:25:23,601 Fetch 5.7.5 (5H1476):    DEBUG     Style: R\0e\0g\0u\0l\0a\0r\0
+2016-06-09 10:25:23,601 Fetch 5.7.5 (5H1476):    DEBUG     Unique: Lucida Grande; 10.0d1e2; 2014-09-12
+2016-06-09 10:25:23,601 Fetch 5.7.5 (5H1476):    DEBUG     Full: Lucida Grande
+2016-06-09 10:25:23,601 Fetch 5.7.5 (5H1476):    DEBUG     Version: 10.0d1e2
+2016-06-09 10:25:23,601 Fetch 5.7.5 (5H1476):    DEBUG     Postscript: LucidaGrande
+2016-06-09 10:25:23,601 Fetch 5.7.5 (5H1476):    DEBUG     Trademark: Lucida is a registered trademark of Bigelow & Holmes Inc.
+2016-06-09 10:25:23,601 Fetch 5.7.5 (5H1476):    DEBUG     Designer: Kris Holmes and Charles Bigelow
+2016-06-09 10:25:23,601 Fetch 5.7.5 (5H1476):    DEBUG     Vendor URL: http://www.agfamonotype.com
+2016-06-09 10:25:23,601 Fetch 5.7.5 (5H1476):    DEBUG     Designer URL: www.bigelowandholmes.com
+2016-06-09 10:25:23,601 Fetch 5.7.5 (5H1476):    DEBUG     License description: Do not copy. Call USA 847-718-0400 UK 44(0)1737 765959.
+2016-06-09 10:25:23,601 Fetch 5.7.5 (5H1476):    DEBUG     License info URL: http://www.agfamonotype.com/html/type/license.html
+2016-06-09 10:25:33,543 Fetch 5.7.5 (5H1476):    DEBUG FST2\V1l8XQIEA++EpAD02BQA9dDpNoGWSTaBoBk2gc9kAYxusAATdIAAAiqQAAIdgAAAABA=
+2016-06-09 10:25:33,549 Fetch 5.7.5 (5H1476):    DEBUG Closing transcript
+2016-06-09 10:25:33,549 Fetch 5.7.5 (5H1476):    DEBUG Closing debug log
+2016-06-09 10:25:33,549 Fetch 5.7.5 (5H1476):    DEBUG All logs closed

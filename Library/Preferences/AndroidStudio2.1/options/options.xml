@@ -1,0 +1,14 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlDoctype.MigrateToHtml5" value="true" />
+    <property name="DefaultHtmlDoctype.Refreshed" value="2" />
+    <property name="AndroidInitConfigurator.V4" value="true" />
+    <property name="AndroidInitConfigurator.V3" value="true" />
+    <property name="AndroidInitConfigurator.V1" value="true" />
+    <property name="AndroidInitConfigurator.V2" value="true" />
+    <property name="installation.uid" value="206da268-3e2a-4f66-9e94-2c1e916e93a3" />
+    <property name="android-component-compatibility-check" value="1468260604302" />
+    <property name="com.google.gct.enable.cloud.testing" value="true" />
+    <property name="file.chooser.recent.files" value="/Applications/Android_Studio/android_sdks&#10;/Applications/Android Studio" />
+  </component>
+</application>
