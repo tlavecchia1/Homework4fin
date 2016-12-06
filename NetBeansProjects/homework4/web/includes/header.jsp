@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <!--
 (c) Ryan Kugel and Tyler LaVecchia
 -->

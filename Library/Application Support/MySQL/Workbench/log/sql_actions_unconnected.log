@@ -8,3 +8,24 @@
  id integer,
  name varchar(30)
  ): 0 row(s) affected
+[1, 11:35:53] CREATE DATABASE IF NOT EXISTS library: Running...
+[1, 11:35:53] CREATE DATABASE IF NOT EXISTS library: 1 row(s) affected
+[2, 11:35:53] USE library: Running...
+[2, 11:35:53] USE library: 0 row(s) affected
+[3, 11:35:53] Drop TABLE IF EXISTS member: Running...
+[3, 11:35:53] Drop TABLE IF EXISTS member: 0 row(s) affected, 1 warning(s):
+1051 Unknown table 'library.member'
+[4, 11:35:53] CREATE TABLE member (
+	first_name		VARCHAR(25)		PRIMARY KEY,
+    last_name		VARCHAR(25) 	NOT NULL,
+    email_address	VARCHAR(25)		NOT NULL,
+    book_title		VARCHAR(25)		NOT NULL,
+    due_date		DATE 			NOT NULL
+): Running...
+[4, 11:35:53] CREATE TABLE member (
+	first_name		VARCHAR(25)		PRIMARY KEY,
+    last_name		VARCHAR(25) 	NOT NULL,
+    email_address	VARCHAR(25)		NOT NULL,
+    book_title		VARCHAR(25)		NOT NULL,
+    due_date		DATE 			NOT NULL
+): 0 row(s) affected

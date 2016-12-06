@@ -945,3 +945,32 @@
   <param>Chrome</param>
   <param>CHROME</param>
 </record>
+<record>
+  <date>2016-12-06T10:33:39</date>
+  <millis>1481038419104</millis>
+  <sequence>978</sequence>
+  <logger>org.netbeans.ui.metrics.bugtracking</logger>
+  <level>800</level>
+  <thread>20</thread>
+  <message>USG_ISSUE_TRACKING_REPOSITORY</message>
+  <param>NB_LOCAL_TASKS</param>
+  <param>OTHER</param>
+</record>
+<record>
+  <date>2016-12-06T11:36:02</date>
+  <millis>1481042162235</millis>
+  <sequence>2691</sequence>
+  <level>800</level>
+  <thread>363</thread>
+  <message>USG_DB_CONNECT</message>
+  <param>com.mysql.jdbc.Driver</param>
+</record>
+<record>
+  <date>2016-12-06T11:36:04</date>
+  <millis>1481042164650</millis>
+  <sequence>2693</sequence>
+  <level>800</level>
+  <thread>363</thread>
+  <message>USG_DB_CONNECT</message>
+  <param>com.mysql.jdbc.Driver</param>
+</record>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ENTRY timestamp='11:35:53'>CREATE DATABASE IF NOT EXISTS library</ENTRY>
+<ENTRY timestamp='~'>USE library</ENTRY>
+<ENTRY timestamp='~'>Drop TABLE IF EXISTS member</ENTRY>
+<ENTRY timestamp='~'>CREATE TABLE member (&#x0A;&#x09;first_name&#x09;&#x09;VARCHAR(25)&#x09;&#x09;PRIMARY KEY,&#x0A;    last_name&#x09;&#x09;VARCHAR(25) &#x09;NOT NULL,&#x0A;    email_address&#x09;VARCHAR(25)&#x09;&#x09;NOT NULL,&#x0A;    book_title&#x09;&#x09;VARCHAR(25)&#x09;&#x09;NOT NULL,&#x0A;    due_date&#x09;&#x09;DATE &#x09;&#x09;&#x09;NOT NULL&#x0A;)</ENTRY>
