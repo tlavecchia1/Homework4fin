@@ -36,17 +36,17 @@ if (action == null) {
       url = "/Items.jsp";
     }
     if (action.equals("doCheckIn")) {
-        DBLib.delete(request.getParameter("id"));
+        String id = request.getParameter("id");
+        DBLib.delete(id);
         ArrayList<Book> books = DBLib.selectBook();
-         request.setAttribute("books", books);
-         System.out.println("books" + books);
-         url = "/bookCheckout.jsp";
+        request.setAttribute("books", books);
+        System.out.println("books" + books);
+        url = "/bookCheckout.jsp";
     }
     if (action.equals("goToBooks")) {
-         ArrayList<Book> books = DBLib.selectBook();
-         request.setAttribute("books", books);
-         System.out.println("books" + books);
-         url = "/bookCheckout.jsp";
+        ArrayList<Book> books = DBLib.selectBook();
+        request.setAttribute("books", books);
+        url = "/bookCheckout.jsp";
          
     }
     else if (action.equals("addBook")) {

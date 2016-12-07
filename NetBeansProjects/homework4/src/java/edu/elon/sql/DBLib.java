@@ -70,17 +70,16 @@ public class DBLib {
       }
  
     
-    public static int delete(String id) {
+    public static int delete(String bookID) {
+        ConnectionPool cp = ConnectionPool.getInstance();
+        Connection connection = cp.getConnection();
         PreparedStatement ps = null;
 
         String query = "DELETE FROM member" + "WHERE id = ?";
         
-        ConnectionPool cp = ConnectionPool.getInstance();
-        Connection connection = cp.getConnection();
-        
         try {
             ps = connection.prepareStatement(query);
-            Integer identification = Integer.parseInt(id);
+            Integer identification = Integer.parseInt(bookID);
             ps.setInt(1, identification);
             //ps.setString(1, identity.toString());
             
@@ -94,11 +93,6 @@ public class DBLib {
         }
     }
 
-    /**
-     * searches the database and returns all of the User objects in an ArrayList
-     *
-     * @return ArrayList<Users>;
-     */
     public static ArrayList<Book> selectBook() {
         PreparedStatement ps = null;
         ResultSet rs = null;

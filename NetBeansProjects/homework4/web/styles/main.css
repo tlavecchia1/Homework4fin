@@ -20,8 +20,8 @@ h1{
 }
 a{
     color: blue;
-    font-weigth: bold;
-    
+    font-weight: bold;
+    padding-left: 2em;
 }
 #mainSection {
   border: solid red;
@@ -37,7 +37,7 @@ footer {
     border-color: blue;
     border-style: solid;
     border-bottom: 2px solid blue;
-    padding-top: 1.5em;
+    padding-left: 2em;
     position: relative; 
 }
 
@@ -49,4 +49,11 @@ section {
   margin-top: 1em;
   padding-bottom: 1em;
   padding-top: 1em;
+}
+
+table {
+    padding-left: 2em;
+}
+h2 {
+    padding-left: 2em;
 }
