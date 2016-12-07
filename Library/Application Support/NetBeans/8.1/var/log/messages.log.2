@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
->Log Session: Monday, July 11, 2016 2:27:28 PM EDT
+>Log Session: Tuesday, December 6, 2016 9:50:43 AM EST
 >System Info: 
   Product Version         = NetBeans IDE 8.1 (Build 201510222201) (#bb5d68d8a020)
   Operating System        = Mac OS X version 10.11.5 running on x86_64
@@ -7,10 +7,10 @@
   Runtime                 = Java(TM) SE Runtime Environment 1.8.0_91-b14
   Java Home               = /Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre
   System Locale; Encoding = en_US (nb); UTF-8
-  Home Directory          = /Users/elon
+  Home Directory          = /Users/tlavecchia
   Current Directory       = /
-  User Directory          = /Users/elon/Library/Application Support/NetBeans/8.1
-  Cache Directory         = /Users/elon/Library/Caches/NetBeans/8.1
+  User Directory          = /Users/tlavecchia/Library/Application Support/NetBeans/8.1
+  Cache Directory         = /Users/tlavecchia/Library/Caches/NetBeans/8.1
   Installation            = /Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/nb
                             /Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/ide
                             /Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/extide
@@ -702,10 +702,87 @@ INFO [org.netbeans.core.network.proxy.fallback.FallbackNetworkProxy]: Fallback s
 INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy reloading succeeded. Fallback provider was successful.
 INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy - mode: direct
 INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy: fell to default (correct if direct mode went before)
+INFO [org.netbeans.modules.uihandler.Installer]: findIdentity: bab2289b-89df-4824-a2de-bdc5e345e42f_9d4b8d7f-f6d1-439a-a0ab-bcfa6b70c18d
+Diagnostic information
+Input arguments:
+	-Djdk.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home
+	-Dnetbeans.default_userdir_root=/Users/tlavecchia/Library/Application Support/NetBeans
+	-Dnetbeans.dirs=/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/nb:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/ergonomics:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/ide:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/extide:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/java:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/apisupport:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/webcommon:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/websvccommon:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/enterprise:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/mobility:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/profiler:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/python:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/php:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/identity:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/harness:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/cnd:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/cndext:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/dlight:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/groovy:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/extra:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/javacard:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/javafx:
+	-Dnetbeans.home=/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/platform
+	-Dcom.apple.mrj.application.apple.menu.about.name=NetBeans
+	-Dnetbeans.importclass=org.netbeans.upgrade.AutoUpgrade
+	-Dnetbeans.accept_license_class=org.netbeans.license.AcceptLicense
+	-Xmx1024m
+	-Xss2m
+	-Xms32m
+	-Dapple.laf.useScreenMenuBar=true
+	-Dapple.awt.graphics.UseQuartz=true
+	-Dsun.java2d.noddraw=true
+	-Dsun.java2d.dpiaware=true
+	-Dsun.zip.disableMemoryMapping=true
+	-XX:+HeapDumpOnOutOfMemoryError
+	-XX:HeapDumpPath=/Users/tlavecchia/Library/Application Support/NetBeans/8.1/var/log/heapdump.hprof
+Compiler: HotSpot 64-Bit Tiered Compilers
+Heap memory usage: initial 32.0MB maximum 910.5MB
+Non heap memory usage: initial 2.4MB maximum -1b
+Garbage collector: PS Scavenge (Collections=16 Total time spent=0s)
+Garbage collector: PS MarkSweep (Collections=3 Total time spent=0s)
+Classes: loaded=9758 total loaded=9758 unloaded 0
+INFO [org.netbeans.core.ui.warmup.DiagnosticTask]: Total memory 34,359,738,368
 INFO [glassfish]: Created GlassFish Server 4.1.1 instance with name GlassFish Server 4.1.1
 INFO [org.netbeans.modules.tomcat5.deploy.TomcatManager]: TomEE version null, type null
 INFO [null]: Last record repeated 3 more times.
+INFO [global]
+
+msg
+Caused: org.netbeans.modules.masterfs.filebasedfs.utils.FSException: Cannot lock read-only file /Users/elon/NetBeansProjects/WebApplication1/nbproject/ant-deploy.xml.
+	at org.netbeans.modules.masterfs.filebasedfs.utils.FSException.io(FSException.java:118)
+	at org.netbeans.modules.masterfs.filebasedfs.fileobjects.FileObj.lock(FileObj.java:406)
+	at org.netbeans.modules.j2ee.deployment.devmodules.api.AntDeploymentHelper.writeDeploymentScript(AntDeploymentHelper.java:118)
+[catch] at org.netbeans.modules.javaee.project.api.ant.ui.J2EEProjectProperties.createDeploymentScript(J2EEProjectProperties.java:286)
+	at org.netbeans.modules.javaee.project.api.ant.ui.J2EEProjectProperties.updateServerProperties(J2EEProjectProperties.java:343)
+	at org.netbeans.modules.web.project.ui.customizer.WebProjectProperties$7.run(WebProjectProperties.java:946)
+	at org.netbeans.modules.openide.util.DefaultMutexImplementation.postRequest(DefaultMutexImplementation.java:1028)
+	at org.netbeans.modules.openide.util.DefaultMutexImplementation.postWriteRequest(DefaultMutexImplementation.java:356)
+	at org.openide.util.Mutex.postWriteRequest(Mutex.java:388)
+	at org.netbeans.modules.web.project.ui.customizer.WebProjectProperties.setServerInstanceInner(WebProjectProperties.java:941)
+	at org.netbeans.modules.web.project.ui.customizer.WebProjectProperties.setServerInstance(WebProjectProperties.java:966)
+	at org.netbeans.modules.web.project.WebProject$ProjectOpenedHookImpl.projectOpened(WebProject.java:1004)
+	at org.netbeans.spi.project.ui.ProjectOpenedHook$1.projectOpened(ProjectOpenedHook.java:85)
+	at org.netbeans.spi.project.ui.support.UILookupMergerSupport$OpenHookImpl.projectOpened(UILookupMergerSupport.java:244)
+	at org.netbeans.spi.project.ui.ProjectOpenedHook$1.projectOpened(ProjectOpenedHook.java:85)
+	at org.netbeans.modules.project.ui.OpenProjectList.notifyOpened(OpenProjectList.java:1298)
+	at org.netbeans.modules.project.ui.OpenProjectList.access$1600(OpenProjectList.java:137)
+	at org.netbeans.modules.project.ui.OpenProjectList$LoadOpenProjects.loadOnBackground(OpenProjectList.java:516)
+	at org.netbeans.modules.project.ui.OpenProjectList$LoadOpenProjects.run(OpenProjectList.java:394)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1443)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:68)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:303)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2058)
+ALL [null]: Cannot lock read-only file /Users/elon/NetBeansProjects/WebApplication1/nbproject/ant-deploy.xml.
 WARNING [org.netbeans.TopSecurityManager]: use of system property netbeans.user has been obsoleted in favor of InstalledFileLocator/Places at org.netbeans.modules.tomcat5.util.TomcatProperties.getAntDeploymentPropertiesFile(TomcatProperties.java:279)
+SEVERE [org.openide.util.Exceptions]
+java.io.IOException: Project folder is not writeable.
+	at org.netbeans.modules.projectapi.nb.NbProjectManager.saveProject(NbProjectManager.java:657)
+	at org.netbeans.api.project.ProjectManager.saveProject(ProjectManager.java:290)
+	at org.netbeans.modules.web.project.ui.customizer.WebProjectProperties$7.run(WebProjectProperties.java:952)
+	at org.netbeans.modules.openide.util.DefaultMutexImplementation.postRequest(DefaultMutexImplementation.java:1028)
+	at org.netbeans.modules.openide.util.DefaultMutexImplementation.postWriteRequest(DefaultMutexImplementation.java:356)
+	at org.openide.util.Mutex.postWriteRequest(Mutex.java:388)
+	at org.netbeans.modules.web.project.ui.customizer.WebProjectProperties.setServerInstanceInner(WebProjectProperties.java:941)
+[catch] at org.netbeans.modules.web.project.ui.customizer.WebProjectProperties.setServerInstance(WebProjectProperties.java:966)
+	at org.netbeans.modules.web.project.WebProject$ProjectOpenedHookImpl.projectOpened(WebProject.java:1004)
+	at org.netbeans.spi.project.ui.ProjectOpenedHook$1.projectOpened(ProjectOpenedHook.java:85)
+	at org.netbeans.spi.project.ui.support.UILookupMergerSupport$OpenHookImpl.projectOpened(UILookupMergerSupport.java:244)
+	at org.netbeans.spi.project.ui.ProjectOpenedHook$1.projectOpened(ProjectOpenedHook.java:85)
+	at org.netbeans.modules.project.ui.OpenProjectList.notifyOpened(OpenProjectList.java:1298)
+	at org.netbeans.modules.project.ui.OpenProjectList.access$1600(OpenProjectList.java:137)
+	at org.netbeans.modules.project.ui.OpenProjectList$LoadOpenProjects.loadOnBackground(OpenProjectList.java:516)
+	at org.netbeans.modules.project.ui.OpenProjectList$LoadOpenProjects.run(OpenProjectList.java:394)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1443)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:68)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:303)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2058)
 WARNING [org.netbeans.modules.java.j2seplatform.libraries.J2SELibraryTypeProvider]: Wrong Classpath entry file:/Applications/NetBeans/glassfish-4.1.1/glassfish/modules/endorsed/javax.annotation-api.jar in Library: Java-EE-GlassFish-v3-Prelude
 WARNING [org.netbeans.modules.java.j2seplatform.libraries.J2SELibraryTypeProvider]: Wrong Classpath entry file:/Applications/NetBeans/glassfish-4.1.1/glassfish/modules/endorsed/jaxb-api.jar in Library: Java-EE-GlassFish-v3-Prelude
 WARNING [org.netbeans.modules.java.j2seplatform.libraries.J2SELibraryTypeProvider]: Wrong Classpath entry file:/Applications/NetBeans/glassfish-4.1.1/glassfish/modules/endorsed/webservices-api-osgi.jar in Library: Java-EE-GlassFish-v3-Prelude
@@ -744,44 +821,247 @@ WARNING [org.netbeans.modules.java.j2seplatform.libraries.J2SELibraryTypeProvide
 WARNING [org.netbeans.modules.java.j2seplatform.libraries.J2SELibraryTypeProvider]: Wrong Classpath entry file:/Applications/NetBeans/glassfish-4.1.1/mq/lib/jaxm-api.jar in Library: Java-EE-GlassFish-v3-Prelude
 INFO [org.netbeans.modules.tomcat5.deploy.TomcatManager]: TomEE version null, type null
 INFO [null]: Last record repeated 3 more times.
-INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Resolving dependencies took: 10 ms
-Diagnostic information
-Input arguments:
-	-Djdk.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home
-	-Dnetbeans.default_userdir_root=/Users/elon/Library/Application Support/NetBeans
-	-Dnetbeans.dirs=/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/nb:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/ergonomics:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/ide:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/extide:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/java:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/apisupport:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/webcommon:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/websvccommon:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/enterprise:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/mobility:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/profiler:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/python:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/php:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/identity:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/harness:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/cnd:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/cndext:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/dlight:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/groovy:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/extra:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/javacard:/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/javafx:
-	-Dnetbeans.home=/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/platform
-	-Dcom.apple.mrj.application.apple.menu.about.name=NetBeans
-	-Dnetbeans.importclass=org.netbeans.upgrade.AutoUpgrade
-	-Dnetbeans.accept_license_class=org.netbeans.license.AcceptLicense
-	-Xmx1024m
-	-Xss2m
-	-Xms32m
-	-Dapple.laf.useScreenMenuBar=true
-	-Dapple.awt.graphics.UseQuartz=true
-	-Dsun.java2d.noddraw=true
-	-Dsun.java2d.dpiaware=true
-	-Dsun.zip.disableMemoryMapping=true
-	-XX:+HeapDumpOnOutOfMemoryError
-	-XX:HeapDumpPath=/Users/elon/Library/Application Support/NetBeans/8.1/var/log/heapdump.hprof
-Compiler: HotSpot 64-Bit Tiered Compilers
-Heap memory usage: initial 32.0MB maximum 910.5MB
-Non heap memory usage: initial 2.4MB maximum -1b
-Garbage collector: PS Scavenge (Collections=22 Total time spent=0s)
-Garbage collector: PS MarkSweep (Collections=4 Total time spent=0s)
-Classes: loaded=11295 total loaded=11301 unloaded 5
-INFO [org.netbeans.core.ui.warmup.DiagnosticTask]: Total memory 34,359,738,368
-INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Complete indexing of 57 binary roots took: 811 ms
-INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Indexing of: /Users/elon/NetBeansProjects/WebApplication1/web took: 153 ms (New or modified files: 0, Deleted files: 0) [Adding listeners took: 0 ms]
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Resolving dependencies took: 36 ms
+INFO [org.netbeans.modules.autoupdate.updateprovider.AutoupdateCatalogParser]: Unpaired license 00000006 without any module.
+INFO [null]: Last record repeated 2 more times.
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Complete indexing of 57 binary roots took: 5,428 ms
+log4j:WARN No appenders could be found for logger (nu.validator.source.LocationRecorder).
+log4j:WARN Please initialize the log4j system properly.
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Indexing of: /Users/elon/NetBeansProjects/WebApplication1/web took: 1,855 ms (New or modified files: 2, Deleted files: 0) [Adding listeners took: 1 ms]
 INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Indexing of: /Users/elon/NetBeansProjects/WebApplication1/test took: 0 ms (New or modified files: 0, Deleted files: 0) [Adding listeners took: 0 ms]
-INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Indexing of: /Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/ide/jsstubs/reststubs.zip took: 62 ms (New or modified files: 0, Deleted files: 0) [Adding listeners took: 0 ms]
-INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Indexing of: /Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/ide/jsstubs/corestubs.zip took: 23 ms (New or modified files: 0, Deleted files: 0) [Adding listeners took: 0 ms]
-INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Indexing of: /Users/elon/NetBeansProjects/WebApplication1/src/java took: 403 ms (New or modified files: 0, Deleted files: 0) [Adding listeners took: 0 ms]
-INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Indexing of: /Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/ide/jsstubs/domstubs.zip took: 23 ms (New or modified files: 0, Deleted files: 0) [Adding listeners took: 0 ms]
-INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Complete indexing of 6 source roots took: 664 ms (New or modified files: 0, Deleted files: 0) [Adding listeners took: 0 ms]
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Indexing of: /Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/ide/jsstubs/reststubs.zip took: 421 ms (New or modified files: 14, Deleted files: 0) [Adding listeners took: 0 ms]
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Indexing of: /Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/ide/jsstubs/corestubs.zip took: 180 ms (New or modified files: 37, Deleted files: 0) [Adding listeners took: 0 ms]
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Indexing of: /Users/elon/NetBeansProjects/WebApplication1/src/java took: 26 ms (New or modified files: 0, Deleted files: 0) [Adding listeners took: 0 ms]
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Indexing of: /Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/ide/jsstubs/domstubs.zip took: 507 ms (New or modified files: 133, Deleted files: 0) [Adding listeners took: 0 ms]
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Complete indexing of 6 source roots took: 2,989 ms (New or modified files: 186, Deleted files: 0) [Adding listeners took: 1 ms]
+INFO [org.netbeans.modules.tomcat5.deploy.TomcatManager]: TomEE version null, type null
+INFO [null]: Last record repeated again.
+INFO [null]: Last record repeated again.
+INFO [null]: Last record repeated 2 more times.
+INFO [null]: Last record repeated 5 more times.
+INFO [org.netbeans.spi.lexer.MutableTextInput]: !!WARNING!! Missing READ-LOCK when accessing TokenHierarchy: input-source:org.netbeans.editor.BaseDocument@7d63da75, mimeType='text/html', kitClass=null, length=424, version=1, file=null
+java.lang.Exception
+	at org.netbeans.lib.lexer.TokenHierarchyOperation.ensureReadLocked(TokenHierarchyOperation.java:406)
+	at org.netbeans.lib.lexer.TokenHierarchyOperation.languagePaths(TokenHierarchyOperation.java:612)
+	at org.netbeans.api.lexer.TokenHierarchy.languagePaths(TokenHierarchy.java:286)
+	at org.netbeans.modules.web.indent.api.LexUtilities.getEmbeddedTokenSequences(LexUtilities.java:261)
+	at org.netbeans.modules.web.indent.api.LexUtilities.createCodeBlocks(LexUtilities.java:328)
+	at org.netbeans.modules.web.indent.api.support.AbstractIndenter.calculateIndentation(AbstractIndenter.java:306)
+	at org.netbeans.modules.web.indent.api.support.AbstractIndenter.reindent(AbstractIndenter.java:233)
+	at org.netbeans.modules.html.editor.indent.HtmlIndentTask.reindent(HtmlIndentTask.java:74)
+	at org.netbeans.modules.editor.indent.TaskHandler$MimeItem.runTask(TaskHandler.java:555)
+	at org.netbeans.modules.editor.indent.TaskHandler.runTasks(TaskHandler.java:316)
+	at org.netbeans.modules.editor.indent.IndentImpl.reformat(IndentImpl.java:365)
+	at org.netbeans.modules.editor.indent.api.Reformat.reformat(Reformat.java:154)
+	at org.netbeans.modules.editor.indent.IndentScriptEngineHack.eval(IndentScriptEngineHack.java:96)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at org.netbeans.modules.editor.indent.IndentScriptEngineHack.eval(IndentScriptEngineHack.java:125)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:249)
+	at org.netbeans.modules.templates.ScriptingCreateFromTemplateHandler.createFromTemplate(ScriptingCreateFromTemplateHandler.java:133)
+	at org.netbeans.api.templates.CreateFromTemplateImpl.build(CreateFromTemplateImpl.java:121)
+	at org.netbeans.api.templates.CreateFromTemplateImpl.build(CreateFromTemplateImpl.java:92)
+	at org.netbeans.api.templates.FileBuilder.build(FileBuilder.java:250)
+	at org.netbeans.api.templates.FileBuilder.createFromTemplate(FileBuilder.java:351)
+	at org.openide.loaders.MultiDataObject.handleCreateFromTemplate(MultiDataObject.java:878)
+	at org.openide.loaders.DataObject$CreateAction.run(DataObject.java:1597)
+	at org.openide.loaders.DataObjectPool$1WrapAtomicAction.run(DataObjectPool.java:261)
+	at org.openide.filesystems.EventControl.runAtomicAction(EventControl.java:127)
+	at org.openide.filesystems.FileSystem.runAtomicAction(FileSystem.java:519)
+	at org.openide.loaders.DataObjectPool.runAtomicAction(DataObjectPool.java:286)
+	at org.openide.loaders.DataObject.invokeAtomicAction(DataObject.java:1051)
+	at org.openide.loaders.DataObject.createFromTemplate(DataObject.java:983)
+	at org.openide.loaders.DataObject.createFromTemplate(DataObject.java:963)
+	at org.netbeans.modules.web.project.api.WebProjectUtilities.createWelcomeFile(WebProjectUtilities.java:401)
+	at org.netbeans.modules.web.project.api.WebProjectUtilities.ensureWelcomePage(WebProjectUtilities.java:360)
+	at org.netbeans.modules.web.project.ui.wizards.NewWebProjectWizardIterator.instantiate(NewWebProjectWizardIterator.java:203)
+	at org.openide.loaders.TemplateWizard$InstantiatingIteratorBridge.instantiate(TemplateWizard.java:1051)
+	at org.openide.loaders.TemplateWizard.handleInstantiate(TemplateWizard.java:605)
+	at org.openide.loaders.TemplateWizard.instantiateNewObjects(TemplateWizard.java:439)
+	at org.openide.loaders.TemplateWizardIterImpl.instantiate(TemplateWizardIterImpl.java:253)
+	at org.openide.loaders.TemplateWizardIteratorWrapper$ProgressInstantiatingIterator.instantiate(TemplateWizardIteratorWrapper.java:180)
+	at org.openide.WizardDescriptor.callInstantiateOpen(WizardDescriptor.java:1626)
+	at org.openide.WizardDescriptor.callInstantiate(WizardDescriptor.java:1570)
+	at org.openide.WizardDescriptor.access$2300(WizardDescriptor.java:92)
+	at org.openide.WizardDescriptor$Listener$2$1.run(WizardDescriptor.java:2257)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1443)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:68)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:303)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2058)
+INFO [org.netbeans.spi.lexer.MutableTextInput]: !!WARNING!! Missing READ-LOCK when accessing TokenHierarchy: input-source:org.netbeans.editor.BaseDocument@7d63da75, mimeType='text/html', kitClass=null, length=424, version=1, file=null
+java.lang.Exception
+	at org.netbeans.lib.lexer.TokenHierarchyOperation.ensureReadLocked(TokenHierarchyOperation.java:406)
+	at org.netbeans.lib.lexer.TokenHierarchyOperation.tokenSequenceList(TokenHierarchyOperation.java:447)
+	at org.netbeans.api.lexer.TokenHierarchy.tokenSequenceList(TokenHierarchy.java:229)
+	at org.netbeans.modules.web.indent.api.LexUtilities.getEmbeddedTokenSequences(LexUtilities.java:268)
+	at org.netbeans.modules.web.indent.api.LexUtilities.createCodeBlocks(LexUtilities.java:328)
+	at org.netbeans.modules.web.indent.api.support.AbstractIndenter.calculateIndentation(AbstractIndenter.java:306)
+	at org.netbeans.modules.web.indent.api.support.AbstractIndenter.reindent(AbstractIndenter.java:233)
+	at org.netbeans.modules.html.editor.indent.HtmlIndentTask.reindent(HtmlIndentTask.java:74)
+	at org.netbeans.modules.editor.indent.TaskHandler$MimeItem.runTask(TaskHandler.java:555)
+	at org.netbeans.modules.editor.indent.TaskHandler.runTasks(TaskHandler.java:316)
+	at org.netbeans.modules.editor.indent.IndentImpl.reformat(IndentImpl.java:365)
+	at org.netbeans.modules.editor.indent.api.Reformat.reformat(Reformat.java:154)
+	at org.netbeans.modules.editor.indent.IndentScriptEngineHack.eval(IndentScriptEngineHack.java:96)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at org.netbeans.modules.editor.indent.IndentScriptEngineHack.eval(IndentScriptEngineHack.java:125)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:249)
+	at org.netbeans.modules.templates.ScriptingCreateFromTemplateHandler.createFromTemplate(ScriptingCreateFromTemplateHandler.java:133)
+	at org.netbeans.api.templates.CreateFromTemplateImpl.build(CreateFromTemplateImpl.java:121)
+	at org.netbeans.api.templates.CreateFromTemplateImpl.build(CreateFromTemplateImpl.java:92)
+	at org.netbeans.api.templates.FileBuilder.build(FileBuilder.java:250)
+	at org.netbeans.api.templates.FileBuilder.createFromTemplate(FileBuilder.java:351)
+	at org.openide.loaders.MultiDataObject.handleCreateFromTemplate(MultiDataObject.java:878)
+	at org.openide.loaders.DataObject$CreateAction.run(DataObject.java:1597)
+	at org.openide.loaders.DataObjectPool$1WrapAtomicAction.run(DataObjectPool.java:261)
+	at org.openide.filesystems.EventControl.runAtomicAction(EventControl.java:127)
+	at org.openide.filesystems.FileSystem.runAtomicAction(FileSystem.java:519)
+	at org.openide.loaders.DataObjectPool.runAtomicAction(DataObjectPool.java:286)
+	at org.openide.loaders.DataObject.invokeAtomicAction(DataObject.java:1051)
+	at org.openide.loaders.DataObject.createFromTemplate(DataObject.java:983)
+	at org.openide.loaders.DataObject.createFromTemplate(DataObject.java:963)
+	at org.netbeans.modules.web.project.api.WebProjectUtilities.createWelcomeFile(WebProjectUtilities.java:401)
+	at org.netbeans.modules.web.project.api.WebProjectUtilities.ensureWelcomePage(WebProjectUtilities.java:360)
+	at org.netbeans.modules.web.project.ui.wizards.NewWebProjectWizardIterator.instantiate(NewWebProjectWizardIterator.java:203)
+	at org.openide.loaders.TemplateWizard$InstantiatingIteratorBridge.instantiate(TemplateWizard.java:1051)
+	at org.openide.loaders.TemplateWizard.handleInstantiate(TemplateWizard.java:605)
+	at org.openide.loaders.TemplateWizard.instantiateNewObjects(TemplateWizard.java:439)
+	at org.openide.loaders.TemplateWizardIterImpl.instantiate(TemplateWizardIterImpl.java:253)
+	at org.openide.loaders.TemplateWizardIteratorWrapper$ProgressInstantiatingIterator.instantiate(TemplateWizardIteratorWrapper.java:180)
+	at org.openide.WizardDescriptor.callInstantiateOpen(WizardDescriptor.java:1626)
+	at org.openide.WizardDescriptor.callInstantiate(WizardDescriptor.java:1570)
+	at org.openide.WizardDescriptor.access$2300(WizardDescriptor.java:92)
+	at org.openide.WizardDescriptor$Listener$2$1.run(WizardDescriptor.java:2257)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1443)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:68)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:303)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2058)
+INFO [org.netbeans.spi.lexer.MutableTextInput]: !!WARNING!! Missing READ-LOCK when accessing TokenHierarchy: input-source:org.netbeans.editor.BaseDocument@7d63da75, mimeType='text/html', kitClass=null, length=424, version=1, file=null
+java.lang.Exception
+	at org.netbeans.lib.lexer.TokenHierarchyOperation.ensureReadLocked(TokenHierarchyOperation.java:406)
+	at org.netbeans.lib.lexer.TokenHierarchyOperation.tokenSequence(TokenHierarchyOperation.java:431)
+	at org.netbeans.lib.lexer.TokenHierarchyOperation.tokenSequence(TokenHierarchyOperation.java:427)
+	at org.netbeans.lib.lexer.TokenHierarchyOperation.embeddedTokenSequences(TokenHierarchyOperation.java:459)
+	at org.netbeans.api.lexer.TokenHierarchy.embeddedTokenSequences(TokenHierarchy.java:265)
+	at org.netbeans.modules.web.indent.api.LexUtilities.getLanguage(LexUtilities.java:119)
+	at org.netbeans.modules.web.indent.api.LexUtilities.getLanguage(LexUtilities.java:115)
+	at org.netbeans.modules.web.indent.api.support.AbstractIndenter.processLanguage(AbstractIndenter.java:1194)
+	at org.netbeans.modules.web.indent.api.support.AbstractIndenter.calculateIndentation(AbstractIndenter.java:373)
+	at org.netbeans.modules.web.indent.api.support.AbstractIndenter.reindent(AbstractIndenter.java:233)
+	at org.netbeans.modules.html.editor.indent.HtmlIndentTask.reindent(HtmlIndentTask.java:74)
+	at org.netbeans.modules.editor.indent.TaskHandler$MimeItem.runTask(TaskHandler.java:555)
+	at org.netbeans.modules.editor.indent.TaskHandler.runTasks(TaskHandler.java:316)
+	at org.netbeans.modules.editor.indent.IndentImpl.reformat(IndentImpl.java:365)
+	at org.netbeans.modules.editor.indent.api.Reformat.reformat(Reformat.java:154)
+	at org.netbeans.modules.editor.indent.IndentScriptEngineHack.eval(IndentScriptEngineHack.java:96)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at org.netbeans.modules.editor.indent.IndentScriptEngineHack.eval(IndentScriptEngineHack.java:125)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:249)
+	at org.netbeans.modules.templates.ScriptingCreateFromTemplateHandler.createFromTemplate(ScriptingCreateFromTemplateHandler.java:133)
+	at org.netbeans.api.templates.CreateFromTemplateImpl.build(CreateFromTemplateImpl.java:121)
+	at org.netbeans.api.templates.CreateFromTemplateImpl.build(CreateFromTemplateImpl.java:92)
+	at org.netbeans.api.templates.FileBuilder.build(FileBuilder.java:250)
+	at org.netbeans.api.templates.FileBuilder.createFromTemplate(FileBuilder.java:351)
+	at org.openide.loaders.MultiDataObject.handleCreateFromTemplate(MultiDataObject.java:878)
+	at org.openide.loaders.DataObject$CreateAction.run(DataObject.java:1597)
+	at org.openide.loaders.DataObjectPool$1WrapAtomicAction.run(DataObjectPool.java:261)
+	at org.openide.filesystems.EventControl.runAtomicAction(EventControl.java:127)
+	at org.openide.filesystems.FileSystem.runAtomicAction(FileSystem.java:519)
+	at org.openide.loaders.DataObjectPool.runAtomicAction(DataObjectPool.java:286)
+	at org.openide.loaders.DataObject.invokeAtomicAction(DataObject.java:1051)
+	at org.openide.loaders.DataObject.createFromTemplate(DataObject.java:983)
+	at org.openide.loaders.DataObject.createFromTemplate(DataObject.java:963)
+	at org.netbeans.modules.web.project.api.WebProjectUtilities.createWelcomeFile(WebProjectUtilities.java:401)
+	at org.netbeans.modules.web.project.api.WebProjectUtilities.ensureWelcomePage(WebProjectUtilities.java:360)
+	at org.netbeans.modules.web.project.ui.wizards.NewWebProjectWizardIterator.instantiate(NewWebProjectWizardIterator.java:203)
+	at org.openide.loaders.TemplateWizard$InstantiatingIteratorBridge.instantiate(TemplateWizard.java:1051)
+	at org.openide.loaders.TemplateWizard.handleInstantiate(TemplateWizard.java:605)
+	at org.openide.loaders.TemplateWizard.instantiateNewObjects(TemplateWizard.java:439)
+	at org.openide.loaders.TemplateWizardIterImpl.instantiate(TemplateWizardIterImpl.java:253)
+	at org.openide.loaders.TemplateWizardIteratorWrapper$ProgressInstantiatingIterator.instantiate(TemplateWizardIteratorWrapper.java:180)
+	at org.openide.WizardDescriptor.callInstantiateOpen(WizardDescriptor.java:1626)
+	at org.openide.WizardDescriptor.callInstantiate(WizardDescriptor.java:1570)
+	at org.openide.WizardDescriptor.access$2300(WizardDescriptor.java:92)
+	at org.openide.WizardDescriptor$Listener$2$1.run(WizardDescriptor.java:2257)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1443)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:68)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:303)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2058)
+INFO [org.netbeans.modules.tomcat5.deploy.TomcatManager]: TomEE version null, type null
+INFO [null]: Last record repeated 5 more times.
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Resolving dependencies took: 11 ms
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Complete indexing of 0 binary roots took: 1 ms
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Indexing of: /Users/tlavecchia/NetBeansProjects/homework4/test took: 0 ms (New or modified files: 0, Deleted files: 0) [Adding listeners took: 0 ms]
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Indexing of: /Users/tlavecchia/NetBeansProjects/homework4/src/java took: 36 ms (New or modified files: 0, Deleted files: 0) [Adding listeners took: 0 ms]
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Indexing of: /Users/tlavecchia/NetBeansProjects/homework4/web took: 50 ms (New or modified files: 2, Deleted files: 0) [Adding listeners took: 0 ms]
+INFO [org.netbeans.modules.parsing.impl.indexing.RepositoryUpdater]: Complete indexing of 3 source roots took: 86 ms (New or modified files: 2, Deleted files: 0) [Adding listeners took: 0 ms]
+WARNING [org.openide.util.actions.MouseCursorUtils]: showWaitCursor could not find a suitable glass pane; key=java.awt.event.ActionEvent[ACTION_PERFORMED,cmd=Name,when=0,modifiers=] on org.openide.loaders.DataFolder$Paste$2@28120a2f
 WARNING [org.netbeans.TopSecurityManager]: use of system property netbeans.user has been obsoleted in favor of InstalledFileLocator/Places at org.netbeans.modules.websvc.saas.model.SaasServicesModel.<clinit>(SaasServicesModel.java:69)
 INFO [org.netbeans.modules.tomcat5.deploy.TomcatManager]: TomEE version null, type null
-INFO [null]: Last record repeated 3 more times.
+INFO [null]: Last record repeated 7 more times.
+SEVERE:  Cannot lock read-only file /Users/elon/NetBeansProjects/WebApplication1/nbproject/private/private.xml.
+
+msg
+Caused: org.netbeans.modules.masterfs.filebasedfs.utils.FSException: Cannot lock read-only file /Users/elon/NetBeansProjects/WebApplication1/nbproject/private/private.xml.
+	at org.netbeans.modules.masterfs.filebasedfs.utils.FSException.io(FSException.java:118)
+	at org.netbeans.modules.masterfs.filebasedfs.fileobjects.FileObj.lock(FileObj.java:406)
+	at org.netbeans.spi.project.support.ant.AntProjectHelper$2.run(AntProjectHelper.java:368)
+	at org.openide.filesystems.EventControl.runAtomicAction(EventControl.java:127)
+	at org.openide.filesystems.FileSystem.runAtomicAction(FileSystem.java:519)
+	at org.netbeans.spi.project.support.ant.AntProjectHelper.runSaveAA(AntProjectHelper.java:339)
+	at org.netbeans.spi.project.support.ant.AntProjectHelper.saveXml(AntProjectHelper.java:356)
+	at org.netbeans.spi.project.support.ant.AntProjectHelper.save(AntProjectHelper.java:642)
+	at org.netbeans.spi.project.support.ant.AntProjectHelper.access$100(AntProjectHelper.java:114)
+	at org.netbeans.spi.project.support.ant.AntProjectHelper$1.save(AntProjectHelper.java:152)
+	at org.netbeans.modules.project.ant.AntBasedProjectFactorySingleton.saveProject(AntBasedProjectFactorySingleton.java:431)
+	at org.netbeans.modules.projectapi.nb.NbProjectManager$7.run(NbProjectManager.java:679)
+	at org.netbeans.modules.projectapi.nb.NbProjectManager$7.run(NbProjectManager.java:671)
+	at org.netbeans.modules.openide.util.DefaultMutexImplementation.writeAccess(DefaultMutexImplementation.java:293)
+	at org.openide.util.Mutex.writeAccess(Mutex.java:299)
+	at org.netbeans.modules.projectapi.nb.NbProjectManager.saveAllProjects(NbProjectManager.java:671)
+	at org.netbeans.api.project.ProjectManager.saveAllProjects(ProjectManager.java:300)
+[catch] at org.netbeans.modules.project.ui.ProjectUiModule.close(ProjectUiModule.java:73)
+	at org.netbeans.core.startup.NbInstaller.closeAsync(NbInstaller.java:743)
+	at org.netbeans.ModuleManager.shutDownAsync(ModuleManager.java:2188)
+	at org.netbeans.core.startup.ModuleSystem.shutDownAsync(ModuleSystem.java:349)
+	at org.netbeans.core.NbLifeExit.doExit(NbLifeExit.java:137)
+	at org.netbeans.core.NbLifeExit.run(NbLifeExit.java:94)
+	at org.netbeans.modules.openide.util.NbMutexEventProvider$Event.doEvent(NbMutexEventProvider.java:118)
+	at org.netbeans.modules.openide.util.NbMutexEventProvider$Event.readAccess(NbMutexEventProvider.java:93)
+	at org.netbeans.modules.openide.util.LazyMutexImplementation.readAccess(LazyMutexImplementation.java:89)
+	at org.openide.util.Mutex.readAccess(Mutex.java:260)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:213)
+	at org.netbeans.core.NbLifecycleManager.exit(NbLifecycleManager.java:119)
+	at org.netbeans.core.windows.view.ui.MainWindow$9.windowClosing(MainWindow.java:546)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:349)
+	at java.awt.Window.processWindowEvent(Window.java:2058)
+	at javax.swing.JFrame.processWindowEvent(JFrame.java:305)
+	at java.awt.Window.processEvent(Window.java:2017)
+	at java.awt.Component.dispatchEventImpl(Component.java:4891)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Window.dispatchEventImpl(Window.java:2750)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+ALL [null]: Cannot lock read-only file /Users/elon/NetBeansProjects/WebApplication1/nbproject/private/private.xml.
 INFO [org.netbeans.core.netigso.Netigso]: bundle org.eclipse.osgi@3.9.1.v20140110-1610 256
 INFO [org.netbeans.core.netigso.Netigso]: bundle org.eclipse.osgi@3.9.1.v20140110-1610 stopped
 INFO [null]: Last record repeated again.

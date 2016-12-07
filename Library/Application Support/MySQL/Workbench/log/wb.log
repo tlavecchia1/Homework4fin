@@ -1,8 +1,8 @@
-11:28:54 [INF][      WBContext]: Parsing application arguments.
-11:28:54 [INF][      WBContext]:     /Applications/MySQLWorkbench.app/Contents/MacOS/MySQLWorkbench
-11:28:54 [INF][      Workbench]: Starting up Workbench
-11:28:54 [INF][      Workbench]: Loading main window
-11:28:54 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+15:57:23 [INF][      WBContext]: Parsing application arguments.
+15:57:23 [INF][      WBContext]:     /Applications/MySQLWorkbench.app/Contents/MacOS/MySQLWorkbench
+15:57:23 [INF][      Workbench]: Starting up Workbench
+15:57:23 [INF][      Workbench]: Loading main window
+15:57:23 [INF][   WBContext UI]: Initializing workbench context UI with these values:
 	base dir: /Applications/MySQLWorkbench.app/Contents/Resources
 	plugin path: /Applications/MySQLWorkbench.app/Contents/PlugIns
 	struct path: /Applications/MySQLWorkbench.app/Contents/Resources/grt
@@ -16,14 +16,14 @@
 	Force SW rendering: No
 	Force OpenGL: No
 	quit when done: No
-11:28:54 [INF][      WBContext]: WbContext::init
-11:28:55 [INF][            WBA]: Looking for extension modules for WBA...
-11:28:55 [INF][            WBA]: 0 extension modules found
-11:28:55 [WRN][            grt]: /Applications/MySQLWorkbench.app/Contents/Resources/data/table_templates.xml:21: link 'com.mysql.rdbms.mysql.datatype.timestamp' <object db.SimpleDatatype> key=simpleType could not be resolved
-11:28:55 [WRN][            grt]: /Applications/MySQLWorkbench.app/Contents/Resources/data/table_templates.xml:106: link 'com.mysql.rdbms.mysql.datatype.varchar' <object db.SimpleDatatype> key=simpleType could not be resolved
-11:28:55 [WRN][            grt]: /Applications/MySQLWorkbench.app/Contents/Resources/data/table_templates.xml:229: link 'com.mysql.rdbms.mysql.datatype.int' <object db.SimpleDatatype> key=simpleType could not be resolved
-11:28:55 [WRN][            grt]: /Users/tlavecchia/Library/Application Support/MySQL/Workbench/connections.xml:18: link 'CF7723A9-5AE2-4B39-898A-7F76E1D944F0' <object GrtObject> key=owner could not be resolved
-11:28:55 [INF][      WBContext]: System info:
+15:57:23 [INF][      WBContext]: WbContext::init
+15:57:24 [INF][            WBA]: Looking for extension modules for WBA...
+15:57:24 [INF][            WBA]: 0 extension modules found
+15:57:24 [WRN][            grt]: /Applications/MySQLWorkbench.app/Contents/Resources/data/table_templates.xml:21: link 'com.mysql.rdbms.mysql.datatype.timestamp' <object db.SimpleDatatype> key=simpleType could not be resolved
+15:57:24 [WRN][            grt]: /Applications/MySQLWorkbench.app/Contents/Resources/data/table_templates.xml:106: link 'com.mysql.rdbms.mysql.datatype.varchar' <object db.SimpleDatatype> key=simpleType could not be resolved
+15:57:24 [WRN][            grt]: /Applications/MySQLWorkbench.app/Contents/Resources/data/table_templates.xml:229: link 'com.mysql.rdbms.mysql.datatype.int' <object db.SimpleDatatype> key=simpleType could not be resolved
+15:57:24 [WRN][            grt]: /Users/tlavecchia/Library/Application Support/MySQL/Workbench/connections.xml:18: link '0F7466F4-2826-42F6-83FD-8B277FED418F' <object GrtObject> key=owner could not be resolved
+15:57:24 [INF][      WBContext]: System info:
  	MySQL Workbench Community (GPL) for Mac OS X version 6.3.6 CE build 511 (32 bit)
 	Configuration Directory: /Users/tlavecchia/Library/Application Support/MySQL/Workbench
 	Data Directory: /Applications/MySQLWorkbench.app/Contents/Resources
@@ -31,7 +31,36 @@
 	OS: OS X 10.11.x El Capitan
 	CPU: 4x Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz - 32.00GiB RAM
 
-11:31:07 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'root'@'localhost' (using password: NO)
-11:31:07 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'root'@'localhost' (using password: NO)
-11:31:10 [INF][      SqlEditor]: Opened connection 'Local instance 3306' to MySQL Community Server (GPL) version 5.7.13
-11:31:11 [INF][     AutoCCache]: Initializing autocompletion cache for Local_instance_3306
+15:57:28 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'root'@'localhost' (using password: NO)
+15:57:28 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'root'@'localhost' (using password: NO)
+15:57:33 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'root'@'localhost' (using password: YES)
+15:57:33 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'root'@'localhost' (using password: YES)
+15:57:33 [ERR][    WQE backend]: Got an exception during connection: Access denied for user 'root'@'localhost' (using password: YES)
+15:57:33 [ERR][      SqlEditor]: SQL editor could not be connected: Access denied for user 'root'@'localhost' (using password: YES)
+15:57:33 [ERR][      SqlEditor]: Your connection attempt failed for user 'root' from your host to server at localhost:3306:
+  Access denied for user 'root'@'localhost' (using password: YES)
+
+Please:
+1 Check that mysql is running on server localhost
+2 Check that mysql is running on port 3306 (note: 3306 is the default, but this can be changed)
+3 Check the root has rights to connect to localhost from your address (mysql rights define what clients can connect to the server and from which machines) 
+4 Make sure you are both providing a password if needed and using the correct password for localhost connecting from the host address you're connecting from
+15:57:41 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'root'@'localhost' (using password: NO)
+15:57:41 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'root'@'localhost' (using password: NO)
+15:57:47 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'root'@'localhost' (using password: YES)
+15:57:47 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'root'@'localhost' (using password: YES)
+15:57:47 [ERR][    WQE backend]: Got an exception during connection: Access denied for user 'root'@'localhost' (using password: YES)
+15:57:47 [ERR][      SqlEditor]: SQL editor could not be connected: Access denied for user 'root'@'localhost' (using password: YES)
+15:57:47 [ERR][      SqlEditor]: Your connection attempt failed for user 'root' from your host to server at localhost:3306:
+  Access denied for user 'root'@'localhost' (using password: YES)
+
+Please:
+1 Check that mysql is running on server localhost
+2 Check that mysql is running on port 3306 (note: 3306 is the default, but this can be changed)
+3 Check the root has rights to connect to localhost from your address (mysql rights define what clients can connect to the server and from which machines) 
+4 Make sure you are both providing a password if needed and using the correct password for localhost connecting from the host address you're connecting from
+15:57:55 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'root'@'localhost' (using password: NO)
+15:57:55 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'root'@'localhost' (using password: NO)
+15:58:43 [INF][      SqlEditor]: Opened connection 'Local instance 3306' to MySQL Community Server (GPL) version 5.7.13
+15:58:44 [INF][     AutoCCache]: Initializing autocompletion cache for Local_instance_3306
+18:56:18 [ERR][     AutoCCache]: Exception while running refresh task: Table 'tylerspace.member' doesn't exist

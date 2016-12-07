@@ -1,0 +1,50 @@
+git clone https://github.com/tlavecchia1/homework4
+git status
+git init
+git add --all
+git commit -m"commit message"
+git statu
+git status
+git remote add origin https://github.com/tlavecchia1/homework4
+git push -u origin master
+git status
+git init
+git add --all
+git commit -m"homework4"
+git status
+git push -u origin master
+ls
+cd NetBeansProjects
+ls
+cd homework4
+ls
+git add --all
+git commit -m"homework4"
+git status
+git remote -v
+git remote rm origin
+git remote add origin https://github.com/tlavecchia1/Homework4Final.git
+git push -u origin master
+ls
+cd ..
+ls
+cd ..
+ls
+cd NetBeansProjects
+ls
+cd homework4
+ls
+git add --all
+git commit -m"jdslk"
+git remote -v
+git push -u origin master
+git init
+git add remote https://github.com/tlavecchia1/Homework4fin.git
+git remote add origin https://github.com/tlavecchia1/Homework4fin.git
+git status
+cd
+ls
+cd NetBeansProjects
+ls
+cd homework4
+ls

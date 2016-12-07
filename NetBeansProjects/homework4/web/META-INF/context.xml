@@ -12,6 +12,6 @@
               removeAbandoned="true" 
               removeAbandonedTimeout="60" 
               type="javax.sql.DataSource" 
-              url="jdbc:mysql://localhost:3306/library?autoReconnect=true" 
+              url="jdbc:mysql://localhost:3306/tylerspace?autoReconnect=true" 
               username="root"  />
 </Context>

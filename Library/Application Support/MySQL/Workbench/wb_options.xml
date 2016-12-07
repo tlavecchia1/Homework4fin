@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <data grt_format="2.0" document_type="MySQL Workbench Options" version="1.0.1">
-  <value type="object" struct-name="app.Options" id="4D9CD55F-24AB-4935-B145-EBDB12AEC895" struct-checksum="0x79af48b6">
-    <value _ptr_="0x7ffd467651e0" type="dict" key="commonOptions"/>
-    <value _ptr_="0x7ffd46765240" type="list" content-type="string" key="disabledPlugins"/>
-    <value _ptr_="0x7ffd467652a0" type="dict" key="options">
+  <value type="object" struct-name="app.Options" id="6479E839-B6A4-4F2B-B965-B3FE1AEC7A3D" struct-checksum="0x79af48b6">
+    <value _ptr_="0x7fdaebd51ca0" type="dict" key="commonOptions"/>
+    <value _ptr_="0x7fdaebd51d00" type="list" content-type="string" key="disabledPlugins"/>
+    <value _ptr_="0x7fdaebd51d60" type="dict" key="options">
       <value type="string" key="@ColorScheme/Items">System Default:0,Windows 7:1,Windows 8:2,Windows 8 (alternative):3,High Contrast:4</value>
       <value type="string" key="@DefaultTargetMySQLVersion/Items">5.0,5.1,5.5,5.6,5.7</value>
       <value type="string" key="@db.ForeignKey:deleteRule/Items">NO ACTION,CASCADE,SET NULL,RESTRICT</value>
@@ -16,7 +16,7 @@
       <value type="int" key="DbSqlEditor::MaxResultsets">50</value>
       <value type="int" key="DbSqlEditor:ActiveInfoTab">0</value>
       <value type="int" key="DbSqlEditor:ActiveSidePaletteTab">0</value>
-      <value type="int" key="DbSqlEditor:ActiveTaskTab">-1</value>
+      <value type="int" key="DbSqlEditor:ActiveTaskTab">1</value>
       <value type="int" key="DbSqlEditor:AutoStartCodeCompletion">1</value>
       <value type="int" key="DbSqlEditor:AutocommitMode">1</value>
       <value type="int" key="DbSqlEditor:CodeCompletionEnabled">1</value>
@@ -35,14 +35,15 @@
       <value type="int" key="DbSqlEditor:ReadTimeOut">600</value>
       <value type="int" key="DbSqlEditor:ReformatViewDDL">1</value>
       <value type="int" key="DbSqlEditor:Reformatter:UpcaseKeywords">1</value>
+      <value type="int" key="DbSqlEditor:ResultSplitterPosition">200</value>
       <value type="string" key="DbSqlEditor:SQLCommentTypeForHotkey">--</value>
       <value type="int" key="DbSqlEditor:SafeUpdates">1</value>
       <value type="int" key="DbSqlEditor:SchemaTreeRestoreState">1</value>
       <value type="int" key="DbSqlEditor:ShowSchemaTreeSchemaContents">1</value>
       <value type="int" key="DbSqlEditor:ShowWarnings">1</value>
       <value type="string" key="DbSqlEditor:SidebarCollapseState">SchemaTree=0</value>
-      <value type="int" key="DbSqlEditor:SidebarInitialSplitterPos">500</value>
-      <value type="int" key="DbSqlEditor:SidebarModeCombined">1</value>
+      <value type="int" key="DbSqlEditor:SidebarInitialSplitterPos">667</value>
+      <value type="int" key="DbSqlEditor:SidebarModeCombined">0</value>
       <value type="string" key="DefaultColumnType">VARCHAR(45)</value>
       <value type="string" key="DefaultConnectionNotation">crowsfoot</value>
       <value type="string" key="DefaultFigureNotation">workbench/default</value>
@@ -68,23 +69,23 @@
       <value type="int" key="SqlIdentifiersCS">1</value>
       <value type="string" key="SqlMode"></value>
       <value type="int" key="SynchronizeObjectColors">1</value>
-      <value _ptr_="0x7ffd467c6030" type="list" content-type="object" content-struct-name="db.mysql.Table" key="TableTemplates">
+      <value _ptr_="0x7fdaee3d4ce0" type="list" content-type="object" content-struct-name="db.mysql.Table" key="TableTemplates">
         <value type="object" struct-name="db.mysql.Table" id="37642F84-3C2E-487D-A678-FCA419E70519" struct-checksum="0x4564421a">
           <value type="string" key="avgRowLength"></value>
           <value type="int" key="checksum">0</value>
-          <value _ptr_="0x7ffd489ed960" type="list" content-type="object" content-struct-name="db.mysql.Column" key="columns">
+          <value _ptr_="0x7fdaee3c5840" type="list" content-type="object" content-struct-name="db.mysql.Column" key="columns">
             <value type="object" struct-name="db.mysql.Column" id="F9028334-CC93-4D2D-A5A3-67C3276F186F" struct-checksum="0xba88e21c">
               <value type="int" key="autoIncrement">0</value>
               <value type="string" key="expression"></value>
               <value type="int" key="generated">0</value>
               <value type="string" key="generatedStorage"></value>
               <value type="string" key="characterSetName"></value>
-              <value _ptr_="0x7ffd489ee2e0" type="list" content-type="object" content-struct-name="db.CheckConstraint" key="checks"/>
+              <value _ptr_="0x7fdaee3c6180" type="list" content-type="object" content-struct-name="db.CheckConstraint" key="checks"/>
               <value type="string" key="collationName"></value>
               <value type="string" key="datatypeExplicitParams"></value>
               <value type="string" key="defaultValue">CURRENT_TIMESTAMP</value>
               <value type="int" key="defaultValueIsNull">0</value>
-              <value _ptr_="0x7ffd489ee340" type="list" content-type="string" key="flags"/>
+              <value _ptr_="0x7fdaee3c61e0" type="list" content-type="string" key="flags"/>
               <value type="int" key="isNotNull">0</value>
               <value type="int" key="length">-1</value>
               <value type="int" key="precision">-1</value>
@@ -100,12 +101,12 @@
               <value type="int" key="generated">0</value>
               <value type="string" key="generatedStorage"></value>
               <value type="string" key="characterSetName"></value>
-              <value _ptr_="0x7ffd489eeaf0" type="list" content-type="object" content-struct-name="db.CheckConstraint" key="checks"/>
+              <value _ptr_="0x7fdaee3c6990" type="list" content-type="object" content-struct-name="db.CheckConstraint" key="checks"/>
               <value type="string" key="collationName"></value>
               <value type="string" key="datatypeExplicitParams"></value>
               <value type="string" key="defaultValue"></value>
               <value type="int" key="defaultValueIsNull">0</value>
-              <value _ptr_="0x7ffd489eeb50" type="list" content-type="string" key="flags"/>
+              <value _ptr_="0x7fdaee3c69f0" type="list" content-type="string" key="flags"/>
               <value type="int" key="isNotNull">0</value>
               <value type="int" key="length">-1</value>
               <value type="int" key="precision">-1</value>
@@ -120,8 +121,8 @@
           <value type="string" key="defaultCharacterSetName"></value>
           <value type="string" key="defaultCollationName"></value>
           <value type="int" key="delayKeyWrite">0</value>
-          <value _ptr_="0x7ffd489ed9c0" type="list" content-type="object" content-struct-name="db.mysql.ForeignKey" key="foreignKeys"/>
-          <value _ptr_="0x7ffd489eda20" type="list" content-type="object" content-struct-name="db.mysql.Index" key="indices"/>
+          <value _ptr_="0x7fdaee3c58a0" type="list" content-type="object" content-struct-name="db.mysql.ForeignKey" key="foreignKeys"/>
+          <value _ptr_="0x7fdaee3c5900" type="list" content-type="object" content-struct-name="db.mysql.Index" key="indices"/>
           <value type="string" key="keyBlockSize"></value>
           <value type="string" key="maxRows"></value>
           <value type="string" key="mergeInsert"></value>
@@ -130,7 +131,7 @@
           <value type="string" key="nextAutoInc"></value>
           <value type="string" key="packKeys"></value>
           <value type="int" key="partitionCount">0</value>
-          <value _ptr_="0x7ffd489edb00" type="list" content-type="object" content-struct-name="db.mysql.PartitionDefinition" key="partitionDefinitions"/>
+          <value _ptr_="0x7fdaee3c59e0" type="list" content-type="object" content-struct-name="db.mysql.PartitionDefinition" key="partitionDefinitions"/>
           <value type="string" key="partitionExpression"></value>
           <value type="int" key="partitionKeyAlgorithm">0</value>
           <value type="string" key="partitionType"></value>
@@ -150,14 +151,14 @@
           <value type="string" key="tableEngine"></value>
           <value type="string" key="tableIndexDir"></value>
           <value type="string" key="tableSpace"></value>
-          <value _ptr_="0x7ffd489eda80" type="list" content-type="object" content-struct-name="db.mysql.Trigger" key="triggers"/>
+          <value _ptr_="0x7fdaee3c5960" type="list" content-type="object" content-struct-name="db.mysql.Trigger" key="triggers"/>
           <value type="int" key="isStub">0</value>
           <value type="int" key="isSystem">0</value>
           <value type="int" key="isTemporary">0</value>
           <value type="string" key="temporaryScope"></value>
           <value type="int" key="commentedOut">0</value>
           <value type="string" key="createDate"></value>
-          <value _ptr_="0x7ffd489ed700" type="dict" key="customData"/>
+          <value _ptr_="0x7fdaee3c55c0" type="dict" key="customData"/>
           <value type="string" key="lastChangeDate"></value>
           <value type="int" key="modelOnly">0</value>
           <value type="string" key="name">timestamps</value>
@@ -168,19 +169,19 @@
         <value type="object" struct-name="db.mysql.Table" id="85ED81C9-805F-484A-B23B-B98FC53D8734" struct-checksum="0x4564421a">
           <value type="string" key="avgRowLength"></value>
           <value type="int" key="checksum">0</value>
-          <value _ptr_="0x7ffd489ef6a0" type="list" content-type="object" content-struct-name="db.mysql.Column" key="columns">
+          <value _ptr_="0x7fdaee3c7570" type="list" content-type="object" content-struct-name="db.mysql.Column" key="columns">
             <value type="object" struct-name="db.mysql.Column" id="B5762CF5-E448-47BF-9B13-87CEE7619933" struct-checksum="0xba88e21c">
               <value type="int" key="autoIncrement">0</value>
               <value type="string" key="expression"></value>
               <value type="int" key="generated">0</value>
               <value type="string" key="generatedStorage"></value>
               <value type="string" key="characterSetName"></value>
-              <value _ptr_="0x7ffd489f0030" type="list" content-type="object" content-struct-name="db.CheckConstraint" key="checks"/>
+              <value _ptr_="0x7fdaee3c7ed0" type="list" content-type="object" content-struct-name="db.CheckConstraint" key="checks"/>
               <value type="string" key="collationName"></value>
               <value type="string" key="datatypeExplicitParams"></value>
               <value type="string" key="defaultValue"></value>
               <value type="int" key="defaultValueIsNull">0</value>
-              <value _ptr_="0x7ffd489f0090" type="list" content-type="string" key="flags"/>
+              <value _ptr_="0x7fdaee3c7f30" type="list" content-type="string" key="flags"/>
               <value type="int" key="isNotNull">1</value>
               <value type="int" key="length">16</value>
               <value type="int" key="precision">-1</value>
@@ -196,12 +197,12 @@
               <value type="int" key="generated">0</value>
               <value type="string" key="generatedStorage"></value>
               <value type="string" key="characterSetName"></value>
-              <value _ptr_="0x7ffd489f0840" type="list" content-type="object" content-struct-name="db.CheckConstraint" key="checks"/>
+              <value _ptr_="0x7fdaee3c86e0" type="list" content-type="object" content-struct-name="db.CheckConstraint" key="checks"/>
               <value type="string" key="collationName"></value>
               <value type="string" key="datatypeExplicitParams"></value>
               <value type="string" key="defaultValue"></value>
               <value type="int" key="defaultValueIsNull">0</value>
-              <value _ptr_="0x7ffd489f08a0" type="list" content-type="string" key="flags"/>
+              <value _ptr_="0x7fdaee3c8740" type="list" content-type="string" key="flags"/>
               <value type="int" key="isNotNull">0</value>
               <value type="int" key="length">255</value>
               <value type="int" key="precision">-1</value>
@@ -217,12 +218,12 @@
               <value type="int" key="generated">0</value>
               <value type="string" key="generatedStorage"></value>
               <value type="string" key="characterSetName"></value>
-              <value _ptr_="0x7ffd489f1050" type="list" content-type="object" content-struct-name="db.CheckConstraint" key="checks"/>
+              <value _ptr_="0x7fdaee3c8ef0" type="list" content-type="object" content-struct-name="db.CheckConstraint" key="checks"/>
               <value type="string" key="collationName"></value>
               <value type="string" key="datatypeExplicitParams"></value>
               <value type="string" key="defaultValue"></value>
               <value type="int" key="defaultValueIsNull">0</value>
-              <value _ptr_="0x7ffd489f10b0" type="list" content-type="string" key="flags"/>
+              <value _ptr_="0x7fdaee3c8f50" type="list" content-type="string" key="flags"/>
               <value type="int" key="isNotNull">1</value>
               <value type="int" key="length">32</value>
               <value type="int" key="precision">-1</value>
@@ -238,12 +239,12 @@
               <value type="int" key="generated">0</value>
               <value type="string" key="generatedStorage"></value>
               <value type="string" key="characterSetName"></value>
-              <value _ptr_="0x7ffd489f1860" type="list" content-type="object" content-struct-name="db.CheckConstraint" key="checks"/>
+              <value _ptr_="0x7fdaee3c9700" type="list" content-type="object" content-struct-name="db.CheckConstraint" key="checks"/>
               <value type="string" key="collationName"></value>
               <value type="string" key="datatypeExplicitParams"></value>
               <value type="string" key="defaultValue">CURRENT_TIMESTAMP</value>
               <value type="int" key="defaultValueIsNull">0</value>
-              <value _ptr_="0x7ffd489f18c0" type="list" content-type="string" key="flags"/>
+              <value _ptr_="0x7fdaee3c9760" type="list" content-type="string" key="flags"/>
               <value type="int" key="isNotNull">0</value>
               <value type="int" key="length">-1</value>
               <value type="int" key="precision">-1</value>
@@ -258,8 +259,8 @@
           <value type="string" key="defaultCharacterSetName"></value>
           <value type="string" key="defaultCollationName"></value>
           <value type="int" key="delayKeyWrite">0</value>
-          <value _ptr_="0x7ffd489ef700" type="list" content-type="object" content-struct-name="db.mysql.ForeignKey" key="foreignKeys"/>
-          <value _ptr_="0x7ffd489ef760" type="list" content-type="object" content-struct-name="db.mysql.Index" key="indices"/>
+          <value _ptr_="0x7fdaee3c75d0" type="list" content-type="object" content-struct-name="db.mysql.ForeignKey" key="foreignKeys"/>
+          <value _ptr_="0x7fdaee3c7630" type="list" content-type="object" content-struct-name="db.mysql.Index" key="indices"/>
           <value type="string" key="keyBlockSize"></value>
           <value type="string" key="maxRows"></value>
           <value type="string" key="mergeInsert"></value>
@@ -268,7 +269,7 @@
           <value type="string" key="nextAutoInc"></value>
           <value type="string" key="packKeys"></value>
           <value type="int" key="partitionCount">0</value>
-          <value _ptr_="0x7ffd489ef840" type="list" content-type="object" content-struct-name="db.mysql.PartitionDefinition" key="partitionDefinitions"/>
+          <value _ptr_="0x7fdaee3c7710" type="list" content-type="object" content-struct-name="db.mysql.PartitionDefinition" key="partitionDefinitions"/>
           <value type="string" key="partitionExpression"></value>
           <value type="int" key="partitionKeyAlgorithm">0</value>
           <value type="string" key="partitionType"></value>
@@ -288,14 +289,14 @@
           <value type="string" key="tableEngine"></value>
           <value type="string" key="tableIndexDir"></value>
           <value type="string" key="tableSpace"></value>
-          <value _ptr_="0x7ffd489ef7c0" type="list" content-type="object" content-struct-name="db.mysql.Trigger" key="triggers"/>
+          <value _ptr_="0x7fdaee3c7690" type="list" content-type="object" content-struct-name="db.mysql.Trigger" key="triggers"/>
           <value type="int" key="isStub">0</value>
           <value type="int" key="isSystem">0</value>
           <value type="int" key="isTemporary">0</value>
           <value type="string" key="temporaryScope"></value>
           <value type="int" key="commentedOut">0</value>
           <value type="string" key="createDate"></value>
-          <value _ptr_="0x7ffd489ef430" type="dict" key="customData"/>
+          <value _ptr_="0x7fdaee3c72d0" type="dict" key="customData"/>
           <value type="string" key="lastChangeDate"></value>
           <value type="int" key="modelOnly">0</value>
           <value type="string" key="name">user</value>
@@ -306,19 +307,19 @@
         <value type="object" struct-name="db.mysql.Table" id="1B5B4584-1B18-436A-AEE9-2DDA73435B22" struct-checksum="0x4564421a">
           <value type="string" key="avgRowLength"></value>
           <value type="int" key="checksum">0</value>
-          <value _ptr_="0x7ffd489f2410" type="list" content-type="object" content-struct-name="db.mysql.Column" key="columns">
+          <value _ptr_="0x7fdaee3ca2e0" type="list" content-type="object" content-struct-name="db.mysql.Column" key="columns">
             <value type="object" struct-name="db.mysql.Column" id="73948747-1D05-445D-AADF-F74BC01EADB2" struct-checksum="0xba88e21c">
               <value type="int" key="autoIncrement">0</value>
               <value type="string" key="expression"></value>
               <value type="int" key="generated">0</value>
               <value type="string" key="generatedStorage"></value>
               <value type="string" key="characterSetName"></value>
-              <value _ptr_="0x7ffd489f2da0" type="list" content-type="object" content-struct-name="db.CheckConstraint" key="checks"/>
+              <value _ptr_="0x7fdaee3cac40" type="list" content-type="object" content-struct-name="db.CheckConstraint" key="checks"/>
               <value type="string" key="collationName"></value>
               <value type="string" key="datatypeExplicitParams"></value>
               <value type="string" key="defaultValue"></value>
               <value type="int" key="defaultValueIsNull">0</value>
-              <value _ptr_="0x7ffd489f2e00" type="list" content-type="string" key="flags"/>
+              <value _ptr_="0x7fdaee3caca0" type="list" content-type="string" key="flags"/>
               <value type="int" key="isNotNull">1</value>
               <value type="int" key="length">-1</value>
               <value type="int" key="precision">-1</value>
@@ -334,12 +335,12 @@
               <value type="int" key="generated">0</value>
               <value type="string" key="generatedStorage"></value>
               <value type="string" key="characterSetName"></value>
-              <value _ptr_="0x7ffd489f35b0" type="list" content-type="object" content-struct-name="db.CheckConstraint" key="checks"/>
+              <value _ptr_="0x7fdaee3cb450" type="list" content-type="object" content-struct-name="db.CheckConstraint" key="checks"/>
               <value type="string" key="collationName"></value>
               <value type="string" key="datatypeExplicitParams"></value>
               <value type="string" key="defaultValue"></value>
               <value type="int" key="defaultValueIsNull">0</value>
-              <value _ptr_="0x7ffd489f3610" type="list" content-type="string" key="flags"/>
+              <value _ptr_="0x7fdaee3cb4b0" type="list" content-type="string" key="flags"/>
               <value type="int" key="isNotNull">1</value>
               <value type="int" key="length">255</value>
               <value type="int" key="precision">-1</value>
@@ -354,11 +355,11 @@
           <value type="string" key="defaultCharacterSetName"></value>
           <value type="string" key="defaultCollationName"></value>
           <value type="int" key="delayKeyWrite">0</value>
-          <value _ptr_="0x7ffd489f2470" type="list" content-type="object" content-struct-name="db.mysql.ForeignKey" key="foreignKeys"/>
-          <value _ptr_="0x7ffd489f24d0" type="list" content-type="object" content-struct-name="db.mysql.Index" key="indices">
+          <value _ptr_="0x7fdaee3ca340" type="list" content-type="object" content-struct-name="db.mysql.ForeignKey" key="foreignKeys"/>
+          <value _ptr_="0x7fdaee3ca3a0" type="list" content-type="object" content-struct-name="db.mysql.Index" key="indices">
             <value type="object" struct-name="db.mysql.Index" id="331D0AA0-FE93-41FC-AF5A-7A837EE04EAD" struct-checksum="0xb3a154c1">
               <value type="string" key="algorithm"></value>
-              <value _ptr_="0x7ffd489f3e10" type="list" content-type="object" content-struct-name="db.mysql.IndexColumn" key="columns">
+              <value _ptr_="0x7fdaee3cbcb0" type="list" content-type="object" content-struct-name="db.mysql.IndexColumn" key="columns">
                 <value type="object" struct-name="db.mysql.IndexColumn" id="17E91926-5681-4B4F-90B9-8B0AC909A0BC" struct-checksum="0x62630b3c">
                   <value type="int" key="columnLength">0</value>
                   <value type="string" key="comment"></value>
@@ -380,7 +381,7 @@
               <value type="int" key="unique">0</value>
               <value type="int" key="commentedOut">0</value>
               <value type="string" key="createDate"></value>
-              <value _ptr_="0x7ffd489f3db0" type="dict" key="customData"/>
+              <value _ptr_="0x7fdaee3cbc50" type="dict" key="customData"/>
               <value type="string" key="lastChangeDate"></value>
               <value type="int" key="modelOnly">0</value>
               <link type="object" struct-name="GrtNamedObject" key="owner">1B5B4584-1B18-436A-AEE9-2DDA73435B22</link>
@@ -396,7 +397,7 @@
           <value type="string" key="nextAutoInc"></value>
           <value type="string" key="packKeys"></value>
           <value type="int" key="partitionCount">0</value>
-          <value _ptr_="0x7ffd489f25b0" type="list" content-type="object" content-struct-name="db.mysql.PartitionDefinition" key="partitionDefinitions"/>
+          <value _ptr_="0x7fdaee3ca480" type="list" content-type="object" content-struct-name="db.mysql.PartitionDefinition" key="partitionDefinitions"/>
           <value type="string" key="partitionExpression"></value>
           <value type="int" key="partitionKeyAlgorithm">0</value>
           <value type="string" key="partitionType"></value>
@@ -417,14 +418,14 @@
           <value type="string" key="tableEngine"></value>
           <value type="string" key="tableIndexDir"></value>
           <value type="string" key="tableSpace"></value>
-          <value _ptr_="0x7ffd489f2530" type="list" content-type="object" content-struct-name="db.mysql.Trigger" key="triggers"/>
+          <value _ptr_="0x7fdaee3ca400" type="list" content-type="object" content-struct-name="db.mysql.Trigger" key="triggers"/>
           <value type="int" key="isStub">0</value>
           <value type="int" key="isSystem">0</value>
           <value type="int" key="isTemporary">0</value>
           <value type="string" key="temporaryScope"></value>
           <value type="int" key="commentedOut">0</value>
           <value type="string" key="createDate"></value>
-          <value _ptr_="0x7ffd489f21a0" type="dict" key="customData"/>
+          <value _ptr_="0x7fdaee3ca040" type="dict" key="customData"/>
           <value type="string" key="lastChangeDate"></value>
           <value type="int" key="modelOnly">0</value>
           <value type="string" key="name">category</value>
@@ -493,7 +494,7 @@
       <value type="int" key="workbench:SaveSQLWorkspaceOnClose">1</value>
       <value type="int" key="workbench:UndoEntries">10</value>
     </value>
-    <value _ptr_="0x7ffd46765300" type="list" content-type="object" content-struct-name="app.PaperType" key="paperTypes">
+    <value _ptr_="0x7fdaebd51dc0" type="list" content-type="object" content-struct-name="app.PaperType" key="paperTypes">
       <value type="object" struct-name="app.PaperType" id="com.mysql.wb.papertype.letter" struct-checksum="0xa53b8cf0">
         <value type="string" key="caption">Letter (8.5 in. x 11 in.)</value>
         <value type="real" key="height">2.793999999999999772626324556767940521240234375e+02</value>
@@ -504,7 +505,7 @@
         <value type="int" key="marginsSet">0</value>
         <value type="real" key="width">2.15900000000000005684341886080801486968994140625e+02</value>
         <value type="string" key="name">na-letter</value>
-        <link type="object" struct-name="GrtObject" key="owner">4D9CD55F-24AB-4935-B145-EBDB12AEC895</link>
+        <link type="object" struct-name="GrtObject" key="owner">6479E839-B6A4-4F2B-B965-B3FE1AEC7A3D</link>
       </value>
       <value type="object" struct-name="app.PaperType" id="com.mysql.wb.papertype.legal" struct-checksum="0xa53b8cf0">
         <value type="string" key="caption">Legal (8.5 in. x 14 in.)</value>
@@ -516,7 +517,7 @@
         <value type="int" key="marginsSet">0</value>
         <value type="real" key="width">2.15900000000000005684341886080801486968994140625e+02</value>
         <value type="string" key="name">na-legal</value>
-        <link type="object" struct-name="GrtObject" key="owner">4D9CD55F-24AB-4935-B145-EBDB12AEC895</link>
+        <link type="object" struct-name="GrtObject" key="owner">6479E839-B6A4-4F2B-B965-B3FE1AEC7A3D</link>
       </value>
       <value type="object" struct-name="app.PaperType" id="com.mysql.wb.papertype.folio" struct-checksum="0xa53b8cf0">
         <value type="string" key="caption">Folio (8.5 in. x 13 in.)</value>
@@ -528,7 +529,7 @@
         <value type="int" key="marginsSet">0</value>
         <value type="real" key="width">2.15900000000000005684341886080801486968994140625e+02</value>
         <value type="string" key="name">folio</value>
-        <link type="object" struct-name="GrtObject" key="owner">4D9CD55F-24AB-4935-B145-EBDB12AEC895</link>
+        <link type="object" struct-name="GrtObject" key="owner">6479E839-B6A4-4F2B-B965-B3FE1AEC7A3D</link>
       </value>
       <value type="object" struct-name="app.PaperType" id="com.mysql.wb.papertype.a4" struct-checksum="0xa53b8cf0">
         <value type="string" key="caption">A4 (210 mm x 297 mm)</value>
@@ -540,7 +541,7 @@
         <value type="int" key="marginsSet">0</value>
         <value type="real" key="width">2.09900000000000005684341886080801486968994140625e+02</value>
         <value type="string" key="name">iso-a4</value>
-        <link type="object" struct-name="GrtObject" key="owner">4D9CD55F-24AB-4935-B145-EBDB12AEC895</link>
+        <link type="object" struct-name="GrtObject" key="owner">6479E839-B6A4-4F2B-B965-B3FE1AEC7A3D</link>
       </value>
       <value type="object" struct-name="app.PaperType" id="com.mysql.wb.papertype.a5" struct-checksum="0xa53b8cf0">
         <value type="string" key="caption">A5 (148 mm x 210 mm)</value>
@@ -552,7 +553,7 @@
         <value type="int" key="marginsSet">0</value>
         <value type="real" key="width">1.4819999999999998863131622783839702606201171875e+02</value>
         <value type="string" key="name">iso-a5</value>
-        <link type="object" struct-name="GrtObject" key="owner">4D9CD55F-24AB-4935-B145-EBDB12AEC895</link>
+        <link type="object" struct-name="GrtObject" key="owner">6479E839-B6A4-4F2B-B965-B3FE1AEC7A3D</link>
       </value>
       <value type="object" struct-name="app.PaperType" id="com.mysql.wb.papertype.b4" struct-checksum="0xa53b8cf0">
         <value type="string" key="caption">B4 (250 mm x 353 mm)</value>
@@ -564,7 +565,7 @@
         <value type="int" key="marginsSet">0</value>
         <value type="real" key="width">2.50099999999999994315658113919198513031005859375e+02</value>
         <value type="string" key="name">iso-b4</value>
-        <link type="object" struct-name="GrtObject" key="owner">4D9CD55F-24AB-4935-B145-EBDB12AEC895</link>
+        <link type="object" struct-name="GrtObject" key="owner">6479E839-B6A4-4F2B-B965-B3FE1AEC7A3D</link>
       </value>
       <value type="object" struct-name="app.PaperType" id="com.mysql.wb.papertype.b5" struct-checksum="0xa53b8cf0">
         <value type="string" key="caption">B5 (176 mm x 250 mm)</value>
@@ -576,7 +577,7 @@
         <value type="int" key="marginsSet">0</value>
         <value type="real" key="width">1.76e+02</value>
         <value type="string" key="name">iso-b5</value>
-        <link type="object" struct-name="GrtObject" key="owner">4D9CD55F-24AB-4935-B145-EBDB12AEC895</link>
+        <link type="object" struct-name="GrtObject" key="owner">6479E839-B6A4-4F2B-B965-B3FE1AEC7A3D</link>
       </value>
       <value type="object" struct-name="app.PaperType" id="com.mysql.wb.papertype.executive" struct-checksum="0xa53b8cf0">
         <value type="string" key="caption">Executive (7.5 in. x 10.5 in.)</value>
@@ -588,7 +589,7 @@
         <value type="int" key="marginsSet">0</value>
         <value type="real" key="width">1.8419999999999998863131622783839702606201171875e+02</value>
         <value type="string" key="name">executive</value>
-        <link type="object" struct-name="GrtObject" key="owner">4D9CD55F-24AB-4935-B145-EBDB12AEC895</link>
+        <link type="object" struct-name="GrtObject" key="owner">6479E839-B6A4-4F2B-B965-B3FE1AEC7A3D</link>
       </value>
       <value type="object" struct-name="app.PaperType" id="com.mysql.wb.papertype.statement" struct-checksum="0xa53b8cf0">
         <value type="string" key="caption">Statement (5.5 in. x 8.5 in.)</value>
@@ -600,7 +601,7 @@
         <value type="int" key="marginsSet">0</value>
         <value type="real" key="width">1.3969999999999998863131622783839702606201171875e+02</value>
         <value type="string" key="name">statement</value>
-        <link type="object" struct-name="GrtObject" key="owner">4D9CD55F-24AB-4935-B145-EBDB12AEC895</link>
+        <link type="object" struct-name="GrtObject" key="owner">6479E839-B6A4-4F2B-B965-B3FE1AEC7A3D</link>
       </value>
       <value type="object" struct-name="app.PaperType" id="com.mysql.wb.papertype.a3" struct-checksum="0xa53b8cf0">
         <value type="string" key="caption">A3 (297 mm x 420 mm)</value>
@@ -612,7 +613,7 @@
         <value type="int" key="marginsSet">0</value>
         <value type="real" key="width">2.97e+02</value>
         <value type="string" key="name">iso-a3</value>
-        <link type="object" struct-name="GrtObject" key="owner">4D9CD55F-24AB-4935-B145-EBDB12AEC895</link>
+        <link type="object" struct-name="GrtObject" key="owner">6479E839-B6A4-4F2B-B965-B3FE1AEC7A3D</link>
       </value>
       <value type="object" struct-name="app.PaperType" id="com.mysql.wb.papertype.a2" struct-checksum="0xa53b8cf0">
         <value type="string" key="caption">A2 (420 mm x 594 mm)</value>
@@ -624,7 +625,7 @@
         <value type="int" key="marginsSet">0</value>
         <value type="real" key="width">4.2e+02</value>
         <value type="string" key="name">iso-a2</value>
-        <link type="object" struct-name="GrtObject" key="owner">4D9CD55F-24AB-4935-B145-EBDB12AEC895</link>
+        <link type="object" struct-name="GrtObject" key="owner">6479E839-B6A4-4F2B-B965-B3FE1AEC7A3D</link>
       </value>
       <value type="object" struct-name="app.PaperType" id="com.mysql.wb.papertype.a1" struct-checksum="0xa53b8cf0">
         <value type="string" key="caption">A1 (594 mm x 841 mm)</value>
@@ -636,7 +637,7 @@
         <value type="int" key="marginsSet">0</value>
         <value type="real" key="width">5.94e+02</value>
         <value type="string" key="name">iso-a1</value>
-        <link type="object" struct-name="GrtObject" key="owner">4D9CD55F-24AB-4935-B145-EBDB12AEC895</link>
+        <link type="object" struct-name="GrtObject" key="owner">6479E839-B6A4-4F2B-B965-B3FE1AEC7A3D</link>
       </value>
       <value type="object" struct-name="app.PaperType" id="com.mysql.wb.papertype.a0" struct-checksum="0xa53b8cf0">
         <value type="string" key="caption">A0 (841 mm x 1189 mm)</value>
@@ -648,7 +649,7 @@
         <value type="int" key="marginsSet">0</value>
         <value type="real" key="width">8.41e+02</value>
         <value type="string" key="name">iso-a0</value>
-        <link type="object" struct-name="GrtObject" key="owner">4D9CD55F-24AB-4935-B145-EBDB12AEC895</link>
+        <link type="object" struct-name="GrtObject" key="owner">6479E839-B6A4-4F2B-B965-B3FE1AEC7A3D</link>
       </value>
       <value type="object" struct-name="app.PaperType" id="com.mysql.wb.papertype.roc16k" struct-checksum="0xa53b8cf0">
         <value type="string" key="caption">ROC 16K (196 mm x 273 mm)</value>
@@ -660,7 +661,7 @@
         <value type="int" key="marginsSet">0</value>
         <value type="real" key="width">1.9680000000000001136868377216160297393798828125e+02</value>
         <value type="string" key="name">ROC 16K</value>
-        <link type="object" struct-name="GrtObject" key="owner">4D9CD55F-24AB-4935-B145-EBDB12AEC895</link>
+        <link type="object" struct-name="GrtObject" key="owner">6479E839-B6A4-4F2B-B965-B3FE1AEC7A3D</link>
       </value>
       <value type="object" struct-name="app.PaperType" id="com.mysql.wb.papertype.jb5" struct-checksum="0xa53b8cf0">
         <value type="string" key="caption">JIS B5 (182 mm x 257 mm)</value>
@@ -672,7 +673,7 @@
         <value type="int" key="marginsSet">0</value>
         <value type="real" key="width">1.82e+02</value>
         <value type="string" key="name">jis-b5</value>
-        <link type="object" struct-name="GrtObject" key="owner">4D9CD55F-24AB-4935-B145-EBDB12AEC895</link>
+        <link type="object" struct-name="GrtObject" key="owner">6479E839-B6A4-4F2B-B965-B3FE1AEC7A3D</link>
       </value>
       <value type="object" struct-name="app.PaperType" id="com.mysql.wb.papertype.tabloid" struct-checksum="0xa53b8cf0">
         <value type="string" key="caption">Tabloid (11 in. x 17 in.)</value>
@@ -684,7 +685,7 @@
         <value type="int" key="marginsSet">0</value>
         <value type="real" key="width">2.793999999999999772626324556767940521240234375e+02</value>
         <value type="string" key="name">tabloid</value>
-        <link type="object" struct-name="GrtObject" key="owner">4D9CD55F-24AB-4935-B145-EBDB12AEC895</link>
+        <link type="object" struct-name="GrtObject" key="owner">6479E839-B6A4-4F2B-B965-B3FE1AEC7A3D</link>
       </value>
       <value type="object" struct-name="app.PaperType" id="com.mysql.wb.papertype.quarto" struct-checksum="0xa53b8cf0">
         <value type="string" key="caption">Quarto (215 mm x 275 mm.)</value>
@@ -696,7 +697,7 @@
         <value type="int" key="marginsSet">0</value>
         <value type="real" key="width">2.15e+02</value>
         <value type="string" key="name">quarto</value>
-        <link type="object" struct-name="GrtObject" key="owner">4D9CD55F-24AB-4935-B145-EBDB12AEC895</link>
+        <link type="object" struct-name="GrtObject" key="owner">6479E839-B6A4-4F2B-B965-B3FE1AEC7A3D</link>
       </value>
       <value type="object" struct-name="app.PaperType" id="com.mysql.wb.papertype.ansic" struct-checksum="0xa53b8cf0">
         <value type="string" key="caption">ANSI C (432 mm x 559 mm.)</value>
@@ -708,7 +709,7 @@
         <value type="int" key="marginsSet">0</value>
         <value type="real" key="width">4.32e+02</value>
         <value type="string" key="name">c</value>
-        <link type="object" struct-name="GrtObject" key="owner">4D9CD55F-24AB-4935-B145-EBDB12AEC895</link>
+        <link type="object" struct-name="GrtObject" key="owner">6479E839-B6A4-4F2B-B965-B3FE1AEC7A3D</link>
       </value>
       <value type="object" struct-name="app.PaperType" id="com.mysql.wb.papertype.ansid" struct-checksum="0xa53b8cf0">
         <value type="string" key="caption">ANSI D (559 mm x 864 mm.)</value>
@@ -720,7 +721,7 @@
         <value type="int" key="marginsSet">0</value>
         <value type="real" key="width">5.59e+02</value>
         <value type="string" key="name">d</value>
-        <link type="object" struct-name="GrtObject" key="owner">4D9CD55F-24AB-4935-B145-EBDB12AEC895</link>
+        <link type="object" struct-name="GrtObject" key="owner">6479E839-B6A4-4F2B-B965-B3FE1AEC7A3D</link>
       </value>
       <value type="object" struct-name="app.PaperType" id="com.mysql.wb.papertype.ansie" struct-checksum="0xa53b8cf0">
         <value type="string" key="caption">ANSI E (864 mm x 1118 mm.)</value>
@@ -732,10 +733,12 @@
         <value type="int" key="marginsSet">0</value>
         <value type="real" key="width">8.64e+02</value>
         <value type="string" key="name">e</value>
-        <link type="object" struct-name="GrtObject" key="owner">4D9CD55F-24AB-4935-B145-EBDB12AEC895</link>
+        <link type="object" struct-name="GrtObject" key="owner">6479E839-B6A4-4F2B-B965-B3FE1AEC7A3D</link>
       </value>
     </value>
-    <value _ptr_="0x7ffd46765360" type="list" content-type="string" key="recentFiles">
+    <value _ptr_="0x7fdaebd51e20" type="list" content-type="string" key="recentFiles">
+      <value type="string">/Users/tlavecchia/Desktop/SQL for Homework4.sql</value>
+      <value type="string">/Users/tlavecchia/Documents/SQL for Homework4.sql</value>
       <value type="string">/Applications/MySQLWorkbench.app/Contents/Resources/../SharedSupport/sakila_full.mwb</value>
     </value>
     <value type="string" key="name"></value>

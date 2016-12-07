@@ -1,0 +1,2779 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Don’t use ID selectors in CSS | Screwlewse</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://screwlewse.com/xmlrpc.php">
+
+<link rel="alternate" type="application/rss+xml" title="Screwlewse &raquo; Feed" href="http://screwlewse.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Screwlewse &raquo; Comments Feed" href="http://screwlewse.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Screwlewse &raquo; Don’t use ID selectors in CSS Comments Feed" href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/screwlewse.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.4"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='circa-gabriela-css'  href='https://fonts.googleapis.com/css?family=Gabriela&#038;subset=latin%2Clatin-ext&#038;ver=4.5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='circa-lato-css'  href='https://fonts.googleapis.com/css?family=Lato%3A400%2C700%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext&#038;ver=4.5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='hexa-style-css'  href='http://screwlewse.com/wp-content/themes/circa/style.css?ver=4.5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='hexa-source-sans-pro-css'  href='http://fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic&#038;ver=4.5.4' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='http://screwlewse.com/wp-content/themes/hexa/genericons/genericons.css?ver=3.0.3' type='text/css' media='all' />
+<script type='text/javascript' src='http://screwlewse.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://screwlewse.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='http://screwlewse.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://screwlewse.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://screwlewse.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Using the window.location property in Javascript' href='http://screwlewse.com/2010/06/using-the-window-location-property-in-javascript/' />
+<link rel='next' title='Different CSS techniques and their performance' href='http://screwlewse.com/2010/08/different-css-techniques-and-their-performance/' />
+<meta name="generator" content="WordPress 4.5.4" />
+<link rel="canonical" href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/" />
+<link rel='shortlink' href='http://screwlewse.com/?p=9' />
+<link rel="alternate" type="application/json+oembed" href="http://screwlewse.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fscrewlewse.com%2F2010%2F07%2Fdont-use-id-selectors-in-css%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://screwlewse.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fscrewlewse.com%2F2010%2F07%2Fdont-use-id-selectors-in-css%2F&#038;format=xml" />
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+					<style type="text/css" id="hexa-custom-background-css">
+							body.custom-background,
+				.custom-background .wp-caption {
+					background-color: #f2f1ef				}
+				.custom-background img.alignleft,
+				.wp-caption.alignleft,
+				img.alignright,
+				.wp-caption.alignright,
+				.author-archives-img,
+				.comment-author .avatar-wrapper {
+					border-top-color: #f2f1ef;
+					border-bottom-color: #f2f1ef;
+				}
+								</style>
+	
+<!-- BEGIN GADWP v4.9.3.2 Universal Tracking - https://deconf.com/google-analytics-dashboard-wordpress/ -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-322346-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!-- END GADWP Universal Tracking -->
+
+</head>
+
+<body class="single single-post postid-9 single-format-standard">
+<div id="page" class="hfeed site">
+			<div id="menu-toggle-nav" class="panel">
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+			<div class="menu"><ul><li ><a href="http://screwlewse.com/">Home</a></li><li class="page_item page-item-2"><a href="http://screwlewse.com/about/">About Me</a></li></ul></div>
+		</nav><!-- #site-navigation -->
+	</div>
+			<div id="sidebar-toggle-nav" class="panel">
+	<div class="widget-areas">
+					<div class="widget-area">
+				<aside id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="http://screwlewse.com/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
+	</label>
+	<input type="submit" class="search-submit" value="Search">
+</form>
+</aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h1 class="widget-title">Recent Posts</h1>		<ul>
+					<li>
+				<a href="http://screwlewse.com/2010/08/different-css-techniques-and-their-performance/">Different CSS techniques and their performance</a>
+						</li>
+					<li>
+				<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/">Don’t use ID selectors in CSS</a>
+						</li>
+					<li>
+				<a href="http://screwlewse.com/2010/06/using-the-window-location-property-in-javascript/">Using the window.location property in Javascript</a>
+						</li>
+					<li>
+				<a href="http://screwlewse.com/2010/05/loading-your-javascript-files-asynchronously/">Loading your javascript files asynchronously</a>
+						</li>
+					<li>
+				<a href="http://screwlewse.com/2008/08/textmate-command-dummy-text-generator-instead-of-lorem-ipsum/">TextMate command: dummy text generator instead of lorem ipsum</a>
+						</li>
+				</ul>
+		</aside>		<aside id="recent-comments-2" class="widget widget_recent_comments"><h1 class="widget-title">Recent Comments</h1><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href='http://blog.aarmora.com/css-selectors-are-fun/' rel='external nofollow' class='url'>CSS Selectors Are fun - AarmoraBlog</a></span> on <a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-24308">Don’t use ID selectors in CSS</a></li><li class="recentcomments"><span class="comment-author-link"><a href='https://rememberingmycode.wordpress.com/2015/04/19/ids-are-unique-but-why/' rel='external nofollow' class='url'>IDs are Unique &#8211; But Why? | coding step by step</a></span> on <a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-21945">Don’t use ID selectors in CSS</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://raphaelgoetter.wordpress.com/2012/10/13/une-si-mauvaise-id/' rel='external nofollow' class='url'>Une si mauvaise ID ? | La Tête dans le Flux</a></span> on <a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-12827">Don’t use ID selectors in CSS</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://shaneprendergast.co.uk/css/the-myth-of-the-id/' rel='external nofollow' class='url'>The myth of the #ID | Shane Prendergast</a></span> on <a href="http://screwlewse.com/2010/08/different-css-techniques-and-their-performance/#comment-2758">Different CSS techniques and their performance</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://www.demonotes.com/web%e5%89%8d%e7%ab%af%e5%bc%80%e5%8f%91%e8%b5%84%e6%ba%90%e9%9b%86%e5%90%88.html' rel='external nofollow' class='url'>web???????? &#8211; Demo??</a></span> on <a href="http://screwlewse.com/2010/08/different-css-techniques-and-their-performance/#comment-613">Different CSS techniques and their performance</a></li></ul></aside><aside id="archives-2" class="widget widget_archive"><h1 class="widget-title">Archives</h1>		<ul>
+			<li><a href='http://screwlewse.com/2010/08/'>August 2010</a></li>
+	<li><a href='http://screwlewse.com/2010/07/'>July 2010</a></li>
+	<li><a href='http://screwlewse.com/2010/06/'>June 2010</a></li>
+	<li><a href='http://screwlewse.com/2010/05/'>May 2010</a></li>
+	<li><a href='http://screwlewse.com/2008/08/'>August 2008</a></li>
+	<li><a href='http://screwlewse.com/2008/07/'>July 2008</a></li>
+	<li><a href='http://screwlewse.com/2006/09/'>September 2006</a></li>
+		</ul>
+		</aside><aside id="categories-2" class="widget widget_categories"><h1 class="widget-title">Categories</h1>		<ul>
+	<li class="cat-item cat-item-6"><a href="http://screwlewse.com/category/web-development/html/" >HTML</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://screwlewse.com/category/web-development/javascript/" >Javascript</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://screwlewse.com/category/uncategorized/" >Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://screwlewse.com/category/web-development/" >Web Development</a>
+</li>
+		</ul>
+</aside><aside id="meta-2" class="widget widget_meta"><h1 class="widget-title">Meta</h1>			<ul>
+						<li><a href="http://screwlewse.com/wp-login.php">Log in</a></li>
+			<li><a href="http://screwlewse.com/feed/">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://screwlewse.com/comments/feed/">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside>			</div>
+							</div>
+</div>			<div id="search-toggle-nav" class="panel">
+		<div class="search-wrapper">
+			<form role="search" method="get" class="search-form" action="http://screwlewse.com/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
+	</label>
+	<input type="submit" class="search-submit" value="Search">
+</form>
+		</div>
+	</div>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-header-wrapper">
+			<div class="site-branding">
+				<h1 class="site-title"><a href="http://screwlewse.com/" rel="home">Screwlewse</a></h1>
+				<h2 class="site-description">semicolon sniffer, always front(end)in</h2>
+			</div>
+			<div class="toggles">
+			<div id="menu-toggle" class="toggle" title="Menu">
+				<span class="screen-reader-text">Menu</span>
+			</div><!-- #menu-toggle -->
+							<div id="sidebar-toggle" class="toggle" title="Widgets">
+					<span class="screen-reader-text">Widgets</span>
+				</div><!-- #sidebar-toggle -->
+									<div id="search-toggle" class="toggle" title="Search">
+				<span class="screen-reader-text">Search</span>
+			</div><!-- #search-toggle -->
+		</div><!-- .toggles -->
+		</div>
+	</header><!-- #masthead -->
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+			
+<article id="post-9" class="post-9 post type-post status-publish format-standard hentry category-uncategorized">
+	<header class="entry-header">
+					<span class="entry-format"></span>
+				<h1 class="entry-title">Don’t use ID selectors in CSS</h1>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>Lately I have been testing out performance among css styles and I found that some of my very <a title="External link to Chris Eppstein's blog, creator of Compass CSS framework" href="http://chriseppstein.github.com/blog/" target="_blank">smart</a> <a title="Blog of Isaac Schlueter" href="http://foohack.com/" target="_blank">friends</a>, started asking,&#8221;why aren&#8217;t you testing using IDs for the unique sections of the page?&#8221;.</p>
+<p>This wasn&#8217;t a hard answer:</p>
+<ol>
+<li>The element is not re-usable on that page.</li>
+<li>This is the begining of a downward sprial into specificity</li>
+<li>Usually, IDs refer to something very specific, and abstracting would be tough</li>
+<li>Any performance gains picked up by using id, is negated by adding any other selector to the left fo that id</li>
+</ol>
+<p>Lets delve into each of these issues at more length</p>
+<h3><strong>The element is not re-usable on that page:</strong></h3>
+<p>IDs are programmer&#8217;s equivalent to singletons.  There can only be one instance on the page.  This means there is no way to re-use it.  It&#8217;s usually a one to one relationship, and according to my speed testing, one line of css that&#8217;s only usable once is not a good value.  There IS a cost to css bloat.</p>
+<h3><strong>This is the beginning of a downward spiral into specificty:</strong></h3>
+<p><strong>There are two main ways of overriding in css.</strong></p>
+<ol>
+<li>The cascade: (anything further down the css, can overwrite the previous css rules)</li>
+<li>Specificity: the idea of creating weight by using weighted selectors.</li>
+</ol>
+<p>The reason I say that specificity is a downward spiral is because the only way to overwrite a weighted rule is to add more weight..  plain and simple.  Now I am not just saying this because I heard it somewhere.  I have made and paid for this mistake.</p>
+<pre><code>
+.ModuleOfficeList .property-checkbox input
+{display:block;margin-bottom:8px;_border:0px !important;}
+
+.ModuleOfficeList .property-checkbox,
+  .ModuleOfficeList .new-icon,
+  .ModuleOfficeList .open-icon
+{display:block}
+...
+.uid-officelistings .property-checkbox
+{display:none !important; }
+</code></pre>
+<p>Above is real code from one of my own work from 2005.  As you can see, after awhile, I had to resort to some weighty selectors and the !important rule.  This is very bad.  Once we get to this point..   it takes us more time to hunt down the parent IDs we are going to use in order to overrule the current specificity.  This is not team-friendly and definately not maintainable.  Eventually you will specify yourself into a hole, and refactoring out specificity is nothing short of a nightmare.</p>
+<h3><strong>On the other hand:</strong></h3>
+<p>I have heard a few reasons why using IDs as selectors is a good thing.  I&#8217;ll speak on them briefly:</p>
+<p><strong>Using ID selectors is faster</strong><br />
+Yes, using ID selectors is faster than using class selectors for the simple reason that there can only be one id within a page.   <a href="http://screwlewse.com/2010/08/different-css-techniques-and-their-performance/" target="_self">I even prove that is true</a>, however the performance benefit is very small, and as soon as you add any other selector, the performance benefit is lost.</p>
+<pre><code>
+#profile-module {...}
+#profile-module li {...}
+.profile-module li {...}
+</code></pre>
+<p>The second selector is no faster than the third.  That&#8217;s because CSS is read from right to left.  so the<br />
+<code>li</code><br />
+gets scanned first, which negates the speed of having an ID. <a title="Steve Souders explains css selector speed (new tab)" href="http://www.stevesouders.com/blog/2009/06/18/simplifying-css-selectors/" target="_blank">Steve Souders explains how selector speed works</a>.</p>
+<p><strong>IDs are meant for singletons</strong><br />
+There are times when someone intentionally wants something to be used only once on a page.  ID selectors would be useful for that purpose since they would signify once per page.   My only argument here is my personal preference of having all my code be re-usable; especially since I don&#8217;t see CSS in a &#8220;programming language&#8221; way.</p>
+<p><strong>UPDATE: maintaible CSS / semantic HTML</strong><br />
+There is a quite a huge following that believe using IDs are very helpful in creating maintainable CSS as well as creating a more semantic document in HTML.  I think that Matt Wilcox sums it up best in his article about <a href="http://mattwilcox.net/archive/entry/id/1058/">naming ID and classes properly</a>.  Matt brings up some valid points as reason for using IDs.</p>
+<p><strong>Update: Another Article advising classnames over IDs</strong><br />
+A year after my initial post, <a href="http://oli.jp/" title="a great site with more informative news on CSS and HTML">Oli Studholme</a> also made <a href="http://oli.jp/2011/ids/" title="Dont use ID selectors for CSS?">this post about ID selectors</a> as well.  We came up with similar conclusions.   Thanks Oli!</p>
+<p><strong>Honorable Mention</strong><br />
+It&#8217;s also worth mentioning, that I am not advocating getting rid of IDs from your markup alltogether.  IDs can help speed up your javascript and they can relay meaning to your document..  all good things.</p>
+<p>But in for CSS, I suggest not using id selectors. There are others that believe using id selectors do have purpose, however I dont find the good outweighs the bad.  In the end, the choice is yours to make.</p>
+			</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+		<span class="post-date"><a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/" title="12:00 pm" rel="bookmark"><time class="entry-date" datetime="2010-07-28T12:00:29+00:00">July 28, 2010</time></a></span><span class="byline"><span class="author vcard"><a class="url fn n" href="http://screwlewse.com/author/Dave%20Gregory/" title="View all posts by Dave Gregory" rel="author">Dave Gregory</a></span></span>					</footer><!-- .entry-meta -->
+</article><!-- #post-## -->
+
+				<nav class="navigation post-navigation" role="navigation">
+		<h1 class="screen-reader-text">Post navigation</h1>
+		<div class="nav-links">
+			<div class="nav-previous"><a href="http://screwlewse.com/2010/06/using-the-window-location-property-in-javascript/" rel="prev"><span class="meta-nav screen-reader-text">&larr;</span></a></div><div class="nav-next"><a href="http://screwlewse.com/2010/08/different-css-techniques-and-their-performance/" rel="next"><span class="meta-nav screen-reader-text">&rarr;</span></a></div>		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+	
+			
+<div id="comments" class="comments-area">
+
+	
+			<h2 class="comments-title">
+			106 thoughts on &ldquo;<span>Don’t use ID selectors in CSS</span>&rdquo;		</h2>
+
+		
+		<ol class="comment-list">
+			
+	<li id="comment-559" class="comment byuser comment-author-DaveGregory bypostauthor even thread-even depth-1">
+		<article id="div-comment-559" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>RR said: &#8220;And remember, there is not 1 way that will be THE way to do things&#8221;</p>
+<p>Well stated.  I totally agree with that statement.</p>
+<p>AND WITH THAT.  I think it&#8217;s about time to turn off comments.   What could be said, has been said.  Thanks to everyone commenting, and bringing your experience and ideas to the table.  🙂</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-559">
+					<time datetime="2010-07-29T00:00:55+00:00">
+						<span class="post-date">July 29, 2010 at 12:00 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-257" class="comment odd alt thread-odd thread-alt depth-1 parent">
+		<article id="div-comment-257" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/f4ec78207e34b78880cbdeb28004b116?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f4ec78207e34b78880cbdeb28004b116?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://businessdailyreview.com/' rel='external nofollow' class='url'>business</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>You use an ID selector in exactly the same way that you use the Class ..</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-257">
+					<time datetime="2011-05-11T13:32:45+00:00">
+						<span class="post-date">May 11, 2011 at 1:32 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-303" class="comment even depth-2">
+		<article id="div-comment-303" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/03b2b5d8545c2ee6e74e9421e92fee40?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/03b2b5d8545c2ee6e74e9421e92fee40?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://www.remitechsolutions.com' rel='external nofollow' class='url'>Kevin</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>No you don&#8217;t.  An ID selector is for something specific.  A class is reusable.  You can&#8217;t use an ID more than once.  You can use a class anywhere.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-303">
+					<time datetime="2011-06-26T21:48:02+00:00">
+						<span class="post-date">June 26, 2011 at 9:48 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-319" class="comment odd alt depth-2 parent">
+		<article id="div-comment-319" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://2.gravatar.com/avatar/5bc3e88139be91601e1e0c1f8bdc434d?s=60&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/5bc3e88139be91601e1e0c1f8bdc434d?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://contentmanagementsystemsthatwork.com' rel='external nofollow' class='url'>Randy</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>If ID and Class were exactly the same then CSS wouldn&#8217;t have both. A class can appear multiple times in a web page, applying the same styling to different div&#8217;s on a page. An ID is a one time only styling, as the author said &#8220;a singleton&#8221;.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-319">
+					<time datetime="2011-07-14T22:42:23+00:00">
+						<span class="post-date">July 14, 2011 at 10:42 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-321" class="comment byuser comment-author-DaveGregory bypostauthor even depth-3">
+		<article id="div-comment-321" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Exactly right.  Id&#8217;s and classes are completely different and also serve purposed beyond just css.  They are significant and important in their own right..<br />
+Thanks for the comments. 🙂</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-321">
+					<time datetime="2011-07-15T03:35:41+00:00">
+						<span class="post-date">July 15, 2011 at 3:35 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li id="comment-320" class="comment byuser comment-author-DaveGregory bypostauthor odd alt depth-2">
+		<article id="div-comment-320" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Well, I dont think you can.. considering I use classnames over and over again on a page.  see: &#8220;performance freebie&#8221;<br />
+also, you aren&#8217;t able to &#8220;double id&#8221;  as you are with classes.  Therefore I can have a class=&#8221;box ext&#8221; which could extend my box with other elements.  can&#8217;t do that with and id.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-320">
+					<time datetime="2011-07-15T03:33:26+00:00">
+						<span class="post-date">July 15, 2011 at 3:33 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-483" class="comment even depth-2">
+		<article id="div-comment-483" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/f5fec57755dea405a7e5843dba0b76a3?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f5fec57755dea405a7e5843dba0b76a3?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://www.nitinkatkam.com' rel='external nofollow' class='url'>Nitin Reddy Katkam</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>CSS classes and IDs may seem similar, but they are not the same &#8211; there are differences that you need to keep in mind when you use them. For example, you can use CSS classes instead of ID, but not the other way round.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-483">
+					<time datetime="2012-03-19T11:23:27+00:00">
+						<span class="post-date">March 19, 2012 at 11:23 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-532" class="comment odd alt depth-2">
+		<article id="div-comment-532" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://1.gravatar.com/avatar/a2920bc7a12013b96a113711e481fd89?s=60&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a2920bc7a12013b96a113711e481fd89?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Haccckkks</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Their NOT the same 🙂</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-532">
+					<time datetime="2012-10-25T04:25:00+00:00">
+						<span class="post-date">October 25, 2012 at 4:25 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li id="comment-295" class="comment even thread-even depth-1 parent">
+		<article id="div-comment-295" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://1.gravatar.com/avatar/a2728f91bcbe3460f0e15fe4ef263dfe?s=60&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a2728f91bcbe3460f0e15fe4ef263dfe?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Anonymous</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>It&#8217;s CSS for godsakes. Simple markup, not &#8220;code&#8221;. It&#8217;s easy to change, and it&#8217;s nice to have some specifics when you&#8217;re reading it. With CSS, if it&#8217;s readable and it works, then it&#8217;s PERFECT. Anyone that says otherwise is an imbecile.</p>
+<p>You can&#8217;t just make a ridiculous blanket statement like &#8220;Don&#8217;t use ID selectors&#8221;. There are plenty of reasons to use ID selectors and even ID selectors with additional selectors to the right.  Let&#8217;s say you have styles you want to apply specifically to one, and only one, area on the page&#8230; Why in the world would I want to junk up my class list with a class that only used one time?</p>
+<p>It&#8217;s a real shame there are going to be inexperienced morons coming to this article and thinking this is gospel.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-295">
+					<time datetime="2011-06-20T17:17:17+00:00">
+						<span class="post-date">June 20, 2011 at 5:17 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-322" class="comment byuser comment-author-DaveGregory bypostauthor odd alt depth-2">
+		<article id="div-comment-322" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Interesting concept that css isn&#8217;t code.  And no.. css isn&#8217;t markup.  If you are going to talk semantics.. please get them right.<br />
+You say it&#8217;s easy to change..  however I suggest that it&#8217;s not.  Just as if you created a Class, with methods and properties inside it.. once that Class (see the capital C?), you wont just be going willy nilly and changing the way that Class/methods work.  It&#8217;s the same with CSS if you do it right.  Just like we strive to make our code re-usable in Ruby or .NET or Javascript, you want to do the same with CSS.  </p>
+<p>And yes I can make a blanket statement.<br />
+I&#8217;ll say it again.<br />
+Dont use ID selectors in CSS.<br />
+So you say there are pleanty of reasons to use ID&#8217;s, name one?  I already addressed the Singleton idea, but I&#8217;m pretty sure you didn&#8217;t read to the bottom.<br />
+Regarding people taking this as gospel, that&#8217;s up to them, however I&#8217;ve stated solid points and even changed the minds of some hardcore ID fanatics.   Hopefully these &#8220;morons&#8221; as you say, will have read the whole article and will be better informed to make up their own minds.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-322">
+					<time datetime="2011-07-15T03:45:11+00:00">
+						<span class="post-date">July 15, 2011 at 3:45 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-507" class="comment even depth-2">
+		<article id="div-comment-507" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/f544a943a6325924313266cd2027cdd6?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f544a943a6325924313266cd2027cdd6?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Andres Roberto</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Obviously this anonymous guy does not have too much experience working with CSS. If you are going to use an Id you have to be sure that you actually need to do it. I personally use ID&#8217;s in order to make my markup a little more readable and for JS purpose. It&#8217;s a bad idea to use ID&#8217;s for CSS. I am going to read that Wilcox article and the other links in order to get better informed about this important topic : )</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-507">
+					<time datetime="2012-06-19T05:13:34+00:00">
+						<span class="post-date">June 19, 2012 at 5:13 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li id="comment-300" class="comment odd alt thread-odd thread-alt depth-1 parent">
+		<article id="div-comment-300" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/6c4bdf7fee3515393d4747cad610224e?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/6c4bdf7fee3515393d4747cad610224e?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Marcos Zanona</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>I think the ID selectors give you a very clear notion if that element is used only once on the page or not.  it seems a bit confusing for me to have a class to the website footer, since you will obviously only have one per page. Sorry I am trying to get used to this idea, but it is really difficult for me to understand how this would organize better. Instead of using only classes or only ids why not use both and just make every selector fit you own purpose? I really feel lost when I view a HTML code and see classes everywhere, even for items that are supposed to be used once 🙁</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-300">
+					<time datetime="2011-06-25T09:37:28+00:00">
+						<span class="post-date">June 25, 2011 at 9:37 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-324" class="comment byuser comment-author-DaveGregory bypostauthor even depth-2 parent">
+		<article id="div-comment-324" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Two things.<br />
+1.  You are absolutely right about the footer.  That could be used once. and be done with it.  That would be a perfect example of a Singleton&#8230;  however</p>
+<p>2.  The thing about using classes instead, is the idea behind OOCSS.  Create re-usable chunks of code. For example, if you have  columned footer, then why not use your grid css to create the columns.  You have just re-used CSS in an area that seemingly would have been a singleton.  The idea is that you look at your site for similarities..  and create re-usable chunks for them.    When you see a variation on what could be a similarity, use the re-usable CSS and extend it with a second class.  Kinda like prototyping in javascript.</p>
+<p>So just like in programming, Singletons are likely rare and are intentional.  Same goes with CSS.  I use ID in very rare cases, but usually even at that..  I haven&#8217;t found many occasions where I absolutely want something to be styled on the page only once.  If I can abstract the CSS and get multi-use out of it&#8230; I will.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-324">
+					<time datetime="2011-07-15T03:50:04+00:00">
+						<span class="post-date">July 15, 2011 at 3:50 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-537" class="comment odd alt depth-3 parent">
+		<article id="div-comment-537" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/096280d5bb7f12bf77c2fd44999179a9?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/096280d5bb7f12bf77c2fd44999179a9?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Matthew Toledo</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Ugh&#8230; OOCSS.  I wish that trend would die.  All it does is cause you to pollute your HTML elements with one to up to a dozen classes.  So that  becomes   That&#8217;s the reason why I think OOCSS was invented by recent programmers who don&#8217;t remember the pre-2000 horror days of font tags and span abuse.  All OOCSS does is move positioning and display elements BACK into HTML where it does not belong.  OOCSS is a step BACKWARDS.  I could rant on about it for a while.  But basically, OOCSS forces future maintainers of your CSS to learn some arbitrary meta-language that first guy created, it is not semantic, and in the long run, after many other people maintain the code, it doesn&#8217;t stop CSS bloat or specificity wars.  Plus, Firefox and Chrome let you edit SCSS in their developer tools today.  I&#8217;m fairly sure that in a few years, they&#8217;ll support SCSS natively and you can just use mixins and functions to replace all that OOCSS gobbledygook.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-537">
+					<time datetime="2013-01-07T05:27:02+00:00">
+						<span class="post-date">January 7, 2013 at 5:27 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-540" class="comment byuser comment-author-DaveGregory bypostauthor even depth-4 parent">
+		<article id="div-comment-540" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Actually untrue.   If unused correctly..  of course OOCSS could do just the same.   if you are making classes named &#8220;right-justify&#8221; then you are doing it wrong.  The name of the game is abstraction.  Making lego-like CSS components that can be used over and over again, but NOT just one or two styling elements.<br />
+Also not a trend.  It&#8217;s just another way of thinking when creating your CSS and I&#8217;m pretty sure it&#8217;s here to stay.<br />
+Lots of people love using it and love the positive outcome of it. That includes me. 🙂</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-540">
+					<time datetime="2013-01-07T15:47:59+00:00">
+						<span class="post-date">January 7, 2013 at 3:47 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-541" class="comment odd alt depth-5">
+		<article id="div-comment-541" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://1.gravatar.com/avatar/40f63f8b48db2251aeceadb07b888a17?s=60&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/40f63f8b48db2251aeceadb07b888a17?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Rob Riggs</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Thanks for the great article. I&#8217;ve been reading up on CSS abstraction and OOCSS for a while now, and I&#8217;m ready to start implementing it into our current Web app. </p>
+<p>I must admit, I&#8217;ve been guilty of the exact things that are now considered bad CSS programming: too many Id&#8217;s and cascades for specificity, and not abstracting.</p>
+<p>I&#8217;m still trying to figure out the best CSS coding pattern for me, between using Scss and OOCSS.</p>
+<p>I&#8217;m really looking for a site with excellent CSS code that I can review that follows these principles.</p>
+<p>Can you recommend one? Thanks.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-541">
+					<time datetime="2013-01-10T16:08:43+00:00">
+						<span class="post-date">January 10, 2013 at 4:08 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-542" class="comment byuser comment-author-DaveGregory bypostauthor even depth-5">
+		<article id="div-comment-542" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Heya Rob</p>
+<p>So uh..  well I have a good example set of stylesheets..  I&#8217;ll look for them.  (from an old, internal site)  They use SASS and OOCSS.  (they both work together very well, if used wisely.   I&#8217;ll look for them and get back to you.<br />
+Til then, the Starbucks website uses oocss from my understanding.  Here is their styleguide.  Check out the pages within to see some of this, working.<br />
+<a href="http://www.starbucks.com/static/reference/styleguide/" rel="nofollow">http://www.starbucks.com/static/reference/styleguide/</a><br />
+One thing to note, however, is that OOCSS is less of a CSS library or framework, and more of a concept.  I suggest watching Nicole Sullivan&#8217;s videos about OOCSS.  It makes far more sense afterwards.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-542">
+					<time datetime="2013-01-10T16:33:52+00:00">
+						<span class="post-date">January 10, 2013 at 4:33 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li id="comment-310" class="pingback odd alt thread-even depth-1">
+		<div class="comment-body">
+			Pingback: <a href='http://twobanjos.com/blog/2011/06/why-well-stop-using-id-in-our-stylesheets/' rel='external nofollow' class='url'>Why we&#8217;ll stop using ID in our stylesheets &laquo; Two Banjos At Once: The Blog</a> 		</div>
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-325" class="comment even thread-odd thread-alt depth-1 parent">
+		<article id="div-comment-325" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://1.gravatar.com/avatar/4822749e70134f6c36bce4ea3c0ee0b1?s=60&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4822749e70134f6c36bce4ea3c0ee0b1?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Graham</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>@Dave: &#8220;So you say there are pleanty of reasons to use ID’s, name one?&#8221;</p>
+<p>Your article logic conveniently ignores that ids are very useful for organizing stylesheets semantically. </p>
+<p>e.g. </p>
+<p>#footer .special-part ul { }<br />
+#footer .nav a { }<br />
+#footer .title h3 {}<br />
+etc. </p>
+<p>By definition, the &#8220;singleton&#8221; nature of ids allows one to easily pinpoint what a particular set of styles is defining. In a complex layout, this is a MUST. It may be technically redundant to include the id selector, but it&#8217;s a whole lot more efficient for human eye/brain &#8212; which, if you ask me, is really what counts with stylesheets. If you want efficiency, just minify all your CSS be done with it. Until you need to go back to the source to change something&#8230; Then your semantic organization is what matters.</p>
+<p>Are you really advocating that one should only ever use classes? </p>
+<p>Honestly, that&#8217;s pretty ridiculous.  </p>
+<p>1. It&#8217;s a given that common elements classes like &#8220;.title&#8221; or &#8220;.nav&#8221; will be assigned quickly. So without using ids, how do you specify specific elements? More classes with .really-long-and-arbitrary-class-names-like-this-just-be-unique? Are you really suggesting wading through umpteen levels of nested classes, just to figure out which value is being applied where, is more efficient than #right .here .it .is {} ?</p>
+<p>2. I get the concept of reusable styles, but there is a time and a place for this. You seem to be applying this relatively specific use to one dogmatic general practice, outlawing id selectors as if they are &#8220;bad&#8221;. I second @Anonymous comments above. Ids are perfectly valid. When did they become the enemy, as you advocate?</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-325">
+					<time datetime="2011-07-16T00:31:10+00:00">
+						<span class="post-date">July 16, 2011 at 12:31 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-328" class="comment byuser comment-author-DaveGregory bypostauthor odd alt depth-2 parent">
+		<article id="div-comment-328" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>The problem with IDs are they introduce specificity.. and weight to your CSS.  In terms of re-usability, this is a huge issue.  Any time you want to override styles that use ID selectors.. you will need to add more weight to the selectors.  That&#8217;s a slippery slope.<br />
+I&#8217;m definitely not suggesting long arbitrary names for css.   Just names that make sense, and are abstracted enough to make sense what they do.  Again.. being specific pigeonholes them and reduces their ease of use.<br />
+ie..  you wouldn&#8217;t want to name something .home-display for a list of images.   you would want something more abstract.. ie .inline-image-list or just .inline-images or .inline-list.   That can therefore be re-used without being some arbitrarily long name.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-328">
+					<time datetime="2011-07-18T21:53:10+00:00">
+						<span class="post-date">July 18, 2011 at 9:53 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-372" class="comment even depth-3 parent">
+		<article id="div-comment-372" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://1.gravatar.com/avatar/723ee972f9e5078aeda85cdf0db3f3c8?s=60&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/723ee972f9e5078aeda85cdf0db3f3c8?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://chriseppstein.github.com' rel='external nofollow' class='url'>Chris Eppstein</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>It&#8217;s not a problem that IDs have more specificity. It&#8217;s feature not a bug. When I style with IDs I WANT those styles to be more specific. If you only use classes then you only have two mechanisms to resolve cascade conflicts: document order and !important. Specificity, when used correctly makes styling a website easier to maintain.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-372">
+					<time datetime="2011-07-25T23:43:14+00:00">
+						<span class="post-date">July 25, 2011 at 11:43 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-383" class="comment odd alt depth-4 parent">
+		<article id="div-comment-383" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://1.gravatar.com/avatar/4822749e70134f6c36bce4ea3c0ee0b1?s=60&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4822749e70134f6c36bce4ea3c0ee0b1?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Graham</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>@Chris: EXACTLY. Specificity is the whole point of IDs. Like you say, if you use only classes, you run into situations where you have to come up with needlessly &#8220;creative&#8221; ways to be specific when needed &#8212; e.g. unique class names, multiple/redundant override styling through doc order, or worse, abusing the nuclear shotgun approach that is !important.</p>
+<p>@David &#8211; Ya, speaking of slippery slopes, what do you call &#8220;Just names that make sense, and are abstracted enough to make sense what they do.&#8221; ? &#8212; At what point does that get absurd? Why do I need to come up with several unique &#8220;names that make sense and are abstracted enough&#8221; for classes when I could just write #id .class tag {} and be done with it? If  a site is at all complex, it&#8217;s inevitable you will need to introduce some semantic specificity into the class names (yes, &#8220;.home-section-subsection&#8221; blah blah), because the single class name abstraction will rapidly become very vague and confusing. </p>
+<p>What&#8217;s worse, using a simple ID tag, or having a .six-point-hyphenated-class-name? </p>
+<p>I&#8217;m sorry, but this war on IDs in styles seems like a trendy fad to write anal retentive blog posts on, rather than a legitimate practice to promote. </p>
+<p>Classes are great, but IDs are not the enemy.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-383">
+					<time datetime="2011-07-28T11:38:18+00:00">
+						<span class="post-date">July 28, 2011 at 11:38 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-389" class="comment byuser comment-author-DaveGregory bypostauthor even depth-5">
+		<article id="div-comment-389" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>I dont know about a fad; especially since I wrote this a year ago.  Actually, this post stemmed from a conversation Chris Eppstein and I had back then.  Suddenly, the CSS Lint tool came out and my blog post was resurrected from the dead!   So fad-ish?  No.  I&#8217;ve been using this concept for quite a while now.  </p>
+<p>What&#8217;s more beneficial to a-classname-with-lots-of-dashes? Well I wouldn&#8217;t say lots of dashes are a requirement to a classname.  In fact, that might get away from abstraction.  However, a classname is still ten times less specificity, no matter how you name it..<br />
+Therefore, using a classname, however absurd you make it, will still carry less weight and will not override the cascade.</p>
+<p>Abstraction is tough.  What do you name your methods? Do you make them specific so they dont make sense if you try and use them elsewhere?  Or do you think about sensible names that explain their purpose in a way that&#8217;s sensible?  I believe the same can be done with CSS.  Now I agree, it&#8217;s hard making names that are abstracted, yet can still convey something useful to the developer.  That&#8217;s the toughest challenge about it.  But that&#8217;s why you can use so many other ways to convey meaning..  IDs, data attributes, html5 elements etc.  I tend to comment my code in a meaningful way that conveys what the css does, as well as an example of the code if need be.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-389">
+					<time datetime="2011-07-28T18:20:23+00:00">
+						<span class="post-date">July 28, 2011 at 6:20 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-509" class="comment odd alt depth-5">
+		<article id="div-comment-509" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/f544a943a6325924313266cd2027cdd6?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f544a943a6325924313266cd2027cdd6?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Andres Roberto</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Too much specificity will ruin the cascade. Yes, IDs are not a bug, they are a feature, but if you use them in a bad way, you will do bad things.</p>
+<p>And by the way, I don&#8217;t care to use six-words-classes like .social-link-list-item. What&#8217;s your problem with long names? : )</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-509">
+					<time datetime="2012-06-19T05:24:48+00:00">
+						<span class="post-date">June 19, 2012 at 5:24 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li id="comment-336" class="comment byuser comment-author-DaveGregory bypostauthor even depth-2 parent">
+		<article id="div-comment-336" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>I wouldn&#8217;t call IDs the enemy per se, however I would suggest against them, and if used, they should be used with the full understanding that their specificity weight will not be easy to override using the cascade.  It will require cascade + specificity.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-336">
+					<time datetime="2011-07-19T19:04:37+00:00">
+						<span class="post-date">July 19, 2011 at 7:04 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-381" class="comment odd alt depth-3 parent">
+		<article id="div-comment-381" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://1.gravatar.com/avatar/dcd70b9932588de3abd8c9366d8f39c4?s=60&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/dcd70b9932588de3abd8c9366d8f39c4?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Zen Thomson</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Sorry but I can&#8217;t understand why would anyone debate against functionality. I&#8217;m not afraid of using IDs where they meant to be used..if you know the language enough (and to be bold css is not a hard one)  it&#8217;s a feature they built for a specific reason, and I can&#8217;t see why wouldn&#8217;t you use it what it is good for..<br />
+You don&#8217;t seem to understand the specificity css offers. I see why re-using code is good, but that&#8217;s not the ultimate practice, and not even the only technique you should use in your code. Even if you like it there are some things that require other methods.<br />
+IDs serve a purpose, and I wouldn&#8217;t want to mislead people believing otherwise.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-381">
+					<time datetime="2011-07-27T22:07:39+00:00">
+						<span class="post-date">July 27, 2011 at 10:07 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-382" class="comment byuser comment-author-DaveGregory bypostauthor even depth-4 parent">
+		<article id="div-comment-382" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>I hardly think I am misleading anyone.   As I said in my article.  The choice is yours.  However, I give you the information as to why using IDs aren&#8217;t the optimal idea for re-usable css.<br />
+You say I dont understand that specificity that css offers; I suggest you look at it this way.  What benefit does specificity offer?  If you take advantage of the cascade, there really isn&#8217;t need to override your css further down the page; especially by using something so weighted as IDs, or even using more selectors, which just make your code more brittle.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-382">
+					<time datetime="2011-07-27T22:21:16+00:00">
+						<span class="post-date">July 27, 2011 at 10:21 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-384" class="comment odd alt depth-5">
+		<article id="div-comment-384" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://1.gravatar.com/avatar/4822749e70134f6c36bce4ea3c0ee0b1?s=60&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4822749e70134f6c36bce4ea3c0ee0b1?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Graham</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>&#8220;I hardly think I am misleading anyone&#8221;</p>
+<p>Frankly, I disagree: </p>
+<p>&#8220;Don&#8217;t use ID selectors in CSS&#8221;  &#8220;using IDs aren’t the optimal idea for re-usable css.&#8221;</p>
+<p>Yellow journalism FTW. </p>
+<p>I mean, congrats, this post and others are generating a lot of traffic and discussion, but I honestly haven&#8217;t been convinced yet there is anything being said here that is revolutionary. </p>
+<p>Well optimized CSS will include a mix of classes and ID selectors as needed based on the specifics of the layout. There&#8217;s cases where specificity is essential and cases where reusability is. </p>
+<p>Speaking of brittle code &#8212; let me give you an example of where specificity matters:</p>
+<p>Let&#8217;s say someone follows through on your suggestion to only use classes, and falls in love with the newfound reusability of their uberflexible styles. They discover that it&#8217;s much more &#8220;efficient&#8221; to reuse cascading styles to create the desired styles for their layout, using a mix of general, abstracted styles and specific-by-class-name classes, usually with multiple classes like class=&#8221;this that this-too&#8221;. The layout is finished, and it&#8217;s a thing of beauty. </p>
+<p>Fast-forward 6 months. Our styles artist has left the building and someone else is brought onto the project. The homepage on the site is to be redesigned to add few new widgets. The new dev attempts to introduce these changes, but discovers the homepage layout is, in fact, a complicated web of interdependent, cascading classes. In fact, many of the general, abstracted class names were named based on assumptions about the homepage layout that are now, at best, out of context, or at worst, just wrong.  </p>
+<p>So the new dev has to go through and scrub these classes to remove redundancies, overrides, awkward class names, or assumptions for the corners this &#8220;reusable&#8221; approach has lead into.  </p>
+<p>The only cases where any solace is found is where classes were used with specificity in the names &#8212; LIKE IDs. </p>
+<p>Moral of the story? Use the right tool for the job. </p>
+<p>If you have a general style, like &#8220;float:left;&#8221;, sure, create a .left class and paint your layout red with it. But don&#8217;t rule out IDs for their exact intended purpose: specificity.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-384">
+					<time datetime="2011-07-28T11:53:25+00:00">
+						<span class="post-date">July 28, 2011 at 11:53 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-510" class="comment even depth-5">
+		<article id="div-comment-510" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/f544a943a6325924313266cd2027cdd6?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f544a943a6325924313266cd2027cdd6?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Andres Roberto</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>@Graham: </p>
+<p>&#8220;using IDs aren’t the optimal idea for re-usable css.&#8221; &#8211; That true, it&#8217;s no optimal for&#8230; re-usable css&#8230; </p>
+<p>Man, don&#8217;t float to the other edge if you know what I mean. It&#8217; not about creating a lot of useless classes, it&#8217;s about making easy to create similar elements on a huge scalable web app. </p>
+<p>If your example guy want to change things, he just has to change the classes. Any way, if it is a unique element that will not change, maybe it&#8217;s ok to use an Id, why not? But for example, let&#8217;s say you have a main horizontal navigation bar. You could have a .h-menu class, that you could use for any horizontal menu you will have in your app. It gives layout properties to ul and li elements that has that class. You can create a nav#main-nav with an ul inside with the class .h-menu. Oh no! This menu is not going to be horizontal any more! Well, let&#8217;s take h-menu class out! and let&#8217;s add the .fixed-menu class that the last guy created : ) Thanks old guy that use re-usable classes. So stop fighting against reuse, because it&#8217;s as important for CSS as Data Structures are for Programming.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-510">
+					<time datetime="2012-06-19T05:34:26+00:00">
+						<span class="post-date">June 19, 2012 at 5:34 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li id="comment-508" class="comment odd alt depth-2">
+		<article id="div-comment-508" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/f544a943a6325924313266cd2027cdd6?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f544a943a6325924313266cd2027cdd6?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Andres Roberto</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Well, I am not agree with you. CSS abstraction is really important. I work everyday on really big scalable web apps, and it&#8217;s very important to me to do reusable CSS modules in order to easily create similar elements in new sections of the app. You don&#8217;t have to use long and unmeaning names! That&#8217;s your fault if you do so. Use class names like .horizontal-menu, .social-links, .icon, and so on.</p>
+<p>Oh, and by the way, I am not agree with the idea of semantic ID and class names. Yes, they should have a comprensible name that indicates what they are. If you don&#8217;t, you will not understand what they do, but they will not actually have a meaning for the machine.</p>
+<p>If you like semantics, use HTML5 tags, meta-data, etc, but don&#8217;t think you are a semantic guy because of your IDs and classes names.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-508">
+					<time datetime="2012-06-19T05:21:30+00:00">
+						<span class="post-date">June 19, 2012 at 5:21 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li id="comment-327" class="comment even thread-even depth-1 parent">
+		<article id="div-comment-327" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://1.gravatar.com/avatar/405eaedde3de68f81af2140fc5794aae?s=60&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/405eaedde3de68f81af2140fc5794aae?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://intranation.com/' rel='external nofollow' class='url'>Bradley Wright</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>I&#8217;m afraid I cannot possibly agree with the advice given in this article. The rules and semantics of the rules are very simple: if you have one specific thing on a page (a masthead; a user profile card; a login box) use an ID. It has a specific meaning: &#8220;the single profile card object on the page&#8221;.</p>
+<p>If you&#8217;re building a flexible modular system driven by a CMS you&#8217;ll probably use classes more, or you have more than one of a type of thing: a list of events; a carousel; a primary and secondary submit button in a form.</p>
+<p>Both of these things are common sense. I don&#8217;t know why we need to have specific and blanket rules discouraging IDs, or (yet to be heard, but to my mind as likely as this current argument) against classes.</p>
+<p>As for specificity as an issue, that&#8217;s just how CSS works. If you know what you&#8217;re doing I can&#8217;t see the issue here &#8211; I&#8217;ve certainly never been bitten by any &#8220;over-specificity&#8221; issues. I just use CSS and HTML together as designed.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-327">
+					<time datetime="2011-07-18T21:35:26+00:00">
+						<span class="post-date">July 18, 2011 at 9:35 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-329" class="comment byuser comment-author-DaveGregory bypostauthor odd alt depth-2 parent">
+		<article id="div-comment-329" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Lucky you!  I have definitely been bitten by the &#8220;over-specificity&#8221; bug.  It hurts bad!<br />
+So you talk about a login box right?  You might ID that because there is only going to be one login box on the page.<br />
+Look at the login box differently;  is it a login box (one on page) or is it a label and text input below it&#8230; (or next to it).   Now it&#8217;s gone from something seen only once, to something you will likely see everywhere on the site.<br />
+Now if you have put these styles in #login-box, you have removed any chance of re-using that code on the site.<br />
+what about using .block-form-layout on the form, and have styling for all elements inside that class?   now you have a full featured style guide for your form elements across the board.  Better yet, .block-form-layout.ext can be used to &#8220;extend&#8221; the styling  and allow for exceptions to the rules.  (as is usual for design)</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-329">
+					<time datetime="2011-07-18T21:59:53+00:00">
+						<span class="post-date">July 18, 2011 at 9:59 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-331" class="comment even depth-3 parent">
+		<article id="div-comment-331" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://1.gravatar.com/avatar/1e48fdd8ec28e7c42c6956547c928ee2?s=60&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/1e48fdd8ec28e7c42c6956547c928ee2?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://benhull.info' rel='external nofollow' class='url'>Ben Hull</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>If you put the styles that are generic inside an ID-based selector, you&#8217;re doing it wrong. There&#8217;s no reason that the #loginBox can&#8217;t have it&#8217;s style provided by rules from both specific and generic selectors.</p>
+<p>Your selectors should match your *intent*: if you mean for a style to affect only the form elements inside the singular #loginBox, then that&#8217;s how you write your selector. If you mean for the styles to affect all form elements, then you write a generic selector, based on classes. When you write selectors that way, you don&#8217;t get bitten by over-specificity &#8211; as Brad says &#8211; they just work when you use them as designed.</p>
+<p>If you find yourself using classes like .block-form-layout, you&#8217;re also doing it wrong &#8211; your IDs and classes should describe the structure of the data, not the way it will be laid out, even in general terms.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-331">
+					<time datetime="2011-07-19T00:21:46+00:00">
+						<span class="post-date">July 19, 2011 at 12:21 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-335" class="comment byuser comment-author-DaveGregory bypostauthor odd alt depth-4 parent">
+		<article id="div-comment-335" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Why?  Why should your classes describe intent?  Is there any reason, other than giving yourself the warm fuzzies, that we should be classing with *intent*?  I&#8217;m not trying to be snarky; it&#8217;s just that all the things that we have held so dear to us in CSS, have always been the biggest pain as well.  Classes are functionally and semantically benign.  The are useful hooks for us as coders.  Whether it be javascript or css.   </p>
+<p>Now I am just saying that we should question the usefulness of matching intent with style.  So if you have a section that is styled EXACTLY the same as another section, but they have no similarities in function, why would you NOT use the same classname in order to re-use css?<br />
+I am not advocating use of classnames like &#8220;red-border&#8221; which actually makes no sense.  That&#8217;s not abstracted and is far too specific; limiting the extent of the styling.  </p>
+<p>I think Nicole Sullivan sums it up best here:<br />
+<a href="http://www.stubbornella.org/content/2011/04/28/our-best-practices-are-killing-us/" rel="nofollow">http://www.stubbornella.org/content/2011/04/28/our-best-practices-are-killing-us/</a></p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-335">
+					<time datetime="2011-07-19T17:51:14+00:00">
+						<span class="post-date">July 19, 2011 at 5:51 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-350" class="comment even depth-5">
+		<article id="div-comment-350" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://2.gravatar.com/avatar/52d9b734a214ff94df1e9240cf64ffd1?s=60&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/52d9b734a214ff94df1e9240cf64ffd1?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://www.dustindikes.com' rel='external nofollow' class='url'>Dustin Dikes</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>The only reason that you should need for describing intent is semantics. These arguments are all focused on CSS and completely ignoring the underlying HTML. </p>
+<p>When you write HTML, it is bad to generically add classes to elements for the sole purpose of styling them across the board. The ids and classes for elements need to indicate what they are, not how they look. You are blurring the line between semantics and styles.</p>
+<p>In the case of the login box, you were mentioning that it could just be a generic form class so you can add that same generic form class to other forms across the site. The way I would do it is have some generic styles for the input fields without any classes or ids attached to them (like background color, border, etc). Then I would have #login-box and would specifically target the inputs inside it to add any extra styling that will differ the #login-box inputs from any other inputs on the site (like, for instance, the width of the input fields).</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-350">
+					<time datetime="2011-07-20T19:43:01+00:00">
+						<span class="post-date">July 20, 2011 at 7:43 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-385" class="comment odd alt depth-5">
+		<article id="div-comment-385" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://1.gravatar.com/avatar/4822749e70134f6c36bce4ea3c0ee0b1?s=60&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4822749e70134f6c36bce4ea3c0ee0b1?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Graham</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>I agree with @Dustin. </p>
+<p>David, you rally against &#8220;over-specificity&#8221;, but what about &#8220;over-generality&#8221;? </p>
+<p>IDs restrict the scope of a given class to a particular part of the page. There is absolutely a time and a place for that. The particulars are up to the designer in how exactly to slice it up, but I just don&#8217;t think one can argue that specificity is never required &#8212; at which point using classes to mimic specificity because &#8220;IDs are bad&#8221; is just silly.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-385">
+					<time datetime="2011-07-28T12:01:08+00:00">
+						<span class="post-date">July 28, 2011 at 12:01 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-511" class="comment even depth-5">
+		<article id="div-comment-511" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/f544a943a6325924313266cd2027cdd6?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f544a943a6325924313266cd2027cdd6?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Andres Roberto</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Hey guys, selector names have 0 semantic weight. It the same for the machine if your class name is .login-box or .island, etc. Please, stop fighting against the world!!! You want to be semantic guys? Use HTML5 tags, RDF.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-511">
+					<time datetime="2012-06-19T05:36:49+00:00">
+						<span class="post-date">June 19, 2012 at 5:36 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-557" class="comment odd alt depth-5">
+		<article id="div-comment-557" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/6128b1378130dd6b7a1b21ffed696074?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/6128b1378130dd6b7a1b21ffed696074?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Aidan Jalali</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Andres, &#8216;semantics&#8217; is anything to do with &#8216;meaning&#8217;. Browser semantics and human semantics are two sides of the same coin. Class names DO have semantic weight, but from a human perspective, not a browser perspective.</p>
+<p>E.g: Giving an error message the classname &#8216;red&#8217; instead of &#8216;error&#8217; is bad semantics, because it describes the appearance of the element rather than the meaning. What if you wanted to change the color of &#8216;.red&#8217;? It doesn&#8217;t make sense any more. It still WORKS, but it doesn&#8217;t make sense.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-557">
+					<time datetime="2013-04-11T16:26:49+00:00">
+						<span class="post-date">April 11, 2013 at 4:26 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li id="comment-347" class="comment even depth-3 parent">
+		<article id="div-comment-347" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://2.gravatar.com/avatar/2991e46ce757c9ceeb4454bc64fe3a8c?s=60&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/2991e46ce757c9ceeb4454bc64fe3a8c?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">brad</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>I feel like you have mentally built an optimally generic log-in box. I agree with the reusability of thinking the boxes content as &#8220;label and text input below it&#8221; etc. But, from my experience, I&#8217;ll usually have a log-in box in the header, that&#8217;s floated to the right, has a drop-shadow, different bg color rounded corners, and a specific width. And the styles really couldn&#8217;t be used elsewhere.</p>
+<p>Going id-less i would have something like &lt;form class=&#8221;float-right drop-shadow-black bg-red rounded-corner-5 width-narrow&#8221;&gt;. That just seems a bit excessive to me. (class names presentational for example purposes).</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-347">
+					<time datetime="2011-07-20T17:58:05+00:00">
+						<span class="post-date">July 20, 2011 at 5:58 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-351" class="comment byuser comment-author-DaveGregory bypostauthor odd alt depth-4 parent">
+		<article id="div-comment-351" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Having that many classes would be bad.  Also classnames can be abstracted so they neither describe specific styles, nor describe the content inside them so specifically.<br />
+ie:  &#8220;home-information&#8221; vs &#8220;float-right red-border padding-sm&#8221; vs &#8220;information-module&#8221;<br />
+The latter being the best strategy in my opinion, as it explains what the content does, however isn&#8217;t so specific.  This allows consistent design as well.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-351">
+					<time datetime="2011-07-20T19:56:57+00:00">
+						<span class="post-date">July 20, 2011 at 7:56 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-355" class="comment even depth-5">
+		<article id="div-comment-355" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://2.gravatar.com/avatar/2991e46ce757c9ceeb4454bc64fe3a8c?s=60&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/2991e46ce757c9ceeb4454bc64fe3a8c?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">brad</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>See this is where I&#8217;m torn &#8220;information-module&#8221; seems so nebulous, it could apply to almost anything. While it would be more scalable, I feel like it would also be more difficult for another developer to understand exactly what that refers to.</p>
+<p>I think a consistent design is also very helpful. I seem to receive designs that often times has elements that follow no pattern and are seemingly random.</p>
+<p>Do you have a couple of sites you&#8217;ve done, aside from this one, whose code I can examine to get a realistic sample to study?</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-355">
+					<time datetime="2011-07-21T18:50:07+00:00">
+						<span class="post-date">July 21, 2011 at 6:50 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-356" class="comment byuser comment-author-DaveGregory bypostauthor odd alt depth-5">
+		<article id="div-comment-356" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>@brad<br />
+You are right..  &#8220;information module&#8221; is nebulous and makes it a bit tougher for other devs to just grok what you are talking about.   Documentation would be the fix for that, but yes, that&#8217;s a downside.<br />
+Another tradeoff.  Having good code with a &#8220;1 to many&#8221; relationship seems positive enough to outweigh less descriptive classnames.  </p>
+<p>Oh man you hit that nail on the head!  Consistent Design!  I&#8217;m gonna make an article all about that.  Consistency is not only key to good UI, it&#8217;s cleaner, and it cuts out &#8220;one trick pony&#8221; css that&#8217;s only meant to adjust code to the designer&#8217;s whim.  This is the hardest part of doing a re-design; kicking back everything that&#8217;s just slightly off, or a few pixels different.   We have H1 to H6.   There is no reason why there needs to be slightly different styles for similar headlines.   Margins? There can be standards there too.<br />
+I just finished re-designing our internal site to conform to a style guide.  One that I suggested and got the designer on board as well.  I kicked back every time there was an inconsistency, but after awhile..  we had it!  A design, that had less than 5 lines of single use css!<br />
+Unfortunately I dont have a site you can check out.  The one I am speaking about, is internal. Maybe I can send you some of the code privately.  🙂</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-356">
+					<time datetime="2011-07-21T23:53:20+00:00">
+						<span class="post-date">July 21, 2011 at 11:53 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-386" class="comment even depth-5">
+		<article id="div-comment-386" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://1.gravatar.com/avatar/4822749e70134f6c36bce4ea3c0ee0b1?s=60&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4822749e70134f6c36bce4ea3c0ee0b1?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Graham</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>@David, re: &#8220;information-module&#8221; </p>
+<p>That&#8217;s exactly what I meant in my comment above that &#8220;general, abstracted&#8221; class names get vague and confusing very quickly. </p>
+<p>Seriously, how ridiculous is this going to get? </p>
+<p>I don&#8217;t want to work on a stylesheet by another dev that reads like a philosophical treatise. I just need to know what rule is defining what style, where.</p>
+<p>@brad is right, more often than not, if you are targeting with specificity, it&#8217;s because the element you are targeting IS unique. And, you know, even if it&#8217;s not 100% unique, it will be a heck of a lot easier for other devs to deal with than deciphering what the heck cryptic class names like &#8220;information-module&#8221; mean. I&#8217;ve stepped into code like this before, and I HATE it. Needlessly arbitrary and esoteric code always strikes me as something Microsoft would do (ya, I went there). </p>
+<p>Just follow Chrome&#8217;s Web Inspector format. Seems to me like they&#8217;ve nailed it&#8230;  There is never any mystery about which style is being matched. In my experience, the closer your own styles reflect Chrome&#8217;s interpretation, the easier they are to manage.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-386">
+					<time datetime="2011-07-28T12:09:52+00:00">
+						<span class="post-date">July 28, 2011 at 12:09 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li id="comment-337" class="comment odd alt thread-odd thread-alt depth-1 parent">
+		<article id="div-comment-337" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://1.gravatar.com/avatar/774298aeb597a5c9bfda141c0c7c2118?s=60&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/774298aeb597a5c9bfda141c0c7c2118?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">sasklacz</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>u say there&#8217;s no performance gain. Try selecting dom element with javascript with and without id. Good luck.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-337">
+					<time datetime="2011-07-19T21:45:08+00:00">
+						<span class="post-date">July 19, 2011 at 9:45 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-338" class="comment byuser comment-author-DaveGregory bypostauthor even depth-2 parent">
+		<article id="div-comment-338" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Well, that&#8217;s javascript.  Javascript selector performance is very different than CSS.  CSS reads from right to left in terms of selectors..  and javascript can be scoped for performance.<br />
+In jQuery, you might do <code>$(".classname")</code> or instead you could scope with <code>$("#scopeID").find(".classname")</code>  which will improve performance.<br />
+This is something not possible in CSS currently.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-338">
+					<time datetime="2011-07-19T23:23:28+00:00">
+						<span class="post-date">July 19, 2011 at 11:23 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-342" class="comment odd alt depth-3 parent">
+		<article id="div-comment-342" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://2.gravatar.com/avatar/8389cb2a7009759c21562c17abcf44e3?s=60&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/8389cb2a7009759c21562c17abcf44e3?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://www.cssprops.com' rel='external nofollow' class='url'>Rey</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>must agree with sasklacz as there are advantages to use id if the website is javascript heavy. Totally abandoning the id is not the right course, but using it less and using  it properly would be the best solution.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-342">
+					<time datetime="2011-07-20T08:04:26+00:00">
+						<span class="post-date">July 20, 2011 at 8:04 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-345" class="comment byuser comment-author-DaveGregory bypostauthor even depth-4">
+		<article id="div-comment-345" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>I never advocated getting rid of ID from your HTML, however I can see why it seems like I did.  Thanks for pointing that out.  I should have mentioned that in the original post.  I&#8217;ll update my post to reflect that I&#8217;m not suggesting getting rid of IDs alltoghether.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-345">
+					<time datetime="2011-07-20T15:58:09+00:00">
+						<span class="post-date">July 20, 2011 at 3:58 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li id="comment-344" class="comment odd alt thread-even depth-1 parent">
+		<article id="div-comment-344" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://2.gravatar.com/avatar/bd4f0ef1baa34a4f31e7938b25da0fd1?s=60&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bd4f0ef1baa34a4f31e7938b25da0fd1?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://telanorth.com' rel='external nofollow' class='url'>Liam</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>I still don&#8217;t think this is a hard rule, I use classes for most things, and always have done, but there are cases where an ID makes more sense from a maintainability, logical and semantic point of view.</p>
+<p>If you find yourself having specificity battles because you use ID&#8217;s the answer is not to stop using ID&#8217;s completely, but to learn where you were making mistakes causing specificity issues and to address those mistakes.</p>
+<p>You don&#8217;t want selectors like<br />
+#home #content article .author .details .name a {<br />
+/* something *.<br />
+}<br />
+This doesn&#8217;t happen because of the use of ID&#8217;s, this happens because of a poor understanding of CSS from the majority of people.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-344">
+					<time datetime="2011-07-20T08:50:02+00:00">
+						<span class="post-date">July 20, 2011 at 8:50 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-346" class="comment byuser comment-author-DaveGregory bypostauthor even depth-2">
+		<article id="div-comment-346" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>This sounds like a future blog post?  Seriously, I&#8217;d love to hear how the use of IDs, from a maintainable point of view, outweigh the downsides of added specificity.  Please elaborate.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-346">
+					<time datetime="2011-07-20T16:54:11+00:00">
+						<span class="post-date">July 20, 2011 at 4:54 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li id="comment-348" class="comment odd alt thread-odd thread-alt depth-1 parent">
+		<article id="div-comment-348" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://2.gravatar.com/avatar/b4fadb98bc6bb92fd88c969c0d71d2fe?s=60&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/b4fadb98bc6bb92fd88c969c0d71d2fe?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://isofarro.com/' rel='external nofollow' class='url'>Isofarro</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>&#8220;The reason I say that specificity is a downward spiral is because the only way to overwrite a weighted rule is to add more weight..  plain and simple.&#8221;</p>
+<p>Incorrect. You can use the same specificity and put your overriding rule after the rule it overrides. No additional specificity needed.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-348">
+					<time datetime="2011-07-20T19:13:21+00:00">
+						<span class="post-date">July 20, 2011 at 7:13 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-352" class="comment byuser comment-author-DaveGregory bypostauthor even depth-2 parent">
+		<article id="div-comment-352" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Okay yes, sorry for not explaining myself so well.   However that still ends up bad.  This means in order to override a style you will need AT LEAST, the same specificity and have it be further down the cascade.<br />
+I still find this disturbing and eventually leading down the specificity spiral, ending in <code>!important</code></p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-352">
+					<time datetime="2011-07-20T20:06:26+00:00">
+						<span class="post-date">July 20, 2011 at 8:06 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-353" class="comment odd alt depth-3">
+		<article id="div-comment-353" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://2.gravatar.com/avatar/b4fadb98bc6bb92fd88c969c0d71d2fe?s=60&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/b4fadb98bc6bb92fd88c969c0d71d2fe?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://isofarro.com/' rel='external nofollow' class='url'>Isofarro</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>&#8220;This means in order to override a style you will need AT LEAST, the same specificity and have it be further down the cascade.&#8221;</p>
+<p>Having the same specificity doesn&#8217;t by definition result in a downward specificity spiral.</p>
+<p>Sure, you override something after it&#8217;s been declared. That&#8217;s generally how inheritance-based systems work. Developers already naturally understand that. CSS suits a pattern of styling from least specific to more specific, working against that grain is plain silly. </p>
+<p>How is overriding something that hasn&#8217;t yet been defined going to be logical or maintainable to anyone other than the original author?</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-353">
+					<time datetime="2011-07-20T20:16:49+00:00">
+						<span class="post-date">July 20, 2011 at 8:16 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li id="comment-364" class="comment even thread-even depth-1">
+		<article id="div-comment-364" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://1.gravatar.com/avatar/d46a72b4e4117a90225df8a0bdf5f5b1?s=60&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/d46a72b4e4117a90225df8a0bdf5f5b1?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://meiert.com/en/' rel='external nofollow' class='url'>Jens O. Meiert</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Consider following a related conversation <a href="https://plus.google.com/u/0/101231306660961225805/posts/gVFtF6KZD6H" rel="nofollow">over on Google+</a>.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-364">
+					<time datetime="2011-07-24T15:56:11+00:00">
+						<span class="post-date">July 24, 2011 at 3:56 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-365" class="comment odd alt thread-odd thread-alt depth-1">
+		<article id="div-comment-365" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/3c191e4d724397876d245d5115388bdc?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/3c191e4d724397876d245d5115388bdc?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://graphility.com' rel='external nofollow' class='url'>Hector Hurtado</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Somehow, it comes down to this:</p>
+<p>1- just code! I love metaphysical (hmm, metadigital) theories, but if they stop you from actually starting the job, just go ahead and start typing &#8212; wow, I can&#8217;t believe I&#8217;m writing this, I love conceptualizing forever.</p>
+<p>2- <em>once</em> you see properties repeating, patterns emerge. It is time to refactor &#8212; surely, with classes.</p>
+<p>3- keep refactoring until you find a balance between:<br />
+a) usability: <em>do I really need to single out this repeating property by creating a class?</em><br />
+b) reusability:<em>can I easily reuse this? Will I? </em><br />
+c) readability:<em>Is my code accessible to me today? To me in 6 months? What about others?</em></p>
+<p>Now, I tend to side with Dave <em>if and only if</em> you have an Object Oriented mind. But this is not a trivial, background matters&#8230; Designer, developer&#8230;</p>
+<p>To wrap up, since I mentioned OOP, I&#8217;ll finish with this: Don&#8217;t Repeat Yourself (DRY) and&#8230;</p>
+<blockquote cite="The Art of Agile Development, by James Shore and Shane Warden"><p>The more tenuous the relationship between two concepts, the more loosely coupled they should be. Conversely, the more closely related two concepts are, the more tightly coupled they may be.</p></blockquote>
+<p>Keep coding!</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-365">
+					<time datetime="2011-07-24T18:44:57+00:00">
+						<span class="post-date">July 24, 2011 at 6:44 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-369" class="comment even thread-even depth-1 parent">
+		<article id="div-comment-369" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://1.gravatar.com/avatar/acbfa0de1d87536d8b5483c028e1c68c?s=60&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/acbfa0de1d87536d8b5483c028e1c68c?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://andreaslagerkvist.com' rel='external nofollow' class='url'>Andreas Lagerkvist</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Personally I almost **never** user .classes. Every module simply gets an ID around it and then I use SASS mixins to style those IDs and its descendants. I keep each module styling in its own file and mixins in categorized files (lists.scss, forms.scss, icons.scss, etc). That way I can be absolutely sure that if there&#8217;s a problem with the &#8220;recent comments&#8221;-module, I&#8217;ll find the code (and _all_ the code) in the recent-comments.scss file. Changing things in that file affects _nothing_ outside that module.</p>
+<p>I find working with generic classes a lot really makes the code difficult to maintain. I really hate it when I need to give an element a class in order to style it, and that class has already been styled by someone else for a completely different purpose. Now I have to re-name my class or re-style it specifically for my module.</p>
+<p>Another annoying thing is that when everything is styled with classes, you can never, safely, change the styling of those classes without going through the entire website to make sure you&#8217;ve double-checked every element that uses that class (by searching for it in the generated HTML I suppose).</p>
+<p>Third negative thing about styling with classes is that it absolutely ruins your markup.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-369">
+					<time datetime="2011-07-25T08:16:43+00:00">
+						<span class="post-date">July 25, 2011 at 8:16 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-373" class="comment odd alt depth-2 parent">
+		<article id="div-comment-373" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/9f8a6e075d4fde992295c3c763bffd5a?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/9f8a6e075d4fde992295c3c763bffd5a?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Alwaison</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>&#8220;Changing things in that file affects _nothing_ outside that module.&#8221;</p>
+<p>So, if you must to add a bullet in all the lists of your website, you need to change it in all the css files? Wow, thats make the code very easy to mantain&#8230;</p>
+<p>IDs are not the devil, but forget about the classes, seem very risky for me&#8230;</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-373">
+					<time datetime="2011-07-26T06:51:23+00:00">
+						<span class="post-date">July 26, 2011 at 6:51 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-374" class="comment even depth-3 parent">
+		<article id="div-comment-374" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://1.gravatar.com/avatar/acbfa0de1d87536d8b5483c028e1c68c?s=60&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/acbfa0de1d87536d8b5483c028e1c68c?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://andreaslagerkvist.com' rel='external nofollow' class='url'>Andreas Lagerkvist</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>I always style elements on single element selector level (ul, h1, p etc) in a way that I most likely want them to look unless something special is going on. I don&#8217;t use reset stylesheets but instead give all elements some basic styling that looks good on its own.</p>
+<p>When I need a list _not_ to have bullets or be on one line etc I simply go:</p>
+<p>#navigation ul {@include plain-list;} or #navigation ul {@include pipe-separated-list;} etc.</p>
+<p>So no, I don&#8217;t &#8220;if you must to add a bullet in all the lists of your website, you need to change it in all the css files&#8221;.</p>
+<p>In fact, since I basically just replace .classes with @mixins I code pretty much exactly the same way you would with .classes except I apply my &#8220;classes&#8221; in my CSS rather than my HTML, which, obviously, keeps my HTML extremely tidy.</p>
+<p>The only time I specifically style an #id or any of its descendants is when that styling is _only_ used for that module. If I write CSS I think I can re-use I turn that CSS into a @mixin.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-374">
+					<time datetime="2011-07-26T12:03:31+00:00">
+						<span class="post-date">July 26, 2011 at 12:03 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-504" class="comment odd alt depth-4 parent">
+		<article id="div-comment-504" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/0fe59a36978f746af34e7a3fd399efa4?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/0fe59a36978f746af34e7a3fd399efa4?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://rhyslloyd.me' rel='external nofollow' class='url'>Rhys Lloyd</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Okay, I know I&#8217;m raising the dead on this post &#8211; but using mixins to replace classes? Your stylesheets must be huge! Sure, it looks small and I&#8217;m sure it&#8217;s maintainable through the power of SASS &#8211; but even the minified CSS output would be substantially larger than if classes were used smartly in a modularised fashion.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-504">
+					<time datetime="2012-05-17T00:07:04+00:00">
+						<span class="post-date">May 17, 2012 at 12:07 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-505" class="comment byuser comment-author-DaveGregory bypostauthor even depth-5">
+		<article id="div-comment-505" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Actually, I think that&#8217;s a good point.  I need to test out minified code using @mixins over @extends instead.   I was pretty shocked to see that mixins compress extremely well.  They arent something I like to use often either, so I wonder how that will fare.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-505">
+					<time datetime="2012-05-17T16:59:55+00:00">
+						<span class="post-date">May 17, 2012 at 4:59 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li id="comment-376" class="comment odd alt thread-odd thread-alt depth-1 parent">
+		<article id="div-comment-376" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://2.gravatar.com/avatar/522662b05a11bde234abc3a360ccdd13?s=60&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/522662b05a11bde234abc3a360ccdd13?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">LATerry</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Sometimes it can be difficult to distinguish someone being a contrarian for the sake of being contrarian, or someone genuinely bringing up a new angle on a topic. I have to say though that I am warming up to some of your ideas. I guess I will try apply them on a future small project, and see how it feels.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-376">
+					<time datetime="2011-07-26T20:07:38+00:00">
+						<span class="post-date">July 26, 2011 at 8:07 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-377" class="comment byuser comment-author-DaveGregory bypostauthor even depth-2">
+		<article id="div-comment-377" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Thanks.  I am definitely not trying to just argue for the sake of it.  🙂  I think there are valid reasons for removing IDs from your css and I&#8217;ve been doing it for about 3 years now, with no issue.  As you can see, I have tried to test and find possible benefits of using ID and the ones I have seen so far, dont offset the issues I have with ID.  Thanks for the input!</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-377">
+					<time datetime="2011-07-26T20:56:18+00:00">
+						<span class="post-date">July 26, 2011 at 8:56 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li id="comment-429" class="comment odd alt thread-even depth-1">
+		<article id="div-comment-429" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://1.gravatar.com/avatar/4b08e66ca39cc29548645e4a60eb13ae?s=60&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4b08e66ca39cc29548645e4a60eb13ae?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">jorge</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>I think you should post an example that explain your position. Like: we have this homepage with ID selectors, implementing this new css code without these selector works better. and so on&#8230;<br />
+PS: Think about the newbies like me!! 😛 Would be nice!<br />
+Cheers!</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-429">
+					<time datetime="2011-08-18T10:19:01+00:00">
+						<span class="post-date">August 18, 2011 at 10:19 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-449" class="comment even thread-odd thread-alt depth-1 parent">
+		<article id="div-comment-449" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/04644c1b91bb370394b448be3d608c09?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/04644c1b91bb370394b448be3d608c09?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Jason</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>I noticed that the source code of this very page has 134 instances of &#8220;id=&#8221;</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-449">
+					<time datetime="2011-10-05T19:58:15+00:00">
+						<span class="post-date">October 5, 2011 at 7:58 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-450" class="comment byuser comment-author-DaveGregory bypostauthor odd alt depth-2">
+		<article id="div-comment-450" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Hah!  Took someone long enough!  However you tried to take a jab, but you did it wrong.   I&#8217;ve never stated there is anything wrong with ID in general..  just not to use this in css.   Good try..  I guess?   </p>
+<p><strong>try this at me instead:</strong><br />
+&#8220;Yo Dave, you suck!  I found over 300 selectors using ID in your CSS!  Three hundred!  You should eat your own dogfood you buttface! &#8221;</p>
+<p>Okay so NOW I am properly burned.<br />
+That&#8217;s when I&#8217;ll give you some lame excuse like &#8220;leave me alone! I use a wordpress template and I dont roll my own, too busy working etc etc.&#8221;  something like that.</p>
+<p>So when I actually do refactor my own blog, I&#8217;ll KEEP ID&#8217;s because there&#8217;s nothing wrong with ID&#8217;s in themselves.   I will however, remove selectors that use ids.  There. </p>
+<p>Good job checking my code.  You are the first to mention it.  (maybe not the first to check)   🙂<br />
+I&#8217;ll get to it when I have time.  meh.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-450">
+					<time datetime="2011-10-05T22:02:16+00:00">
+						<span class="post-date">October 5, 2011 at 10:02 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li id="comment-453" class="comment even thread-even depth-1">
+		<article id="div-comment-453" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/627a9cbfc7df507aa8f8bda2335ffb0a?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/627a9cbfc7df507aa8f8bda2335ffb0a?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://www.zemoga.com' rel='external nofollow' class='url'>clonyx</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Regarding a loginbox I&#8217;d rely on something like:</p>
+<p>#loginbox{<br />
+    styles related ONLY to the component&#8230;<br />
+}<br />
+    #loginbox .form-box{<br />
+        the base component for reusable form elements&#8230;<br />
+    }</p>
+<p>IDs are created for valid reasons, and the code above describes how the components works even if it is the first time you see the code.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-453">
+					<time datetime="2011-10-27T14:02:48+00:00">
+						<span class="post-date">October 27, 2011 at 2:02 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-454" class="comment odd alt thread-odd thread-alt depth-1 parent">
+		<article id="div-comment-454" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/627a9cbfc7df507aa8f8bda2335ffb0a?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/627a9cbfc7df507aa8f8bda2335ffb0a?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://www.zemoga.com' rel='external nofollow' class='url'>clonyx</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Mistake in the last post&#8230; I meant:<br />
+#login-box{<br />
+styles related ONLY to the component…<br />
+}<br />
+.form-box{<br />
+the base component for reusable form elements…<br />
+}</p>
+<p>And my HTML would be coded as:</p>
+<p>&#8230;</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-454">
+					<time datetime="2011-10-27T14:05:47+00:00">
+						<span class="post-date">October 27, 2011 at 2:05 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-499" class="comment byuser comment-author-DaveGregory bypostauthor even depth-2 parent">
+		<article id="div-comment-499" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>That could work..   however why not just extend the login box with an extension classname..   .login-box.form-box {&#8230;}<br />
+which allows you to extend form-box without affecting it..  AND you get free re-usable code by using a class.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-499">
+					<time datetime="2012-04-13T23:54:02+00:00">
+						<span class="post-date">April 13, 2012 at 11:54 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-512" class="comment odd alt depth-3">
+		<article id="div-comment-512" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/f544a943a6325924313266cd2027cdd6?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f544a943a6325924313266cd2027cdd6?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Andres Roberto</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>That&#8217;s right. When working with web apps you don&#8217;t know when you have to create one more login box, just because your client asked to do so or because you just really need to do it!</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-512">
+					<time datetime="2012-06-19T05:39:34+00:00">
+						<span class="post-date">June 19, 2012 at 5:39 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li id="comment-485" class="pingback even thread-even depth-1">
+		<div class="comment-body">
+			Pingback: <a href='http://jangnan.wordpress.com/2012/03/20/2012%eb%85%84-3%ec%9b%94-20%ec%9d%bc-it-%ea%b8%b0%ec%88%a0-%eb%8f%99%ed%96%a5/' rel='external nofollow' class='url'>2012? 3? 20? it ?? ?? |</a> 		</div>
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-497" class="comment odd alt thread-odd thread-alt depth-1 parent">
+		<article id="div-comment-497" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c48c98de05532930f6cf888ce99f4e43?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c48c98de05532930f6cf888ce99f4e43?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">NOT-mozilla</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>You&#8217;re doing a disservice to anyone reading your article that may be new to CSS or trying to get a better grasp of how best to use classes and ID&#8217;s. A blanket statement and an article title of &#8220;Don&#8217;t use ID selectors in CSS&#8221; is an aphorism solely designed to generate traffic and to boost your own self-esteem. ID&#8217;s have a specific purpose and using them in a layout, frankly just makes sense. Reusability has obvious benefits but so does specificality.</p>
+<p>I hope that novices and beginners don&#8217;t start subscribing to your opinions and end up creating far more work for themselves and others who may have to maintain their code in the future. </p>
+<p>Just because there&#8217;s a way to obfuscate CSS doesn&#8217;t mean it should be done. I guess those of us who use ID&#8217;s will never be 31337 in your book but when it comes time for making an edit, those who subscribe to your opinions will be scanning hundreds of lines of code trying to figure out dependancies and their implications while those who used ID&#8217;s for their intended purpose will already be home.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-497">
+					<time datetime="2012-04-07T14:50:43+00:00">
+						<span class="post-date">April 7, 2012 at 2:50 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-500" class="comment byuser comment-author-DaveGregory bypostauthor even depth-2 parent">
+		<article id="div-comment-500" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Please use a real name instead of a generic name like Mozilla.  That reflects negatively on your comments and I haven&#8217;t even read them yet.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-500">
+					<time datetime="2012-04-13T23:56:16+00:00">
+						<span class="post-date">April 13, 2012 at 11:56 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-501" class="comment byuser comment-author-DaveGregory bypostauthor odd alt depth-3 parent">
+		<article id="div-comment-501" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Interesting that you believe just by NOT using ID&#8217;s, that we are creating MORE code and MORE work.    I am advocating the opposite.   Creating re-usable CSS using classes allows you to make LESS code and CLEANER code.</p>
+<p>nice try tho Troll.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-501">
+					<time datetime="2012-04-13T23:58:51+00:00">
+						<span class="post-date">April 13, 2012 at 11:58 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-528" class="comment even depth-4">
+		<article id="div-comment-528" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/90795635b950a6970d737753d95dde46?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/90795635b950a6970d737753d95dde46?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Erik Reppen</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>In a large team on a complex site scenario, yes you would be. General tag CSS should be easiest to override. Classes should represent re-used containers and special case tags. Any unique container, not likely to get used twice in future layout tweaks should have an ID. And no, you should not use that ID every chance you get, you should use it sparingly, only for properties that you need to override within that unique container.</p>
+<p>What you end up when nobody uses IDs is a CSS class arms race every time you narrow down to more specific code and when you get one rookie on the team who doesn&#8217;t get the generally idea is minimalism, not fear of specificity, they start tacking on 5 css classes to everything they write so nobody &#8220;breaks their stuff.&#8221; What would you rather override? #sub-nav button or .main-section .sub-nav &gt; ul &gt; li &gt; button.nav_button</p>
+<p>The question isn&#8217;t whether to use IDs, it&#8217;s how to use them competently.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-528">
+					<time datetime="2012-08-23T23:47:29+00:00">
+						<span class="post-date">August 23, 2012 at 11:47 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li id="comment-498" class="comment odd alt thread-even depth-1 parent">
+		<article id="div-comment-498" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://1.gravatar.com/avatar/4cd2ed4ec61cf1948865bdc7ad36c0f5?s=60&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4cd2ed4ec61cf1948865bdc7ad36c0f5?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Chalky</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>When I change my IDs (let&#8217;s face it, I do), I don&#8217;t want my CSS to break.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-498">
+					<time datetime="2012-04-08T00:05:37+00:00">
+						<span class="post-date">April 8, 2012 at 12:05 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-502" class="comment byuser comment-author-DaveGregory bypostauthor even depth-2 parent">
+		<article id="div-comment-502" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Agreed.  With this technique, your css will not break if you change ID&#8217;s.  🙂</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-502">
+					<time datetime="2012-04-14T00:01:48+00:00">
+						<span class="post-date">April 14, 2012 at 12:01 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-529" class="comment odd alt depth-3">
+		<article id="div-comment-529" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/90795635b950a6970d737753d95dde46?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/90795635b950a6970d737753d95dde46?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Erik Reppen</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>CSS breaks for different reasons including changing the wrong classes. It can also break easily due to their not being specificity applied when it made perfect sense to do so. Example:</p>
+<p>Most of my button properties are defined on a simple button tag. But my sub-nav buttons need a couple property tweaks.</p>
+<p>is:<br />
+#sub-nav button<br />
+or:<br />
+.sub-nav button</p>
+<p>the smart way to do that?</p>
+<p>Remember this point in decision-making right here. Well call it Point A. The author of the class version knows it would be pretty easy to smash .sub-nav button as there are two more general containers above it with classes so they add some things:</p>
+<p>.main-content .side-bar .sub-nav button</p>
+<p>Now somebody needs to override a property on that sub-nav with CSS that is only linked on a special page-type.</p>
+<p>.main-content .side-bar .sub-nav &gt; li &gt; button</p>
+<p>To me, a selective ID-user, that is a freaking mess that could have been avoided. If the sub-nav overrides had been set under an ID in a non-distant ancestor like #sub-nav button, we would have never moved beyond Point A in the first case and when it came time to override #sub-nav li button would do the trick just fine.</p>
+<p>The key to flexibility and maintainability in CSS is minimalism in CSS. Not using IDs at all is just as good of a way to start a CSS arms race leading to a convoluted bloat-fest as using them badly is. IDs are for very specific styles narrowed down to the immediate container so that you can do whatever you want with your more general styles and not worry about unanticipated breakage in those specific areas.</p>
+<p>If you believe classes-only is the way to go, you&#8217;re failing to understand a crucial point in CSS. You don&#8217;t define everything on one bucket if you can avoid it. The more you inherit from more general styles, the better. The less you have to worry about breaking highly specific overrides to those general styles, also, the better.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-529">
+					<time datetime="2012-08-24T00:21:12+00:00">
+						<span class="post-date">August 24, 2012 at 12:21 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li id="comment-513" class="comment even thread-odd thread-alt depth-1 parent">
+		<article id="div-comment-513" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/f544a943a6325924313266cd2027cdd6?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f544a943a6325924313266cd2027cdd6?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Andres Roberto</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Ok, Stop fighting against what&#8217;s very accepted by the most of the Front End community. Id&#8217;s are not a good idea for styling. They can help you in some cases because of they specificity power, but that&#8217;s does not means that they are the solution for every single element! Stop fighting against reusability and stop fighting against big names and STOP thinking that classes and ID names really give any meaning to your markup! The only one that will read them is the guy that maintain the website! Machines ignore them. I will say it again, want to be semantic? OK, then use RDF and HTML5 tags and a lot of Semantic Web Stuff: <a href="http://www.w3.org/standards/semanticweb/" rel="nofollow">http://www.w3.org/standards/semanticweb/</a></p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-513">
+					<time datetime="2012-06-19T05:43:22+00:00">
+						<span class="post-date">June 19, 2012 at 5:43 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-550" class="comment odd alt depth-2">
+		<article id="div-comment-550" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/39799a635c81b31e6f06317cc9b68e31?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/39799a635c81b31e6f06317cc9b68e31?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">paolo poggi</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>I think we&#8217;ve heard you the 2 (or were they 3?) previous times you stated this. I&#8217;m trying to reach the bottom of this post 🙂</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-550">
+					<time datetime="2013-01-24T15:57:50+00:00">
+						<span class="post-date">January 24, 2013 at 3:57 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li id="comment-514" class="comment even thread-even depth-1">
+		<article id="div-comment-514" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://2.gravatar.com/avatar/ee05d9319cdeaf1c43c92a9664c74556?s=60&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ee05d9319cdeaf1c43c92a9664c74556?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://www.media3000.co.uk' rel='external nofollow' class='url'>Anthony</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>( I might have disagreed with you in an earlier comment, however &#8230; )<br />
+I am finding myself using class for almost everything now.</p>
+<p>It is great for &#8216;context&#8217; when more than one developer is hacking away at the style sheets, and it decends into the usual mess. Eg for a price:</p>
+<p>#cart  .price {<br />
+}<br />
+#cart  .name {<br />
+}<br />
+#cart  .qty {<br />
+}</p>
+<p>#mini-cart  .price {<br />
+}</p>
+<p>.product  .price {<br />
+}</p>
+<p>Then all developers can obviously see what is being edited, there can be more than one name per page without conflict, and names can be short.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-514">
+					<time datetime="2012-07-02T14:21:11+00:00">
+						<span class="post-date">July 2, 2012 at 2:21 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-520" class="comment odd alt thread-odd thread-alt depth-1">
+		<article id="div-comment-520" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://1.gravatar.com/avatar/118789a9fd79649028d0c003c6a33776?s=60&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/118789a9fd79649028d0c003c6a33776?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://vhdes.com' rel='external nofollow' class='url'>Jack L</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>I have come to the conclusion that IDs are not all that necessary in CSS.  They are as Dave repeatedly suggests useful and even necessary in HTML, which is where I use them especially when using JavaScript or PHP to generate IDs on the fly to use with jQuery.  Then again, I grew up on procedural coding and became an OO architect in the 90s with Java, C++, and ObjectiveC before I started working on HTML/CSS.  I treat IDs as dynamic HTML instances and with CSS being declarative&#8211;and on that basis (well, okay, because it&#8217;s good OO practice too)&#8211;it makes littles sense for me to use them.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-520">
+					<time datetime="2012-08-13T21:15:39+00:00">
+						<span class="post-date">August 13, 2012 at 9:15 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-522" class="comment even thread-even depth-1">
+		<article id="div-comment-522" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://2.gravatar.com/avatar/b3d0d27c01d183d7770c060f5e29e9ad?s=60&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/b3d0d27c01d183d7770c060f5e29e9ad?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://tracker1.info/' rel='external nofollow' class='url'>Michael J. Ryan</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>I tend to mix them up a bit&#8230; my latest project is .less based (bootstrap) and I am using an MVC pattern for the server-side portion.. my main template puts an ID in the html tag of &#8220;controllername-actionname&#8221;  or &#8220;public-viewname&#8221; (for public pages using the template).  This way I can target a single page&#8217;s specific needs with an outer wrapper of #account-login { &#8230; } for example&#8230; I also add a &#8220;controller-controllername&#8221; class to the html.  So that I can target a section of pages easily.  Outside of this, most of my ID&#8217;s are more for JS than for CSS usage.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-522">
+					<time datetime="2012-08-16T00:46:18+00:00">
+						<span class="post-date">August 16, 2012 at 12:46 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-525" class="comment odd alt thread-odd thread-alt depth-1">
+		<article id="div-comment-525" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://1.gravatar.com/avatar/7149e4447ad1577b56b49e89ef5db1ac?s=60&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/7149e4447ad1577b56b49e89ef5db1ac?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Thomas</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Lots of classes:<br />
+Introduce bloat to your markup and blur the division between style and content. (i.e. )</p>
+<p>Lots of ids:<br />
+Iintroduce bloat to your CSS, because you have to repeat rules on different elements and create weighted rules to override styles.</p>
+<p>My suggestion:</p>
+<p>1. Use the cascade properly<br />
+2. Find the right mixture between ids and classes in order to keep your markup *and* CSS lean and maintainable</p>
+<p>It&#8217;s about balance and knowing what you do.</p>
+<p>While I agree, that reusable code is beneficial, it&#8217;s a bit far-fetched here. CSS is mostly about creating something unique: a style for a certain webpage. I don&#8217;t want to reuse *every* bit of a design, which I specifically created for this project, across different projects. That&#8217;s the type of bloat grid systems introduce, which provide lots of classes you end up not using.<br />
+Of course it is good practice to use classes more often than ids, because you want to have certain styles repeated on various elements of the page.<br />
+But specificity has a clear advantage: you don&#8217;t have to care wether changing the style of an id breaks your layout. When I want to change one element, but its styles are composed of 3-5 different classes, I&#8217;m in trouble. Changes are going to affect the design everywhere.</p>
+<p>And btw, I can still use classes on an id. They&#8217;re not mutually exclusive.</p>
+<p>@Andreas &#8220;Stop fighting against what’s very accepted by the most of the Front End community&#8221; &#8211; that&#8217;s a very funny thing to say 🙂</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-525">
+					<time datetime="2012-08-21T08:34:14+00:00">
+						<span class="post-date">August 21, 2012 at 8:34 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-527" class="comment even thread-even depth-1">
+		<article id="div-comment-527" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/90795635b950a6970d737753d95dde46?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/90795635b950a6970d737753d95dde46?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Erik Reppen</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>This is terrible advice. Anybody who has worked with teams of 5 or larger has seen CSS that looks like this.</p>
+<p>.main-content .side-bar &gt; ul &gt; li { /*properties*/}</p>
+<p>That&#8217;s what&#8217;s a pain to override, not:</p>
+<p>#side-bar li</p>
+<p>The important detail is that you only use IDs to override more general styles specific to things that are only inside the ID element. Then you can go crazy with classes and tag selectors at higher node levels and never worry about breakage of those critical property overrides.</p>
+<p>Good CSS is minimal CSS Using IDs well leads to less CSS. Not using them at all as a hard and fast rule means you&#8217;re not doing it right. Start with general. Gather commonly re-used sets of properties into classes. And then sparingly, use IDs to override only the properties need to change in an ancestor element context.</p>
+<p>ID on the body?  Idiocy. Always, unless you&#8217;re already cooked because of a CSS arms race that happened before you got there. But classes-only just means a higher quantity of classes which is a specificity mess that you can only clean  up with even more classes if you never use IDs.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-527">
+					<time datetime="2012-08-23T22:58:36+00:00">
+						<span class="post-date">August 23, 2012 at 10:58 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-530" class="pingback odd alt thread-odd thread-alt depth-1">
+		<div class="comment-body">
+			Pingback: <a href='http://chasebizdream.wordpress.com/2012/09/30/css-cross-country-notes/' rel='external nofollow' class='url'>CSS Cross Country Notes | Chase Biz Dream</a> 		</div>
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-535" class="comment even thread-even depth-1 parent">
+		<article id="div-comment-535" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://2.gravatar.com/avatar/5b7b087b6a24f00468b63e48fc760d45?s=60&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/5b7b087b6a24f00468b63e48fc760d45?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">asfer</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>I am a newb&#8230; Thanks for pointing out the specificity problem of using using IDs!</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-535">
+					<time datetime="2012-12-29T21:10:26+00:00">
+						<span class="post-date">December 29, 2012 at 9:10 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-539" class="comment byuser comment-author-DaveGregory bypostauthor odd alt depth-2">
+		<article id="div-comment-539" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Yep!</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-539">
+					<time datetime="2013-01-07T15:44:07+00:00">
+						<span class="post-date">January 7, 2013 at 3:44 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li id="comment-536" class="comment even thread-odd thread-alt depth-1 parent">
+		<article id="div-comment-536" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://2.gravatar.com/avatar/e6228586e782fee6c11374c0051cd21f?s=60&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/e6228586e782fee6c11374c0051cd21f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Bill Freese</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>IDs can be used as anchors. Classes cannot. This is the actual functional distinction. So why do so many pages discussing ID vs class fail (like this very page) to mention that fact?</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-536">
+					<time datetime="2013-01-04T22:03:05+00:00">
+						<span class="post-date">January 4, 2013 at 10:03 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	<ul class="children">
+
+	<li id="comment-538" class="comment byuser comment-author-DaveGregory bypostauthor odd alt depth-2">
+		<article id="div-comment-538" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c0c77998fa0d0d157753e02ec517c57f?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Dave Gregory</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Sorry, but this article is NOT about named anchors.  (which is what you are referring to)  No named anchors have been harmed in the making of this article.  🙂</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-538">
+					<time datetime="2013-01-07T15:42:55+00:00">
+						<span class="post-date">January 7, 2013 at 3:42 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+	<li id="comment-543" class="comment even thread-even depth-1">
+		<article id="div-comment-543" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://1.gravatar.com/avatar/decd534867cf3291c0226f9ce6f43f3a?s=60&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/decd534867cf3291c0226f9ce6f43f3a?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://www.circulationstudio.com' rel='external nofollow' class='url'>Brian</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Great discussion! I too have been reducing the number of IDs in my CSS. IDs are great JS hooks and useful for named anchors so they are still present in my markup. Newer HTML5 semantic elements (header, footer, aside etc) used in conjunction with ARIA roles (banner, contentinfo, main, etc) and CSS attribute selector [att=&#8221;val&#8221;] (particularly those that match substrings such as ^,$,*) the can greatly reduce or eliminate styling IDs while remaining clear (at least to me). I also have started using LESS and creating many separate files and using a master file to import the *.less files. Simply looking at the file system I know narrow down what styles to edit! It takes practice and I understand why many would object (verb) and keep the CSS &#8220;simple&#8221;, but for now for me it is interesting. Regardless, iIt is essential to constantly be learning and striving for improvement in this field!</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-543">
+					<time datetime="2013-01-11T20:51:35+00:00">
+						<span class="post-date">January 11, 2013 at 8:51 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-546" class="pingback odd alt thread-odd thread-alt depth-1">
+		<div class="comment-body">
+			Pingback: <a href='https://annotary.com/collections/7291/css' rel='external nofollow' class='url'>Css | Annotary</a> 		</div>
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-547" class="comment even thread-even depth-1">
+		<article id="div-comment-547" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://2.gravatar.com/avatar/2f936f2084a7f044df3228a4bf3cca33?s=60&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/2f936f2084a7f044df3228a4bf3cca33?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">dnut</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Ah&#8230; </p>
+<p>Many a person commenting on this article (which I am in total agreement with) seem to never have worked in an enterprise setting that does web development or may be were on the wrong side of that setting&#8230; </p>
+<p>All those ideas of using IDs for a header or a login box. How nice. Unfortunately, in many cases you develop your CSS code as part of some product. That product then leaves the R&amp;D department and is maintained for a relatively long period of time. The developers who use the product to extend and adopt to their needs **can&#8217;t** just go and change that damn header when they need to change the color of the links in the new design. The have to work on top of it. Which they can&#8217;t. Because of IDs specificity.They can&#8217;t even hack it properly without killing any maintainability for the future. **!important** all FTW.</p>
+<p>People don&#8217;t seem to get it. Have you ever tried styling/re-styling CSS from one of the frameworks (Sencha, JQM, JQUI). They don&#8217;t use IDs. And even then, without extreme specificity issues, it is extremely not-easy to do.</p>
+<p>P.S. The comment on the named anchors just killed me.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-547">
+					<time datetime="2013-01-18T21:38:03+00:00">
+						<span class="post-date">January 18, 2013 at 9:38 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-551" class="pingback odd alt thread-odd thread-alt depth-1">
+		<div class="comment-body">
+			Pingback: <a href='http://gregbriandavis.wordpress.com/2013/01/31/stop-using-ids-in-your-css/' rel='external nofollow' class='url'>Stop Using ID&#8217;s in your CSS! | the design informant</a> 		</div>
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-554" class="comment even thread-even depth-1">
+		<article id="div-comment-554" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/cde84eff7c1de3f49e9e30fa0114bc0d?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/cde84eff7c1de3f49e9e30fa0114bc0d?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn"><a href='http://www.heloisabiagi.com' rel='external nofollow' class='url'>Heloisa</a></cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Though I&#8217;m fond of working with classes and I really like the OOCSS concept, I don&#8217;t think using classes or IDs is a single matter of &#8220;this is good&#8221;, &#8220;this is bad&#8221;. They both have their purposes. Classes are great for creating generic styles that will be reused along the project. IDs are needed to treat exceptions and/or unique styles.The secret is to use both wisely.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-554">
+					<time datetime="2013-03-22T13:30:38+00:00">
+						<span class="post-date">March 22, 2013 at 1:30 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-555" class="comment odd alt thread-odd thread-alt depth-1">
+		<article id="div-comment-555" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://1.gravatar.com/avatar/78eebec4aa5408eb04007be3495edc50?s=60&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/78eebec4aa5408eb04007be3495edc50?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Mr.Key</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>Well how many of you have a CSS &#8220;library&#8221; at hand which they deploy on each site ? I would say that CSS is actually very specific per page.  Let&#8217;s say you need columns with width of 40px, would you need that columns size on every page? Heck no..</p>
+<p>Yes of course there are common thigs, which can be abstracted, it is a good idea to do it. A good examples are HTML component frameworks which provide themes (like JQueryUI, PrimeFaces, etc. etc.) If you write something like that it is absurd to use IDs&#8230;</p>
+<p>But then again, a CSS is created per page, meaning that CSS itself is quite specific to the layout of the particular page. Yes &#8230; you could abstract the base with which help you can create anything.. and this abstracted base is CSS, not classes in some major CSS library which are supposed to do every possible thing&#8230;.</p>
+<p>After all is said and done I would suggest that using ID&#8217;s for particular page layout is OK, it even helps the semantic of the page and the CSS in a way and using classes when you write general-purpose library (again consider JQueryUI) then classes are a must.</p>
+<p>Very good article, and interesting follow-up in the comments. As always truth is somewhere between the two extremes.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-555">
+					<time datetime="2013-04-05T11:51:13+00:00">
+						<span class="post-date">April 5, 2013 at 11:51 am</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-556" class="comment even thread-even depth-1">
+		<article id="div-comment-556" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://0.gravatar.com/avatar/0dbb16a5ef0649c57f32e52b03bd4cc8?s=60&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/0dbb16a5ef0649c57f32e52b03bd4cc8?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">Adrian</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>I am a hardcore ID guy and understand the differences.  This article makes sense from two perspectives.  1/ speed.  2/ ensuring that your code is not overly specific.</p>
+<p>My problem is that when I go to someone else&#8217;s code and need to make a change, if it is a class, then I can&#8217;t.  I don&#8217;t know where else may get screwed up.  If it&#8217;s an ID, then I&#8217;m safe.  This is called readability.  That being said, my ID use over the past week have certainly reduced drastically.</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-556">
+					<time datetime="2013-04-09T22:35:32+00:00">
+						<span class="post-date">April 9, 2013 at 10:35 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-558" class="comment odd alt thread-odd thread-alt depth-1">
+		<article id="div-comment-558" class="comment-body">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<span class="avatar-wrapper"><img alt='' src='http://2.gravatar.com/avatar/8ee7e0eab1eb1b14ef9a5f56e16d2c81?s=60&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/8ee7e0eab1eb1b14ef9a5f56e16d2c81?s=120&amp;d=mm&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' /></span>					<cite class="fn">RR</cite> <span class="says">says:</span>				</div><!-- .comment-author -->
+
+							</footer><!-- .comment-meta -->
+
+			<div class="comment-content">
+				<p>First of all: I&#8217;m dutch, so I&#8217;m not your English grammar or spelling fairy.</p>
+<p>I read the whole article, also most of the comments and I do understand both sides of the story. In fact: I&#8217;ve BEEN on both sides of this story. I experimented with this years ago, writing with lots of id&#8217;s and few classes or the other way around. My conclusion is that only using classes is not smart at all. You SHOULD go mixed mode with this for the sake of structure!</p>
+<p>I&#8217;ve been writing in many different languages for over more than a decade now, and I kinda use the same type of structure in all languages. Just to be a bit more detailed, I write in HTML4/5, CSS 2/3, JS/jQuery, JSON, PHP, (My)SQL, XML, HTA, BATCH, AS and many more, and structure is what is most important!</p>
+<p>So, to respond on this article and give some common sense feedback:</p>
+<p>&#8211; Specificity: Just using classes is not smart at all because there are other languages that DEPEND on being specific on your target or selector. Specificity, when used the right (smart) way will also give you a better code structure, this way future devs can pick up where you stopped because your code is READABLE. There are still a lot of devs that underestimate this and don&#8217;t use indentations or parent / child like programming: They should stop creating this pollution and apply for another job.</p>
+<p>&#8211; Speed improvements: Can be neglected both ways for a large part. Nowadays we have fast internet, fast computers, tablets, smartphones, netbooks, etc. I also don&#8217;t believe in minifying for the sake of a few nanoseconds. These measurements are always being taken out of proportion and people start causing a panic for nothing. Of course there is a difference between writing junk and writing clean code, like: &#8220;duh&#8230;!?&#8221; (imagine a blond trailer park chick working at the local road cafe chewing gum while saying that and rolling her eyes&#8230;&#8230;&#8230;.stop staring at her boobs!)</p>
+<p>&#8211; Use comments in your code: Do I really need to explain this&#8230;?</p>
+<p>&#8211; ID and Class names: THINK first before writing your code and make some on paper concepts so you have a guideline! This way you won&#8217;t jump into a name giving death match to self destruction. Have a plan, never dive into a pool of sharks, or crocodiles, or piranhas, or mothers in law in their old bathing suites revealing  their cellulite skin.</p>
+<p>Ok, so just to keep it even more short than I am doing already:</p>
+<p>&#8211; Just applying this &#8220;re-usable&#8221; way of CSS makes it to dynamic, and we all know what happens with code that&#8217;s written like this and it&#8217;s being changed: Avalanche!</p>
+<p>&#8211; Have a plan, minimize name similarity in your code!</p>
+<p>&#8211; Use parent / child like code for the sake of structure! Use comments and indentation the readable way!</p>
+<p>&#8211; Think about other devs when writing your code, don&#8217;t be a smart*ss!</p>
+<p>And remember, there is not 1 way that will be THE way to do things&#8230; I personally don&#8217;t need to proof anything to anyone here in this article. This is just my personal experience in being a dev in more than 1 language for over more than a decade. I&#8217;ve worked on websites, built crm, cms, dms, ems, all that stuff&#8230;</p>
+<p>That being said: GODSPEED!</p>
+			</div><!-- .comment-content -->
+
+			<div class="comment-metadata">
+								<a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/#comment-558">
+					<time datetime="2013-05-08T20:32:23+00:00">
+						<span class="post-date">May 8, 2013 at 8:32 pm</span>
+					</time>
+				</a>
+							</div><!-- .comment-metadata -->
+		</article><!-- .comment-body -->
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-563" class="pingback even thread-even depth-1">
+		<div class="comment-body">
+			Pingback: <a href='http://www.w3c.com.cn/%e5%b9%b2%e5%98%9b%e8%a6%81%e7%94%a8id%e6%9d%a5%e5%86%99css%ef%bc%9f-2' rel='external nofollow' class='url'>????id??css? - web?? - ?????</a> 		</div>
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-568" class="pingback odd alt thread-odd thread-alt depth-1">
+		<div class="comment-body">
+			Pingback: <a href='http://cnandreu.aws.af.cm/start-a-blog-like-this-one/' rel='external nofollow' class='url'>Start a blog like this one by cnandreu</a> 		</div>
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-571" class="pingback even thread-even depth-1">
+		<div class="comment-body">
+			Pingback: <a href='http://cnandreu.com/start-a-blog/' rel='external nofollow' class='url'>Start a Blog by cnandreu</a> 		</div>
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-574" class="pingback odd alt thread-odd thread-alt depth-1">
+		<div class="comment-body">
+			Pingback: <a href='http://www.webdirections.org/blog/in-defense-of-the-humble-id-attribute/' rel='external nofollow' class='url'>In defense of the humble id attribute | Web Directions</a> 		</div>
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-579" class="pingback even thread-even depth-1">
+		<div class="comment-body">
+			Pingback: <a href='http://www.robert-deluca.com/ids-css-style-sheets-place/' rel='external nofollow' class='url'>ID&#039;s in CSS style sheets -- they have a place &raquo; Robert DeLuca</a> 		</div>
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-580" class="pingback odd alt thread-odd thread-alt depth-1">
+		<div class="comment-body">
+			Pingback: <a href='http://wbruno.com.br/css/afinal-usar-ou-nao-seletores-ids-no-css/' rel='external nofollow' class='url'>Afinal, usar ou não seletores IDs no css ?</a> 		</div>
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-581" class="pingback even thread-even depth-1">
+		<div class="comment-body">
+			Pingback: <a href='http://blog.elemdage.com/technology/simple-showhide-with-js-css' rel='external nofollow' class='url'>Simple Show/Hide with JS &amp; CSS | Emerging Tech Talk</a> 		</div>
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-12827" class="pingback odd alt thread-odd thread-alt depth-1">
+		<div class="comment-body">
+			Pingback: <a href='http://raphaelgoetter.wordpress.com/2012/10/13/une-si-mauvaise-id/' rel='external nofollow' class='url'>Une si mauvaise ID ? | La Tête dans le Flux</a> 		</div>
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-21945" class="pingback even thread-even depth-1">
+		<div class="comment-body">
+			Pingback: <a href='https://rememberingmycode.wordpress.com/2015/04/19/ids-are-unique-but-why/' rel='external nofollow' class='url'>IDs are Unique &#8211; But Why? | coding step by step</a> 		</div>
+
+	</li><!-- #comment-## -->
+
+	<li id="comment-24308" class="pingback odd alt thread-odd thread-alt depth-1">
+		<div class="comment-body">
+			Pingback: <a href='http://blog.aarmora.com/css-selectors-are-fun/' rel='external nofollow' class='url'>CSS Selectors Are fun - AarmoraBlog</a> 		</div>
+
+	</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+		
+	
+			<p class="no-comments">Comments are closed.</p>
+	
+	
+</div><!-- #comments -->
+
+		
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+	</div><!-- #content -->
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+						<a href="http://wordpress.org/" rel="generator">Proudly powered by WordPress</a>
+			<span class="sep"> | </span>
+			Theme: Circa by <a href="https://wordpress.com/themes/circa" rel="designer">WordPress.com</a>.		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+<script type='text/javascript' src='http://screwlewse.com/wp-content/themes/hexa/js/menus.js?ver=20120206'></script>
+<script type='text/javascript' src='http://screwlewse.com/wp-content/themes/hexa/js/skip-link-focus-fix.js?ver=20130115'></script>
+<script type='text/javascript' src='http://screwlewse.com/wp-includes/js/wp-embed.min.js?ver=4.5.4'></script>
+
+</body>
+</html>
